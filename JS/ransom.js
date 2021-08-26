@@ -10,16 +10,14 @@ function showAboutUsText(){
         e.classList.remove("selected-box")
     })
     if(Array.from(this.parentNode.children).indexOf(this) == 0){
-        let text = "- Ransom Company for Cyber security is a local company specialized in cyber security, headquartered in northern Jordan in Irbid Governorate The Hashemite Kingdom of Jordan. Founded in 2021, the company is today startup companies in the field of cyber security that provide a comprehensive range of learning methods and training in specialized curricula in cyber security (information security, networks, applications, databases and social engineering) in addition to providing solutions and software that contribute to solving problems Cyber intrusions and threats and regulates consulting and IT security services." ;
+        let text = "- Ransom Company for Cyber security is a local company specialized in cyber security, headquartered in northern Jordan in Irbid Governorate The Hashemite Kingdom of Jordan" +
+            " Founded in 2021, the company is today startup companies in the field of cyber security that provide a comprehensive range of learning methods and training in specialized curricula in cyber security (information security, networks, applications, databases and social engineering) in addition to providing solutions and software that contribute to solving problems Cyber intrusions and threats and regulates consulting and IT security services \n" +
+            "We help organizations plan, build, and operate successful information security programs, solve security problems, and implement specific IT security projects\n" +
+            "Each member of our team has a unique set of skills and experience in the fields of training, software solutions and consulting, as well as business development and information and communication technology. Our team also has a wide and deep understanding of the Middle East and the world and its urgent need for training based on the curricula provided by international companies and to be a specialized center for exams and also to attract programmers who are able to find software solutions related to cyber security\n" ;
         textBox.textContent = text;
         this.classList.add("selected-box");
     }else if(Array.from(this.parentNode.children).indexOf(this) == 1){
-        let text = `- Training, qualifying and building the capacities of young people in basic knowledge related to networks and information security by adopting the curricula offered by international companies specialized in networks and information security.
-        Providing a specialized testing center to obtain accredited international certificates.
-        Providing a programming environment capable of building software solutions to hacking problems and cyber threats.
-        Contributing and participating in providing expertise and advice to governmental and private institutions in cyber security technologies.
-        Building a network of strategic alliances to form an advanced, updated and sophisticated knowledge base, which would enable us to share the highest level of international collective experiences with our clients.
-        Supporting and strengthening the local community through effective participation in local activities and events.` ;
+        let text = `Training, qualifying and building the capacities of young people in basic knowledge related to networks and information security by adopting the curricula offered by international companies specialized in networks and information security` ;
         textBox.textContent = text;
         this.classList.add("selected-box");
     }else if(Array.from(this.parentNode.children).indexOf(this) == 2){
@@ -70,17 +68,17 @@ if(theLink.includes("pages=")){
         // if(document.documentElement.scrollTop > 99){
         //     navBar.classList.add("sticky")
         // }
-        if(document.documentElement.scrollTop > 60){
-            whoAreWeH2.classList.add("showWhoAreWe");
-        }
-        if(document.documentElement.scrollTop > 500){
-            let theTime = 300;
-            cards.forEach(ele=>{
-                setTimeout(() => {
-                    ele.classList.add("showcards")
-                }, theTime);
-                theTime+=300;
-            })
+        // if(document.documentElement.scrollTop > 60){
+        //     whoAreWeH2.classList.add("showWhoAreWe");
+        // }
+        // if(document.documentElement.scrollTop > 500){
+        //     let theTime = 300;
+        //     cards.forEach(ele=>{
+        //         setTimeout(() => {
+        //             ele.classList.add("showcards")
+        //         }, theTime);
+        //         theTime+=300;
+        //     })
             // cards[0].classList.add("showcards");
             // setTimeout(() => {
             //     cards[1].classList.add("showcards");
@@ -90,9 +88,10 @@ if(theLink.includes("pages=")){
             // }, 600);
             
         }
-        if(document.documentElement.scrollTop >950){
-            objectives.classList.add("showobjectives")
-        }
+
+        // if(document.documentElement.scrollTop >950){
+        //     objectives.classList.add("showobjectives")
+        // }
         if(document.documentElement.scrollTop > 1380){
             let theTime = 200;
             homeCourses.forEach(ele=>{
@@ -111,19 +110,19 @@ if(theLink.includes("pages=")){
             // setTimeout(() => {
             //     homeCourses[3].classList.add("showcourses");
             // }, 900);
-            
+
         }
-        if(document.documentElement.scrollTop > 2200){
-            let theTime = 200;
-            socialMedia.forEach(ele=>{
-                setTimeout(() => {
-                    ele.classList.add("showsocial")
-                }, theTime);
-                theTime+=200;
-            })
-            
-        }
-    }
+        // if(document.documentElement.scrollTop > 2200){
+        //     let theTime = 200;
+        //     socialMedia.forEach(ele=>{
+        //         setTimeout(() => {
+        //             ele.classList.add("showsocial")
+        //         }, theTime);
+        //         theTime+=200;
+        //     })
+        //
+        // }
+
 }
 
 

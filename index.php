@@ -1,7 +1,6 @@
 <?php
 ob_start();
 // session_start();
-
 include "conn.php";
 include "checkadmin.php";
 include "checkuser.php";
@@ -191,9 +190,15 @@ if($do=='dashborad'){
             </div>
         </div>
         <div class="text-box">
-            <p>- Ransom Company for Cyber security is a local company specialized in cyber security, headquartered in northern Jordan in Irbid Governorate The Hashemite Kingdom of Jordan.
+            <p>- Ransom Company for Cyber security is a local company specialized in cyber security, headquartered in northern Jordan in Irbid Governorate The Hashemite Kingdom of Jordan
 
-                Founded in 2021, the company is today startup companies in the field of cyber security that provide a comprehensive range of learning methods and training in specialized curricula in cyber security (information security, networks, applications, databases and social engineering) in addition to providing solutions and software that contribute to solving problems Cyber intrusions and threats and regulates consulting and IT security services.</p>
+                Founded in 2021, the company is today startup companies in the field of cyber security that provide a comprehensive range of learning methods and training in specialized curricula in cyber security (information security, networks, applications, databases and social engineering) in addition to providing solutions and software that contribute to solving problems Cyber intrusions and threats and regulates consulting and IT security services
+
+                We help organizations plan, build, and operate successful information security programs, solve security problems, and implement specific IT security projects
+
+                Each member of our team has a unique set of skills and experience in the fields of training, software solutions and consulting, as well as business development and information and communication technology. Our team also has a wide and deep understanding of the Middle East and the world and its urgent need for training based on the curricula provided by international companies and to be a specialized center for exams and also to attract programmers who are able to find software solutions related to cyber security
+
+            </p>
         </div>
     </div>
 
@@ -202,99 +207,56 @@ if($do=='dashborad'){
 
 
 
-<img src="PHOTOS/cover2.jpg" class="img-fluid" alt="...">
 
-
-
-    
-
-
-    <!-- Who are we -->
-
-    <div class="who-are-we" id="whoarewe">
-<h2>Who Are We</h2>
-
-<p>
-            - Ransom Company for Cyber security is a local company specialized in cyber security, headquartered in northern Jordan in Irbid Governorate - The Hashemite Kingdom of Jordan.
-        </p>
-        <p>
-            - Founded in 2021, the company is today startup companies in the field of cyber security that provide a comprehensive range of learning methods and training in specialized curricula in cyber security (information security, networks, applications, databases and social engineering) in addition to providing solutions and software that contribute to solving problems Cyber intrusions and threats and regulates consulting and IT security services.
-        </p>
-        <p>
-            - <span>Our Mission</span> : To be the first choice in training, build the capabilities of young people, provide consulting, and develop
-            software solutions to institutions and companies.
-        </p>
-        <p>
-            - <span>Our Vision</span> : Secure Cyberspace.
-        </p>
-        <p>- We help organizations plan, build, and operate successful information security programs, solve security problems, and implement specific IT security projects.</p>
-        <p>
-            - Each member of our team has a unique set of skills and experience in the fields of training, software solutions and consulting, as well as business development and information and communication technology. Our team also has a wide and deep understanding of the Middle East and the world and its urgent need for training based on the curricula provided by international companies and to be a specialized center for exams and also to attract programmers who are able to find software solutions related to cyber security.
-        </p>
-    </div>
-
-
-    <div class="cards">
-
-        <div>
-            <div>
-                <span><i class="fas fa-tools"></i></span>
-                <div>
-                    <h3>Training</h3>
+    <div class="container1">
+        <div class="card">
+            <div class="face face1">
+                <div class="content">
+                    <img src="PHOTOS/presentation.svg"/>
+                    <h3>Trainig</h3>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
                     <p>CISCO Academy , Ec_Council Masterclass, Cyber Security Training Courses.</p>
-                </div>
-            </div>
-        </div>
 
-        <div>
-            <div>
-                <span><i class="fas fa-tools"></i></span>
-                <div>
-                    <h3>Solutions</h3>
-                    <p>Penetration Testing,
-                        Antivirus,
-                        AND
-                        Intrusion Detection System</p>
                 </div>
             </div>
         </div>
-        <div>
-            <div>
-                <span><i class="fas fa-tools"></i></span>
-                <div>
+        <div class="card">
+            <div class="face face1">
+                <div class="content">
+                    <img src="PHOTOS/consultation.svg"/>
                     <h3>Consulting</h3>
-                    <p>Knowing the weaknesses in your systems is the first step to protecting them.
-                        Our comprehensive assessment </p>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <p>Penetration Testing, Antivirus, AND Intrusion Detection System</p>
+
                 </div>
             </div>
         </div>
 
 
 
+        <div class="card">
+            <div class="face face1">
+                <div class="content">
+                    <img src="PHOTOS/idea.svg"/>
+                    <h3>Solutions</h3>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <p>Penetration Testing, Antivirus, AND Intrusion Detection System</p>
+
+                </div>
+            </div>
+        </div>
 
     </div>
 
-    <div class="objectives">
-        <h2>OBJECTIVES</h2>
-        <div>
-            <span>&#10003;</span><p>Training, qualifying and building the capacities of young people in basic knowledge related to networks and information security by adopting the curricula offered by international companies specialized in networks and information security.</p>
-        </div>
-        <div>
-            <span>&#10003;</span><p>Providing a specialized testing center to obtain accredited international certificates.</p>
-        </div>
-        <div>
-            <span>&#10003;</span><p>Providing a programming environment capable of building software solutions to hacking problems and cyber threats.</p>
-        </div>
-        <div>
-            <span>&#10003;</span><p>Contributing and participating in providing expertise and advice to governmental and private institutions in cyber security technologies.</p>
-        </div>
-        <div>
-            <span>&#10003;</span><p>Building a network of strategic alliances to form an advanced, updated and sophisticated knowledge base, which would enable us to share the highest level of international collective experiences with our clients.</p>
-        </div>
-        <div>
-            <span>&#10003;</span><p>Supporting and strengthening the local community through effective participation in local activities and events.</p>
-        </div>
-    </div>
 
 
     <div class="courses">
