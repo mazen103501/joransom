@@ -82,6 +82,7 @@ nav{
 .nav-item{
     margin: 0 10px;
     padding: 23px 10px;
+    white-space: nowrap;
 }
 .container-fluid{
     width: 70%;
@@ -189,6 +190,10 @@ nav{
 } */
 
 
+
+
+
+/* intro Page */
 .intro-section{
     background-image: url("../PHOTOS/intro-background.jpg");
     background-color: rgb(1 28 58);
@@ -256,6 +261,81 @@ nav{
         margin-top: -50px;
     }
 }
+
+
+
+
+
+/* about-us */
+.about-us{
+    padding-top: 20px;
+    padding-bottom: 200px;
+    background-image: url("../PHOTOS/about-background.jpg");
+    background-size: cover;
+    background-position: 50% 52%;
+    color: white;
+    margin-top: -1px;
+}
+.about-us .thecont{
+    background: #001730;
+}
+.about-us .thecont .about-box{
+    display: flex;
+    align-items: space-between;
+    flex-wrap: wrap;
+    
+}
+.about-us .thecont .about-box .box{
+    height: 100%;
+    background: #001730;
+    padding: 50px 0;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.selected-box{
+    background: white !important;
+}
+
+
+.about-us .thecont .about-box .box h5{
+    text-align: center;
+    color: #008CFC;
+}
+.about-us .thecont .text-box{
+    /* margin-top: 40px; */
+    padding: 30px 20px 20px;
+    background: white;
+    color: #6b6b6b;
+    /* word-spacing: 2px; */
+    line-height: 1.8;
+    text-indent: 30px;
+    min-height: 180px;
+}
+.thecont{
+    margin: 0 auto;
+}
+@media (min-width:768px){
+    .thecont{
+        width: 726px;
+    }
+    .about-us .thecont .about-box .box{
+        flex-basis: 100%;
+    }
+}
+@media (min-width:992px){
+    .thecont{
+        width: 920px;
+    }
+    .about-us .thecont .about-box .box{
+        flex-basis: 33.33%;
+    }
+}
+@media (min-width:1200px){
+    .thecont{
+        width: 1170px;
+    }
+}
+
 
 
 

@@ -177,6 +177,29 @@ if($do=='dashborad'){
 
 
 
+<section class="about-us">
+    <div class="thecont">
+        <div class="about-box">
+            <div class="box selected-box">
+                <h5>Who Are We</h5>
+            </div>
+            <div class="box">
+                <h5>Objectives</h5>
+            </div>
+            <div class="box">
+                <h5>Our Mession & Vision</h5>
+            </div>
+        </div>
+        <div class="text-box">
+            <p>- Ransom Company for Cyber security is a local company specialized in cyber security, headquartered in northern Jordan in Irbid Governorate The Hashemite Kingdom of Jordan.
+
+                Founded in 2021, the company is today startup companies in the field of cyber security that provide a comprehensive range of learning methods and training in specialized curricula in cyber security (information security, networks, applications, databases and social engineering) in addition to providing solutions and software that contribute to solving problems Cyber intrusions and threats and regulates consulting and IT security services.</p>
+        </div>
+    </div>
+
+</section>
+
+
 
 
 <img src="PHOTOS/cover2.jpg" class="img-fluid" alt="...">

@@ -1,3 +1,38 @@
+let aboutUsBoxes = document.querySelectorAll(".about-us .thecont .about-box .box");
+
+aboutUsBoxes[0].addEventListener("click" , showAboutUsText);
+aboutUsBoxes[1].addEventListener("click" , showAboutUsText);
+aboutUsBoxes[2].addEventListener("click" , showAboutUsText);
+
+function showAboutUsText(){
+    let textBox = document.querySelector(".about-us .thecont .text-box p");
+    aboutUsBoxes.forEach((e)=>{
+        e.classList.remove("selected-box")
+    })
+    if(Array.from(this.parentNode.children).indexOf(this) == 0){
+        let text = "- Ransom Company for Cyber security is a local company specialized in cyber security, headquartered in northern Jordan in Irbid Governorate The Hashemite Kingdom of Jordan. Founded in 2021, the company is today startup companies in the field of cyber security that provide a comprehensive range of learning methods and training in specialized curricula in cyber security (information security, networks, applications, databases and social engineering) in addition to providing solutions and software that contribute to solving problems Cyber intrusions and threats and regulates consulting and IT security services." ;
+        textBox.textContent = text;
+        this.classList.add("selected-box");
+    }else if(Array.from(this.parentNode.children).indexOf(this) == 1){
+        let text = `- Training, qualifying and building the capacities of young people in basic knowledge related to networks and information security by adopting the curricula offered by international companies specialized in networks and information security.
+        Providing a specialized testing center to obtain accredited international certificates.
+        Providing a programming environment capable of building software solutions to hacking problems and cyber threats.
+        Contributing and participating in providing expertise and advice to governmental and private institutions in cyber security technologies.
+        Building a network of strategic alliances to form an advanced, updated and sophisticated knowledge base, which would enable us to share the highest level of international collective experiences with our clients.
+        Supporting and strengthening the local community through effective participation in local activities and events.` ;
+        textBox.textContent = text;
+        this.classList.add("selected-box");
+    }else if(Array.from(this.parentNode.children).indexOf(this) == 2){
+        let text = `- To be the first choice in training, build the capabilities of young people, provide consulting, and develop software solutions to institutions/companies, and Secure Cyberspace.` ;
+        textBox.textContent = text;
+        this.classList.add("selected-box");
+    }
+
+}
+
+
+
+
 let navBar = document.querySelector("nav"),
     whoAreWeH2 = document.querySelector(".who-are-we h2"),
     cards = document.querySelectorAll(".cards > div"),
@@ -14,7 +49,7 @@ if(theLink.includes("pages=")){
     socialMedia.forEach(ele=>{
             ele.classList.add("showsocial");
     });
-    console.log(trainingCourses)
+    // console.log(trainingCourses)
     window.onload = function(){
     let theTime = 100;
     trainingCourses.forEach(ele=>{
@@ -28,7 +63,7 @@ if(theLink.includes("pages=")){
 
 }else{
     window.onscroll = function(){
-        console.log(document.documentElement.scrollTop)
+        // console.log(document.documentElement.scrollTop)
         // if(document.documentElement.scrollTop < 99){
         //     navBar.classList.remove("sticky")
         // }
@@ -98,7 +133,7 @@ let select = document.querySelector("select"),
     enroll = document.querySelectorAll(".course-container a"),
     theSelectNumber;
 
-console.log(select , enroll)
+// console.log(select , enroll)
 enroll.forEach((ele,i)=>{
     ele.addEventListener("click",function(){
         theSelectNumber = i;
