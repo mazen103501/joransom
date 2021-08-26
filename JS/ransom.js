@@ -1,32 +1,30 @@
-let aboutUsBoxes = document.querySelectorAll(".about-us .thecont .about-box .box");
+let aboutUsBoxes = document.querySelectorAll(".about-us .thecont .about-box .box"),
+    textBoxParag = document.querySelectorAll(".about-us .thecont .text-box p");
 
-aboutUsBoxes[0].addEventListener("click" , showAboutUsText);
-aboutUsBoxes[1].addEventListener("click" , showAboutUsText);
-aboutUsBoxes[2].addEventListener("click" , showAboutUsText);
 
 function showAboutUsText(){
-    let textBox = document.querySelector(".about-us .thecont .text-box p");
     aboutUsBoxes.forEach((e)=>{
         e.classList.remove("selected-box")
+    });
+    textBoxParag.forEach((e)=>{
+        e.classList.remove("show-text")
     })
     if(Array.from(this.parentNode.children).indexOf(this) == 0){
-        let text = "- Ransom Company for Cyber security is a local company specialized in cyber security, headquartered in northern Jordan in Irbid Governorate The Hashemite Kingdom of Jordan" +
-            " Founded in 2021, the company is today startup companies in the field of cyber security that provide a comprehensive range of learning methods and training in specialized curricula in cyber security (information security, networks, applications, databases and social engineering) in addition to providing solutions and software that contribute to solving problems Cyber intrusions and threats and regulates consulting and IT security services \n" +
-            "We help organizations plan, build, and operate successful information security programs, solve security problems, and implement specific IT security projects\n" +
-            "Each member of our team has a unique set of skills and experience in the fields of training, software solutions and consulting, as well as business development and information and communication technology. Our team also has a wide and deep understanding of the Middle East and the world and its urgent need for training based on the curricula provided by international companies and to be a specialized center for exams and also to attract programmers who are able to find software solutions related to cyber security\n" ;
-        textBox.textContent = text;
         this.classList.add("selected-box");
+        textBoxParag[0].classList.add("show-text")
     }else if(Array.from(this.parentNode.children).indexOf(this) == 1){
-        let text = `Training, qualifying and building the capacities of young people in basic knowledge related to networks and information security by adopting the curricula offered by international companies specialized in networks and information security` ;
-        textBox.textContent = text;
         this.classList.add("selected-box");
+        textBoxParag[1].classList.add("show-text")
     }else if(Array.from(this.parentNode.children).indexOf(this) == 2){
-        let text = `- To be the first choice in training, build the capabilities of young people, provide consulting, and develop software solutions to institutions/companies, and Secure Cyberspace.` ;
-        textBox.textContent = text;
         this.classList.add("selected-box");
+        textBoxParag[2].classList.add("show-text")
     }
 
 }
+
+aboutUsBoxes.forEach((e)=>{
+    e.addEventListener("click" , showAboutUsText);
+});
 
 
 
@@ -60,39 +58,10 @@ if(theLink.includes("pages=")){
 
 
 }else{
+    console.log(homeCourses)
     window.onscroll = function(){
-        // console.log(document.documentElement.scrollTop)
-        // if(document.documentElement.scrollTop < 99){
-        //     navBar.classList.remove("sticky")
-        // }
-        // if(document.documentElement.scrollTop > 99){
-        //     navBar.classList.add("sticky")
-        // }
-        // if(document.documentElement.scrollTop > 60){
-        //     whoAreWeH2.classList.add("showWhoAreWe");
-        // }
-        // if(document.documentElement.scrollTop > 500){
-        //     let theTime = 300;
-        //     cards.forEach(ele=>{
-        //         setTimeout(() => {
-        //             ele.classList.add("showcards")
-        //         }, theTime);
-        //         theTime+=300;
-        //     })
-            // cards[0].classList.add("showcards");
-            // setTimeout(() => {
-            //     cards[1].classList.add("showcards");
-            // }, 300);
-            // setTimeout(() => {
-            //     cards[2].classList.add("showcards");
-            // }, 600);
-            
-        }
-
-        // if(document.documentElement.scrollTop >950){
-        //     objectives.classList.add("showobjectives")
-        // }
-        if(document.documentElement.scrollTop > 1380){
+        console.log(document.documentElement.scrollTop)
+        if(document.documentElement.scrollTop > (homeCourses[0].parentElement.offsetTop -350)){
             let theTime = 200;
             homeCourses.forEach(ele=>{
                 setTimeout(() => {
@@ -125,7 +94,7 @@ if(theLink.includes("pages=")){
 
 }
 
-
+}
 
 
 let select = document.querySelector("select"),
@@ -138,7 +107,7 @@ enroll.forEach((ele,i)=>{
         theSelectNumber = i;
         select.options[theSelectNumber].selected = true;
     })
-})
+});
 
 
 

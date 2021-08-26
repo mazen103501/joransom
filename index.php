@@ -190,7 +190,7 @@ if($do=='dashborad'){
             </div>
         </div>
         <div class="text-box">
-            <p>- Ransom Company for Cyber security is a local company specialized in cyber security, headquartered in northern Jordan in Irbid Governorate The Hashemite Kingdom of Jordan
+            <p class="show-text">- Ransom Company for Cyber security is a local company specialized in cyber security, headquartered in northern Jordan in Irbid Governorate The Hashemite Kingdom of Jordan
 
                 Founded in 2021, the company is today startup companies in the field of cyber security that provide a comprehensive range of learning methods and training in specialized curricula in cyber security (information security, networks, applications, databases and social engineering) in addition to providing solutions and software that contribute to solving problems Cyber intrusions and threats and regulates consulting and IT security services
 
@@ -198,6 +198,12 @@ if($do=='dashborad'){
 
                 Each member of our team has a unique set of skills and experience in the fields of training, software solutions and consulting, as well as business development and information and communication technology. Our team also has a wide and deep understanding of the Middle East and the world and its urgent need for training based on the curricula provided by international companies and to be a specialized center for exams and also to attract programmers who are able to find software solutions related to cyber security
 
+            </p>
+            <p >
+            - Training, qualifying and building the capacities of young people in basic knowledge related to networks and information security by adopting the curricula offered by international companies specialized in networks and information security
+            </p>
+            <p >
+            - To be the first choice in training, build the capabilities of young people, provide consulting, and develop software solutions to institutions/companies, and Secure Cyberspace.
             </p>
         </div>
     </div>
@@ -258,7 +264,7 @@ if($do=='dashborad'){
     </div>
 
 
-
+<div class="spot-courses">
     <div class="courses">
         <?php
         $stmt1=$con->prepare('SELECT * FROM `ec_course` LIMIT 4');
@@ -268,12 +274,12 @@ if($do=='dashborad'){
             $photos = $course['photos'];
             echo "<a href='index.php?pages=ec'><div>";
             echo "<img src='HTML/upload/course/$photos' alt='image' />";
-            echo "<h5>".$course['Course_name']."</h5>";
+            echo "<div class='course-name'><h5>".$course['Course_name']."</h5></div>";
             echo "</div></a>";
 
 
         }
-        echo "</div>";
+        echo "</div></div>";
 
 
 // AD
