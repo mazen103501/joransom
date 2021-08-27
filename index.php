@@ -170,7 +170,7 @@ if($do=='dashborad'){
             <div class="section-img">
                 <img src="PHOTOS/intro-image.png">
             </div>
-        </div>
+    </div>
 </section>
 
 
@@ -199,8 +199,11 @@ if($do=='dashborad'){
                 Each member of our team has a unique set of skills and experience in the fields of training, software solutions and consulting, as well as business development and information and communication technology. Our team also has a wide and deep understanding of the Middle East and the world and its urgent need for training based on the curricula provided by international companies and to be a specialized center for exams and also to attract programmers who are able to find software solutions related to cyber security
 
             </p>
-            <p >
-            - Training, qualifying and building the capacities of young people in basic knowledge related to networks and information security by adopting the curricula offered by international companies specialized in networks and information security
+            <p>
+
+                - Training, qualifying and building the capacities of young people in basic knowledge related to networks and information security by adopting the curricula offered by international companies specialized in networks and information security<br>
+                - Training, qualifying and building the capacities of young people in basic knowledge related to networks and information security by adopting the curricula offered by international companies specialized in networks and information security
+
             </p>
             <p >
             - To be the first choice in training, build the capabilities of young people, provide consulting, and develop software solutions to institutions/companies, and Secure Cyberspace.
@@ -262,6 +265,50 @@ if($do=='dashborad'){
         </div>
 
     </div>
+
+
+
+<section class="about-numbers">
+    <div class="thecont">
+        <div class="space">
+            <div class="headerandboxes">
+                <div class="heading"><h1>Some <span>Numbers</span></h1></div>
+                <div class="boxescont">
+                    <div class="box">
+                        <p class="backend-num"></p>
+                        <img src="PHOTOS/team.svg" alt="team">
+                        <p class="number">1920+</p>
+                        <p class="text-box">Our Team</p>
+                    </div>
+                    <div class="box">
+                        <p class="backend-num"></p>
+                        <img src="PHOTOS/team.svg" alt="team">
+                        <p class="number">1920+</p>
+                        <p class="text-box">Our Team</p>
+                    </div>
+                    <div class="box">
+                        <p class="backend-num"></p>
+                        <img src="PHOTOS/team.svg" alt="team">
+                        <p class="number">1920+</p>
+                        <p class="text-box">Our Team</p>
+                    </div>
+                    <div class="box">
+                        <p class="backend-num"></p>
+                        <img src="PHOTOS/team.svg" alt="team">
+                        <p class="number">1920+</p>
+                        <p class="text-box">Our Team</p>
+                    </div>
+                </div>
+            </div>
+            <div class="number-img">
+                <img src="PHOTOS/about-number-phone.png" alt="secure phone">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
 
 
 <div class="spot-courses">

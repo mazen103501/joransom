@@ -304,9 +304,10 @@ nav{
     color:#ec5a5a;
     /* word-spacing: 2px; */
     line-height: 1.8;
-    text-indent: 30px;
+    /* text-indent: 30px; */
     min-height: 280px;
     position: relative;
+    overflow: hidden;
 }
 .about-us .thecont .text-box p{
     transform: translateX(75px);
@@ -332,6 +333,11 @@ nav{
 
 .thecont{
     margin: 0 auto;
+}
+@media (max-width:768px){
+    .about-us .thecont .about-box .box{
+        flex-basis: 100%;
+    }
 }
 @media (min-width:768px){
     .thecont{
@@ -371,81 +377,18 @@ nav{
 
 
 
-
-
-
-
-
-/* who are we */
-.who-are-we{
-    width: calc(100% - 10%);
-    margin: 50px auto;
-}
-.who-are-we h2{
-    text-align: center;
-    margin-bottom: 30px;
-    font-weight: bold;
-    transform: translateY(40px);
-    opacity: 0;
-    transition: 0.8s;
-    text-align: center;
-    font-size:30px; font-weight:bolder; letter-spacing:1px;
-    text-transform: uppercase;
-    align-items: center;
-    
-    display: grid;
-    grid-template-columns: 1fr max-content 1fr;
-    grid-template-rows: 27px 0;
-    grid-gap: 20px;
-    align-items: center;
-}
-.who-are-we h2:after,.who-are-we h2:before {
-    content: " ";
-    display: block;
-    border-bottom: 1px solid #c50000;
-    border-top: 1px solid #c50000;
-    height: 5px;
-  background-color:#f8f8f8;
-}
-
-
-.who-are-we p{
-    font-size: 20px;
-    font-family: 'Benne', serif;
-}
-
-.who-are-we p span{
-    color: #e20f33;
-    font-weight:bolder;
-}
-
-
-.showWhoAreWe{
-    transform: translateY(0) !important;
-    opacity: 1 !important;
-}
-
-
-
-
-
-
-
-
-
-
 /*  cards */
 .container1{
     position:relative;
     width:100%;
     display:flex;
+    flex-wrap: wrap;
     justify-content:space-around;
     background-image: url("../PHOTOS/about-background.jpg");
     background-size: cover;
     bottom:70px;
 
 }
-
 .card{
     position:relative;
 }
@@ -527,9 +470,6 @@ nav{
     color:#fff;
 }
 
-
-
-
 .showcards{
     transform: translateX(0) !important;
     opacity: 1 !important;
@@ -537,60 +477,76 @@ nav{
 
 
 
-/* Objectives */
-/* .objectives{
-    width: calc(100% - 10%);
-    margin: 50px auto;
-    transform: scale(0.5,0.5);
-    opacity: 0;
-    transition: 0.8s;
+
+
+/* about numbers */
+.about-numbers{
+    background-image: url("../PHOTOS/about-numbers.png");
+    margin-top: -75px;
+    background-repeat: no-repeat;
+    background-position: 70% 70%;
+    padding-top: 150px;
+    padding-bottom: 150px;
 }
-.objectives h2{
-    text-align: center;
-    margin-bottom: 30px;
-    font-weight: bolder;
-    text-align: center;
-    font-size:30px; font-weight:bolder;letter-spacing:1px;
-    text-transform: uppercase;
-
-    display: grid;
-    grid-template-columns: 1fr max-content 1fr;
-    grid-template-rows: 27px 0;
-    grid-gap: 20px;
-    align-items: center;
+.about-numbers .thecont{
+    margin-top: 150px;
 }
-.objectives h2:after,.objectives h2:before {
-    content: " ";
-    display: block;
-    border-bottom: 1px solid #c50000;
-    border-top: 1px solid #c50000;
-    height: 5px;
-  background-color:#f8f8f8;
-}
-
-
-
-.objectives div{
+.about-numbers .thecont .space{
     display: flex;
-    margin-top: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
 }
-.objectives p{
-    font-size: 20px;
-    font-family: 'Benne', serif;
+.about-numbers .thecont .space .headerandboxes{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
 }
-.objectives div span{
-    margin-right: 10px;
-    font-size: 20px;
+.about-numbers .thecont .space .headerandboxes .heading{
+    margin-top: 0px;
+    color: rgb(0, 0, 0);
+    
 }
-.objectives p::before{
-    content: "\2713";
-    display: inline-block;
-    margin-right: 10px;
-} 
-.showobjectives{
-    transform: scale(1,1) !important;
-    opacity: 1 !important;
-} */
+.about-numbers .thecont .space .headerandboxes .heading span{
+    color: #1DA1F2;
+}
+.about-numbers .thecont .space .headerandboxes .boxescont{
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    gap: 20px;
+}
+.about-numbers .thecont .space .headerandboxes  .boxescont .box{
+    border-radius: 20px;
+    text-align: center;
+    flex-basis: calc(50% - 10px);
+    background: #001730;
+    color: white;
+    transition: 0.9s;
+}
+.about-numbers .thecont .space .headerandboxes  .boxescont .box:hover{
+    box-shadow: inset 0 170px 0 0 #cecccc59;
+    /* border: 1px solid black; */
+    /* opacity: 0.24; */
+}
+.about-numbers .thecont .space .headerandboxes  .boxescont .box:hover p{
+    /* color: black; */
+}
+.about-numbers .thecont .space .headerandboxes  .boxescont .box img{
+    width: 60px;
+    height: 60px;
+    color: #008cfc;
+}
+.about-numbers .thecont .space .headerandboxes  .boxescont .box .number{
+
+}
+.about-numbers .thecont .space .number-img{
+    width: 583px;
+}
+.about-numbers .thecont .space .number-img img{
+    width: 100%;
+}
 
 
 
@@ -620,19 +576,16 @@ nav{
     background: white;
     flex-direction: column;
     width: 280px;
-    height: 300px;
     transform: translateY(60px);
     opacity: 0;
     transition: 0.7s;
     text-decoration: none;
     color: black;
-    overflow: hidden;
 }
 .courses img{
     width: 100%;
-    height: 301px;
+    height: 300px;
     border-bottom: 1px solid black;
-    z-index: 2;
     transition: 0.5s;
 }
 .courses a .course-name{
@@ -644,13 +597,7 @@ nav{
 }
 .courses a .course-name h5{
     text-align: center;
-    color: black;
-}
-.courses a:hover img{
-    transform: rotate(5deg) scale(1.2);
-}
-.courses a:hover .course-name{
-    margin-top: -76px;
+    color: #e20f33;
 }
 
 .showcourses{
