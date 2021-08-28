@@ -61,7 +61,10 @@ if(theLink.includes("pages=")){
     console.log(homeCourses)
     window.onscroll = function(){
         console.log(document.documentElement.scrollTop)
-        if(document.documentElement.scrollTop > (homeCourses[0].parentElement.offsetTop -350)){
+        if(innerWidth > 500){
+
+        }
+        if(document.documentElement.scrollTop > (homeCourses[0].parentElement.offsetTop -250)){
             let theTime = 200;
             homeCourses.forEach(ele=>{
                 setTimeout(() => {

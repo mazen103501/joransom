@@ -277,26 +277,26 @@ if($do=='dashborad'){
                     <div class="box">
                         <p class="backend-num"></p>
                         <img src="PHOTOS/team.svg" alt="team">
-                        <p class="number">1920+</p>
-                        <p class="text-box">Our Team</p>
+                        <p class="number"><span>15</span>+</p>
+                        <p class="text-box">Team Member's</p>
+                    </div>
+                    <div class="box">
+                        <p class="backend-num"></p>
+                        <img src="PHOTOS/deal.svg" alt="team">
+                        <p class="number"><span>6</span>+</p>
+                        <p class="text-box">Partner's</p>
                     </div>
                     <div class="box">
                         <p class="backend-num"></p>
                         <img src="PHOTOS/team.svg" alt="team">
-                        <p class="number">1920+</p>
-                        <p class="text-box">Our Team</p>
+                        <p class="number"><span>49</span>+</p>
+                        <p class="text-box">Course's</p>
                     </div>
                     <div class="box">
                         <p class="backend-num"></p>
                         <img src="PHOTOS/team.svg" alt="team">
-                        <p class="number">1920+</p>
-                        <p class="text-box">Our Team</p>
-                    </div>
-                    <div class="box">
-                        <p class="backend-num"></p>
-                        <img src="PHOTOS/team.svg" alt="team">
-                        <p class="number">1920+</p>
-                        <p class="text-box">Our Team</p>
+                        <p class="number"><span>254</span>+</p>
+                        <p class="text-box">Student's</p>
                     </div>
                 </div>
             </div>
