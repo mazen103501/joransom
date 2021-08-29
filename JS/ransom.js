@@ -1,23 +1,69 @@
+// intro image
+let introImage = document.querySelector(".intro-section .intro-containter .section-img");
+
+window.addEventListener("scroll" , showIntroImage);
+if(window.innerWidth > 1107){
+    setTimeout(() => {
+        introImage.classList.add("showimage");
+    }, 500);
+    
+}
+function showIntroImage(){
+    introImage.classList.add("showimage");
+}
+
+
+
+
+
+
+
 let aboutUsBoxes = document.querySelectorAll(".about-us .thecont .about-box .box"),
+    textBox= document.querySelector(".about-us .thecont .text-box"),
     textBoxParag = document.querySelectorAll(".about-us .thecont .text-box p");
 
-
+console.log(textBox)
 function showAboutUsText(){
     aboutUsBoxes.forEach((e)=>{
         e.classList.remove("selected-box")
     });
     textBoxParag.forEach((e)=>{
         e.classList.remove("show-text")
+        e.classList.remove("absolute")
     })
     if(Array.from(this.parentNode.children).indexOf(this) == 0){
+        textBoxParag[0].classList.add("absolute")
+        textBox.classList.add("hidetextbox")
         this.classList.add("selected-box");
         textBoxParag[0].classList.add("show-text")
+        setTimeout(() => {
+            textBox.classList.remove("hidetextbox")
+        }, 1000);
+        setTimeout(() => {
+            textBoxParag[0].classList.remove("absolute")
+        }, 2000);
     }else if(Array.from(this.parentNode.children).indexOf(this) == 1){
+        textBoxParag[1].classList.add("absolute")
+        textBox.classList.add("hidetextbox")
         this.classList.add("selected-box");
         textBoxParag[1].classList.add("show-text")
+        setTimeout(() => {
+            textBox.classList.remove("hidetextbox")
+        }, 1000);
+        setTimeout(() => {
+            textBoxParag[1].classList.remove("absolute")
+        }, 2000);
     }else if(Array.from(this.parentNode.children).indexOf(this) == 2){
+        textBoxParag[2].classList.add("absolute")
+        textBox.classList.add("hidetextbox")
         this.classList.add("selected-box");
         textBoxParag[2].classList.add("show-text")
+        setTimeout(() => {
+            textBox.classList.remove("hidetextbox")
+        }, 1000);
+        setTimeout(() => {
+            textBoxParag[2].classList.remove("absolute")
+        }, 2000);
     }
 
 }
@@ -30,9 +76,7 @@ aboutUsBoxes.forEach((e)=>{
 
 
 let navBar = document.querySelector("nav"),
-    whoAreWeH2 = document.querySelector(".who-are-we h2"),
     cards = document.querySelectorAll(".cards > div"),
-    objectives = document.querySelector(".objectives "),
     homeCourses = document.querySelectorAll(".courses > a"),
     socialMedia = document.querySelectorAll("footer div:last-of-type i"),
     trainingCourses = document.querySelectorAll(".course-container > div");
@@ -72,39 +116,15 @@ if(theLink.includes("pages=")){
                 }, theTime);
                 theTime+=200;
             })
-            // homeCourses[0].classList.add("showcourses");
-            // setTimeout(() => {
-            //     homeCourses[1].classList.add("showcourses");
-            // }, 300);
-            // setTimeout(() => {
-            //     homeCourses[2].classList.add("showcourses");
-            // }, 600);
-            // setTimeout(() => {
-            //     homeCourses[3].classList.add("showcourses");
-            // }, 900);
-
         }
-        // if(document.documentElement.scrollTop > 2200){
-        //     let theTime = 200;
-        //     socialMedia.forEach(ele=>{
-        //         setTimeout(() => {
-        //             ele.classList.add("showsocial")
-        //         }, theTime);
-        //         theTime+=200;
-        //     })
-        //
-        // }
-
+    }
 }
-
-}
-
 
 let select = document.querySelector("select"),
     enroll = document.querySelectorAll(".course-container a"),
     theSelectNumber;
 
-// console.log(select , enroll)
+
 enroll.forEach((ele,i)=>{
     ele.addEventListener("click",function(){
         theSelectNumber = i;
@@ -115,27 +135,3 @@ enroll.forEach((ele,i)=>{
 
 
 
-// let cont = document.querySelectorAll(".course-container > div");
-
-// for(let i=0 ; i<cont.length;i++){
-//     cont[i].addEventListener("click" , soso)
-// }
-// function soso(){
-//     let theImg = this.children[1].src,
-//         theName = this.querySelector("h6").textContent,
-//         theText = this.querySelector("p").textContent;
-//     console.log(theText)
-//     // console.log(theName)
-//     document.querySelector(".course-info").classList.toggle("showcourse-info");
-//     document.querySelector(".course-info img").src = theImg;
-//     document.querySelector(".course-info div:nth-of-type(2) h5").textContent = theName;
-//     document.querySelector(".course-info div:nth-of-type(2) p").textContent = theText;
-//     document.querySelector(".course-info button").classList.remove("togglebutton");
-
-//     // console.log(this)
-// }
-
-// document.querySelector(".btn-danger").onclick = function(){
-//     document.querySelector(".course-info").classList.toggle("showcourse-info");
-//     document.querySelector(".course-info button").classList.add("togglebutton");
-// }

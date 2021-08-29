@@ -201,7 +201,6 @@ if($do=='dashborad'){
             </p>
             <p>
 
-                - Training, qualifying and building the capacities of young people in basic knowledge related to networks and information security by adopting the curricula offered by international companies specialized in networks and information security<br>
                 - Training, qualifying and building the capacities of young people in basic knowledge related to networks and information security by adopting the curricula offered by international companies specialized in networks and information security
 
             </p>
@@ -288,13 +287,13 @@ if($do=='dashborad'){
                     </div>
                     <div class="box">
                         <p class="backend-num"></p>
-                        <img src="PHOTOS/team.svg" alt="team">
+                        <img src="PHOTOS/book.svg" alt="team">
                         <p class="number"><span>49</span>+</p>
                         <p class="text-box">Course's</p>
                     </div>
                     <div class="box">
                         <p class="backend-num"></p>
-                        <img src="PHOTOS/team.svg" alt="team">
+                        <img src="PHOTOS/reading.svg" alt="team">
                         <p class="number"><span>254</span>+</p>
                         <p class="text-box">Student's</p>
                     </div>

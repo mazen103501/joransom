@@ -242,6 +242,16 @@ nav{
     width: 100%;
     height: 100%;
 }
+.intro-section .intro-containter .section-img{
+    transform: translateX(-50px);
+    opacity: 0;
+    transition: 0.8s;
+}
+.intro-section .intro-containter .showimage{
+    transform: translateX(0);
+    opacity: 1;
+}
+
 @media (max-width:400px){
     .intro-section .intro-containter{
         overflow-x: hidden;
@@ -317,22 +327,30 @@ nav{
     color: #fff;
 }
 .about-us .thecont .text-box{
-    /* margin-top: 40px; */
-    padding: 30px 40px 20px;
     background: #1C2B4E;
     color:#ec5a5a;
-    /* word-spacing: 2px; */
     line-height: 1.8;
-    /* text-indent: 30px; */
-    min-height: 280px;
     position: relative;
     overflow: hidden;
+    padding: 35px 40px 35px;
+    transition: all 1s ease;
+    height: fit-content;
+    min-height: 300px;
+}
+.about-us .thecont .hidetextbox{
+    height: 0;
+    padding: 0;
+    min-height: 0;
 }
 .about-us .thecont .text-box p{
-    transform: translateX(75px);
-    opacity: 0;
+    transform: translateX(0);
+    opacity: 1;
     transition:all 0.5s ease;
-    position: absolute;
+    display: none;
+    /* position: absolute; */
+}
+.about-us .thecont .text-box .absolute{
+    position: absolute !important;
 }
 .about-us .thecont .about-box .box h5{
     text-align: center;
@@ -343,10 +361,13 @@ nav{
     color: white !important;
     pointer-events: none;
 }
-.show-text{
-    transform: translateX(0) !important;
-    opacity: 1 !important;
-    position: static !important;
+.about-us .thecont .text-box .show-text{
+    display: block;
+    /* transform: translateX(0) !important;
+    opacity: 1 !important; */
+    /* position: absolute !important; */
+    /* top: 20px;
+    left: 20px; */
 }
 
 
