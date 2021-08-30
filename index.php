@@ -220,7 +220,7 @@ if($do=='dashborad'){
         <div class="card">
             <div class="face face1">
                 <div class="content">
-                    <img src="PHOTOS/presentation.svg"/>
+                    <img src="PHOTOS/presentation.svg" alt="image"/>
                     <h3>Trainig</h3>
                 </div>
             </div>
@@ -234,7 +234,7 @@ if($do=='dashborad'){
         <div class="card">
             <div class="face face1">
                 <div class="content">
-                    <img src="PHOTOS/consultation.svg"/>
+                    <img src="PHOTOS/consultation.svg" alt="image"/>
                     <h3>Consulting</h3>
                 </div>
             </div>
@@ -251,7 +251,7 @@ if($do=='dashborad'){
         <div class="card">
             <div class="face face1">
                 <div class="content">
-                    <img src="PHOTOS/idea.svg"/>
+                    <img src="PHOTOS/idea.svg" alt="image"/>
                     <h3>Solutions</h3>
                 </div>
             </div>
@@ -281,19 +281,19 @@ if($do=='dashborad'){
                     </div>
                     <div class="box">
                         <p class="backend-num"></p>
-                        <img src="PHOTOS/deal.svg" alt="team">
+                        <img src="PHOTOS/deal.svg" alt="Partner">
                         <p class="number"><span>6</span>+</p>
                         <p class="text-box">Partner's</p>
                     </div>
                     <div class="box">
                         <p class="backend-num"></p>
-                        <img src="PHOTOS/book.svg" alt="team">
+                        <img src="PHOTOS/book.svg" alt="Course">
                         <p class="number"><span>49</span>+</p>
                         <p class="text-box">Course's</p>
                     </div>
                     <div class="box">
                         <p class="backend-num"></p>
-                        <img src="PHOTOS/reading.svg" alt="team">
+                        <img src="PHOTOS/reading.svg" alt="Student">
                         <p class="number"><span>254</span>+</p>
                         <p class="text-box">Student's</p>
                     </div>
@@ -309,6 +309,27 @@ if($do=='dashborad'){
 
 
 
+<!-- events or announcement -->
+
+<section class="events">
+    <div class="evet-cont">
+        <div class="event-image">
+            <img src="PHOTOS/thr.jpg" alt="Course">
+        </div>
+        <div class="event-text">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique iure deleniti doloremque laborum et velit numquam inventore. Fuga, dolore laudantium asperiores, placeat eum natus minima voluptate consequuntur voluptatum voluptates libero? Est earum velit consectetur mollitia, harum optio dignissimos tempora eveniet reiciendis nam numquam, voluptate accusamus cum natus illum iste nulla.</p>
+        </div>
+    </div>
+
+</section>
+
+
+
+
+
+
+
+<!-- courses in home -->
 
 <div class="spot-courses">
     <div class="courses">
