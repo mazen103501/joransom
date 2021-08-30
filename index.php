@@ -74,16 +74,10 @@ if(isset($do) && $do!='ar'){
                 </li>
 
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link" href="index.php?pages=trainigpage">
                         Training
                     </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <li><a class="dropdown-item" href="index.php?pages=cisco">Cisco course</a></li>
-                        <li><a class="dropdown-item" href="index.php?pages=software">Software course</a></li>
-                        <li><a class="dropdown-item" href="index.php?pages=ec">EC_council course</a></li>
-                        <li><a class="dropdown-item" href="index.php?pages=others">others</a></li>
-                    </ul>
-                </li>
+
 
 
 
@@ -737,13 +731,9 @@ elseif ($do=="consulting"){
 
 
 //print course
-elseif($do=='cisco') {
+elseif($do=='trainigpage') {
     $id=isset($_GET['ciscoid'])&& is_numeric($_GET['ciscoid'])?intval($_GET['ciscoid']): 0;
      echo "<h1 class='trainingh1'>Cisco Courses</h1>";
-    
-
-
-
     echo "<div class='course-container'>";
     $stmt1 = $con->prepare('SELECT * FROM `cisco_course`');
     $stmt1->execute();
@@ -761,53 +751,12 @@ elseif($do=='cisco') {
         echo "</div>";
     }
     echo "</div>";
-    ?>
-
-    <div class="bookcourses" id="request">
-        <div class="bookcover"></div>
-        <div class="thecontainer">
-            <div>
-                <h1>Courses Request</h1>
-                <p>Our cyber security training can help you and your team build fundamental to advanced cyber security techniques, Learn how to protect and defend against cyber threats with cyber security training courses for all levels of your organization.</p>
-                <p>From our interesting courses You and your team will learn to approach cyber security offensively and defensively through real-world examples and exercises, hands-on labs and expert instruction. You will gain knowledge to secure your critical systems and assets.</p>
-            </div>
-            <form method="POST" action="index.php?pages=newuser">
-                <div>
-                    <input type="text" placeholder="Full Name" name="fullname" required>
-                    <input type="email" placeholder="E-mail" name="email" required>
-                </div>
-                <div>
-                    <select name="courses">
-                        <?php
-                        foreach ($row1 as $course) {
-                            $courserequest=$course['Course_name'];
-                            echo "<option value='$courserequest'>".$course['Course_name']."</option>";
-                        }
-                        ?>
-                    </select>
-                    <input type="number" placeholder="Phone Number" name="number" required>
-
-                </div>
-                <textarea placeholder="Message" name="message"></textarea>
-                <input type="submit" name="save" value="Send">
-            </form>
-        </div>
 
 
 
 
-    </div>
 
-    <?php
-
-}
-
-
-
-elseif($do=='software') {
-
-    $id=isset($_GET['softwareid'])&& is_numeric($_GET['softwareid'])?intval($_GET['softwareid']): 0;
-
+    //software course
     echo "<h1 class='trainingh1'>Software Courses</h1>";
     echo "<div class='course-container'>";
     $stmt1 = $con->prepare('SELECT * FROM `software_course`');
@@ -825,55 +774,10 @@ elseif($do=='software') {
         echo "</div>";
     }
     echo "</div>";
-    ?>
-    <div class="bookcourses" id="request">
-        <div class="bookcover"></div>
-        <div class="thecontainer">
-            <div>
-                <h1>Courses Request</h1>
-                <p>Our cyber security training can help you and your team build fundamental to advanced cyber security techniques, Learn how to protect and defend against cyber threats with cyber security training courses for all levels of your organization.</p>
-                <p>From our interesting courses You and your team will learn to approach cyber security offensively and defensively through real-world examples and exercises, hands-on labs and expert instruction. You will gain knowledge to secure your critical systems and assets.</p>
-            </div>
-            <form method="POST" action="index.php?pages=newuser">
-                <div>
-                    <input type="text" placeholder="Full Name" name="fullname" required>
-                    <input type="email" placeholder="E-mail" name="email" required>
-                </div>
-                <div>
-                    <select name="courses">
-                        <?php
-                        foreach ($row1 as $course) {
-                            $courserequest=$course['Course_name'];
-                            echo "<option value='$courserequest'>".$course['Course_name']."</option>";
-
-
-                        }
-                        ?>
-                    </select>
-                    <input type="number" placeholder="Phone Number" name="number" required>
-
-                </div>
-                <textarea placeholder="Message" name="message"></textarea>
-                <input type="submit" name="save" value="Send">
-            </form>
-        </div>
 
 
 
-
-    </div>
-
-
-
-
-    </div>
-
-    <?php
-}
-
-
-
-elseif($do=='ec') {
+//ec course
     $id=isset($_GET['ecid'])&& is_numeric($_GET['ecid'])?intval($_GET['ecid']): 0;
 
     echo "<h1 class='trainingh1'>EC-councel Courses</h1>";
@@ -893,49 +797,14 @@ elseif($do=='ec') {
         echo "</div>";
     }
     echo "</div>";
-    ?>
-    <div class="bookcourses" id="request">
-        <div class="bookcover"></div>
-        <div class="thecontainer">
-            <div>
-                <h1>Courses Request</h1>
-                <p>Our cyber security training can help you and your team build fundamental to advanced cyber security techniques, Learn how to protect and defend against cyber threats with cyber security training courses for all levels of your organization.</p>
-                <p>From our interesting courses You and your team will learn to approach cyber security offensively and defensively through real-world examples and exercises, hands-on labs and expert instruction. You will gain knowledge to secure your critical systems and assets.</p>
-            </div>
-            <form method="POST" action="index.php?pages=newuser">
-                <div>
-                    <input type="text" placeholder="Full Name" name="fullname" required>
-                    <input type="email" placeholder="E-mail" name="email" required>
-                </div>
-                <div>
-                    <select name="courses">
-                        <?php
-                        foreach ($row1 as $course) {
-                            $courserequest=$course['Course_name'];
-                            echo "<option value='$courserequest'>".$course['Course_name']."</option>";
-
-
-                        }
-                        ?>
-                    </select>
-                    <input type="number" placeholder="Phone Number" name="number" required>
-
-                </div>
-                <textarea placeholder="Message" name="message"></textarea>
-                <input type="submit" name="save" value="Send">
-            </form>
-        </div>
 
 
 
 
-    </div>
 
-    <?php
-}
+    //other course
 
 
-elseif($do=='others') {
     $id=isset($_GET['otherid'])&& is_numeric($_GET['otherid'])?intval($_GET['otherid']): 0;
 
     echo "<h1 class='trainingh1'>Other Courses</h1>";
@@ -956,6 +825,7 @@ elseif($do=='others') {
     }
     echo "</div>";
     ?>
+
     <div class="bookcourses" id="request">
         <div class="bookcover"></div>
         <div class="thecontainer">
@@ -974,10 +844,7 @@ elseif($do=='others') {
                         <?php
                         foreach ($row1 as $course) {
                             $courserequest=$course['Course_name'];
-
                             echo "<option value='$courserequest'>".$course['Course_name']."</option>";
-
-
                         }
                         ?>
                     </select>
@@ -993,8 +860,19 @@ elseif($do=='others') {
 
 
     </div>
+
     <?php
+
 }
+
+
+
+
+
+
+
+
+
 elseif ($do=='newuser'){
     if(isset($_POST['save'])){
         $fullname=$_POST['fullname'];
