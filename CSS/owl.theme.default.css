@@ -28,7 +28,7 @@
     cursor: default; }
 
 .owl-theme .owl-nav.disabled + .owl-dots {
-  margin-top: 10px; }
+  margin-top: 90px; }
 
 .owl-theme .owl-dots {
   text-align: center;
@@ -47,4 +47,4 @@
       transition: opacity 200ms ease;
       border-radius: 30px; }
     .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
-      background: #869791; }
+      background: #ee0000; }

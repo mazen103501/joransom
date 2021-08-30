@@ -312,6 +312,7 @@ if($do=='dashborad'){
 <!-- events or announcement -->
 
 <section class="events">
+        <div class="owl-carousel owl-3 owl-theme">
     <div class="evet-cont">
         <div class="event-image">
             <img src="PHOTOS/thr.jpg" alt="Course">
@@ -321,8 +322,21 @@ if($do=='dashborad'){
         </div>
     </div>
 
-</section>
 
+
+
+            <div class="evet-cont">
+                <div class="event-image">
+                    <img src="PHOTOS/thr.jpg" alt="Course">
+                </div>
+                <div class="event-text">
+                    <p> khalid</p>
+                </div>
+            </div>
+
+
+    </div>
+    </section>
 
 
 
@@ -347,24 +361,6 @@ if($do=='dashborad'){
 
         }
         echo "</div></div>";
-
-
-// AD
-echo '<h2 class="Advertisement">Advertisement</h2>
-
-    <div id="owl-demo" class="owl-2 owl-carousel owl-theme">
-        <div class="item image"><img src="PHOTOS/green1.jpg"></div>
-        <div class="item image"><img src="PHOTOS/kaizen1.jpg"></div>
-        <div class="item image"><img src="PHOTOS/TG81.jpg"></div>
-        <div class="item image"><img src="PHOTOS/first.jpg"></div>
-        <div class="item image"><img src="PHOTOS/sec.jpg"></div>
-        <div class="item image"><img src="PHOTOS/thr.jpg"></div>
-    </div>
-    
-
-';
-
-
 
 
         ?>
@@ -1107,6 +1103,28 @@ ob_end_flush();
             },
             1000: {
                 items: 3
+            }
+        }
+    })
+
+
+    $('.owl-3').owlCarousel({
+
+        margin: 10,
+        autoplay: 1000,
+        autoplayHoverPause: true,
+        slideTransition: 'linear',
+        navigation:true,
+        scrollPerPage:true,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 1
+            },
+            1000: {
+                items: 1
             }
         }
     })
