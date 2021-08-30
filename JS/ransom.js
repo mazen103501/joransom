@@ -2,12 +2,20 @@
 let introImage = document.querySelector(".intro-section .intro-containter .section-img");
 
 window.addEventListener("scroll" , showIntroImage);
-if(window.innerWidth > 1107){
+if(introImage !== null &&  window.innerWidth > 1107){
     setTimeout(() => {
         introImage.classList.add("showimage");
     }, 500);
     
+}else{
+    window.addEventListener("scroll" , function(){
+        if(introImage !== null &&  window.innerWidth < 1107 && document.documentElement.scrollTop > (homeCourses[0].parentElement.offsetTop -50) ){
+            showIntroImage()
+        }
+    })
 }
+
+
 function showIntroImage(){
     introImage.classList.add("showimage");
 }
@@ -15,8 +23,7 @@ function showIntroImage(){
 
 
 
-
-
+// about us animation
 
 let aboutUsBoxes = document.querySelectorAll(".about-us .thecont .about-box .box"),
     textBox= document.querySelector(".about-us .thecont .text-box"),
@@ -75,6 +82,22 @@ aboutUsBoxes.forEach((e)=>{
 
 
 
+// training Buttons
+
+let trainingBtns = document.querySelectorAll(".filter-buttons button");
+console.log(trainingBtns)
+
+trainingBtns.forEach(e=>{
+    e.addEventListener("click" , trainingBtnsFunc)
+})
+function trainingBtnsFunc(){
+    trainingBtns.forEach(e=>{
+        e.classList.remove("selected")
+    })
+    this.classList.add("selected")
+}
+
+
 let navBar = document.querySelector("nav"),
     cards = document.querySelectorAll(".cards > div"),
     homeCourses = document.querySelectorAll(".courses > a"),
@@ -104,10 +127,6 @@ if(theLink.includes("pages=")){
 }else{
     console.log(homeCourses)
     window.onscroll = function(){
-        // console.log(document.documentElement.scrollTop)
-        // if(innerWidth > 500){
-
-        // }
         if(document.documentElement.scrollTop > (homeCourses[0].parentElement.offsetTop -250)){
             let theTime = 200;
             homeCourses.forEach(ele=>{

@@ -74,7 +74,7 @@ if(isset($do) && $do!='ar'){
                 </li>
 
                 <li class="nav-item dropdown">
-                    <a class="nav-link" href="index.php?pages=trainigpage">
+                    <a class="nav-link" href="index.php?pages=trainingpage">
                         Training
                     </a>
 
@@ -731,7 +731,19 @@ elseif ($do=="consulting"){
 
 
 //print course
-elseif($do=='trainigpage') {
+elseif($do=='trainingpage') {
+    ?>
+
+<div class="filter-buttons">
+    <button class="selected">All</button>
+    <button>Cisco</button>
+    <button>Software</button>
+    <button>EC-Council</button>
+    <button>Other</button>
+</div>
+
+
+<?php
     $id=isset($_GET['ciscoid'])&& is_numeric($_GET['ciscoid'])?intval($_GET['ciscoid']): 0;
     echo "<div class='course-container'>";
     $stmt1 = $con->prepare('SELECT * FROM `cisco_course`');
@@ -1007,7 +1019,6 @@ ob_end_flush();
             }
         }
     })
-
 
 
 

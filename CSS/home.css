@@ -981,13 +981,39 @@ footer .content:last-of-type a:nth-of-type(4) i:hover{
 
 
 
+/* filter Buttons */
+.filter-buttons{
+    padding-top: 100px;
+    /* padding-bottom: 50px; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* background:   #001730; */
+}
+.filter-buttons button{
+    all: unset;
+    padding: 10px 25px;
+    background: #001730;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.filter-buttons .selected{
+    background: rgba(28, 43, 78, 0.877);
+}
+
 /* courses in training */
 .course-container{
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
     width:  calc(100% - 300px);
-    margin: 60px auto;
+    padding-top: 70px;
+    /* padding-bottom: 70px; */
+    margin: 0 auto 70px;
+    background: rgba(28, 43, 78, 0.877);
 }
 .course-container > div{
     width: 198px;
@@ -1015,7 +1041,7 @@ footer .content:last-of-type a:nth-of-type(4) i:hover{
     max-height: 58px;
     overflow: hidden;
 }
-@media (max-width:790px){
+@media (max-width:900px){
     .course-container{
         width:  calc(100% - 10px);
         justify-content: center;
@@ -1067,54 +1093,6 @@ footer div:first-of-type img{
     padding: 10px;
     border-bottom: 2px solid black;
 }
-
-
-
-
-/* the info in training course */
-/* .course-info{
-    position: fixed;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    width: 800px;
-    height: 400px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-55%);
-    background: gray;
-    z-index: 9999999;
-    color: white;
-    visibility: hidden;
-    opacity: 0;
-    border: 2px solid black;
-    transition: 0.5s;
-}
-.course-info >div{
-    width: 50%;
-}
-.course-info img{
-    width: calc(100% - 20px);
-    height: calc(100% - 20px);
-    margin-top: 10px;
-    margin-left: 10px;
-}
-.course-info h5{
-    text-align: center;
-    margin-top: 30px;
-}
-.course-info p{
-    width: 400px;
-    margin: 100px auto;
-}
-.course-info div:nth-of-type(2){
-    position: relative;
-}
-.course-info button{
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-} */
 
 .togglebutton{
     display: none;
@@ -1273,7 +1251,7 @@ footer div:first-of-type img{
 .bookcourses .bookcover{
     width: 100%;
     height: 100%;
-    background: rgb(226, 15, 51 , 0.6);
+    background: rgb(1 17 35 / 80%);
     position: absolute;
     z-index: 2;
 }
@@ -1373,8 +1351,8 @@ footer div:first-of-type img{
     height: 50px;
     border-radius: 40px;
     color: white;
-    background: rgb(226, 15, 51 );
-    border: 1px solid rgb(255, 5, 47);
+    background: rgb(1 17 35 / 70%);
+    border: 1px solid rgb(1 17 35);
     font-weight: bold;
 }
 
