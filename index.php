@@ -733,7 +733,6 @@ elseif ($do=="consulting"){
 //print course
 elseif($do=='trainigpage') {
     $id=isset($_GET['ciscoid'])&& is_numeric($_GET['ciscoid'])?intval($_GET['ciscoid']): 0;
-     echo "<h1 class='trainingh1'>Cisco Courses</h1>";
     echo "<div class='course-container'>";
     $stmt1 = $con->prepare('SELECT * FROM `cisco_course`');
     $stmt1->execute();
@@ -750,15 +749,15 @@ elseif($do=='trainigpage') {
 
         echo "</div>";
     }
-    echo "</div>";
+   
 
 
 
 
 
     //software course
-    echo "<h1 class='trainingh1'>Software Courses</h1>";
-    echo "<div class='course-container'>";
+
+
     $stmt1 = $con->prepare('SELECT * FROM `software_course`');
     $stmt1->execute();
     $row1 = $stmt1->fetchAll();
@@ -773,15 +772,15 @@ elseif($do=='trainigpage') {
         echo "<a href='#request'>Enroll now</a>";
         echo "</div>";
     }
-    echo "</div>";
+
 
 
 
 //ec course
     $id=isset($_GET['ecid'])&& is_numeric($_GET['ecid'])?intval($_GET['ecid']): 0;
 
-    echo "<h1 class='trainingh1'>EC-councel Courses</h1>";
-    echo "<div class='course-container'>";
+
+
     $stmt1 = $con->prepare('SELECT * FROM `ec_course`');
     $stmt1->execute();
     $row1 = $stmt1->fetchAll();
@@ -796,7 +795,7 @@ elseif($do=='trainigpage') {
 
         echo "</div>";
     }
-    echo "</div>";
+
 
 
 
@@ -807,8 +806,8 @@ elseif($do=='trainigpage') {
 
     $id=isset($_GET['otherid'])&& is_numeric($_GET['otherid'])?intval($_GET['otherid']): 0;
 
-    echo "<h1 class='trainingh1'>Other Courses</h1>";
-    echo "<div class='course-container'>";
+
+
     $stmt1 = $con->prepare('SELECT * FROM `others`');
     $stmt1->execute();
     $row1 = $stmt1->fetchAll();
@@ -823,7 +822,7 @@ elseif($do=='trainigpage') {
 
         echo "</div>";
     }
-    echo "</div>";
+ echo "</div>";
     ?>
 
     <div class="bookcourses" id="request">
