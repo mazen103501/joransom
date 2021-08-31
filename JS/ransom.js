@@ -107,8 +107,10 @@ let navBar = document.querySelector("nav"),
 
     let theLink = location.href;
 
+
     // console.log(trainingCourses)
 if(theLink.includes("pages=")){
+    document.body.style.backgroundColor ="#1C2B4E";
     socialMedia.forEach(ele=>{
             ele.classList.add("showsocial");
     });
