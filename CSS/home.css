@@ -1005,7 +1005,8 @@ footer .content:last-of-type a:nth-of-type(4) i:hover{
     transition: 0.4s;
 }
 .filter-buttons .selected{
-    background: rgba(28, 43, 78, 0.877);
+    background: white;
+    color: black;
 }
 
 /* courses in training */
