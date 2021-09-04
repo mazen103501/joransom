@@ -1,10 +1,10 @@
 <?php
 
 
-include "checkadmin.php";
-include 'checkuser.php';
+
 ob_start();
-// session_start();
+ session_start();
+
 
 ?>
 
@@ -129,19 +129,20 @@ ob_start();
 
 
 <div class="forms">
-    <form method="POST" >
+    <form method="POST" id="login-form" >
             <h3>Login</h3>
             <div>
                 <!-- <label for="exampleInputEmail1">user name</label> -->
                 <i class="fas fa-user-alt"></i>
-                <input type="text" name="username" placeholder="Username" required>
+                <input id="name" type="text" name="username" placeholder="Username" >
             </div>
             <div >
                 <!-- <label for="exampleInputPassword1" >Password</label> -->
                 <i class="fas fa-key"></i>
-                <input type="password" name="password" placeholder="Password" required>
+                <input id="password" type="password" name="password" placeholder="Password" >
             </div>
-            <button type="submit" name="login" class="btn btn-primary">Submit</button>
+            <button id="submit" type="submit" name="login" class="btn btn-primary">Submit</button>
+        <p class="form-result"></p>
     </form>
 
 
@@ -195,7 +196,6 @@ ob_start();
         <h3>Contact Us</h3>
 
         <p><a href="https://maps.app.goo.gl/PRXcpVLVFkGmUBTCA" target="_blank"rel="noreferrer">Jordan,Irbid</a></p>
-
         <p>0096227277760</p>
         <p><a href="https://wa.link/7y545l" target="_balnk">00962776277760</a></p>
         <p><a href="mailto:info@joransom.com">info@joransom.com</a></p>
@@ -224,8 +224,30 @@ ob_end_flush();
 
 
 ?>
-
-
-
 <script src="bootstrap-5.0.1-dist/js/bootstrap.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+
+<script>
+    $(document).ready(function() {
+        $("#login-form").submit(function(event) {
+            event.preventDefault();
+
+            var username = $("#name").val();
+            var password = $("#password").val();
+            var submit = $("#submit").val();
+
+
+            $(".form-result").load("checkuser.php", {
+                username: username,
+                password:password,
+                submit: submit
+            });
+        });
+    });
+
+
+
+</script>
 </body>

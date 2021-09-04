@@ -1442,10 +1442,10 @@ footer div:first-of-type img{
 }
 .result-error {
     color: red;
-    margin-left: 522px;
-    font-size: 20px;
-    font-weight: bolder;
-    margin-top: 80px;
+    /*margin-left: 522px;*/
+    /*font-size: 20px;*/
+    /*font-weight: bolder;*/
+    /*margin-top: 80px;*/
    
 }
 .result-success {

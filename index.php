@@ -1,9 +1,9 @@
 <?php
 ob_start();
-// session_start();
+session_start();
 include "conn.php";
-include "checkadmin.php";
-include "checkuser.php";
+
+
 $do = isset($_GET['pages']) ? $_GET['pages'] : 'dashborad';
 ?>
 
@@ -955,7 +955,6 @@ ob_end_flush();
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="bootstrap-5.0.1-dist/js/bootstrap.js"></script>
 
-<script src="JS/home.js"></script>
 <script src="JS/ransom.js"></script>
 <script src="JS/jquiry.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>

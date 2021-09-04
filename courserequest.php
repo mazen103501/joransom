@@ -1,7 +1,6 @@
 <?php
 include "conn.php";
 
-
  $fullname =  $_POST['fullname'];
  $email = $_POST['email'];
  $phone =$_POST['number'];
@@ -21,17 +20,17 @@ include "conn.php";
   $errorEmail = true;
   return false;
  } else {
-  echo "<span class='result-success'>request send</span>";
+     echo "<span class='result-success'>request send</span>";
 
 
-  $stmt = $con->exec("INSERT INTO `courses_request` (`id`, `fullname`, `email`, `phone`, `course`, `message`) VALUES (NULL, '$fullname', '$email', '$phone', '$s1', '$message')");
+     $stmt = $con->exec("INSERT INTO `courses_request` (`id`, `fullname`, `email`, `phone`, `course`, `message`) VALUES (NULL, '$fullname', '$email', '$phone', '$s1', '$message')");
 //    header("location:index.php?pages=cisco");
 
 
-  $msg = "FullName: " . $fullname . "\n" . "Email: " . $email . "\n" . "PhoneNumber :" . $phone . "\n" . "course :" . $s1 . "\n" . "Message :" . $message . "\n";
+     $msg = "FullName: " . $fullname . "\n" . "Email: " . $email . "\n" . "PhoneNumber :" . $phone . "\n" . "course :" . $s1 . "\n" . "Message :" . $message . "\n";
 
 
-  mail("register@joransom.com", "New Register", $msg);
+     mail("register@joransom.com", "New Register", $msg);
 
 
 
@@ -52,7 +51,7 @@ include "conn.php";
 
     // If any fields are empty, errorEmpty will return true
     // Add error class on all input fields
-    if (errorEmail=== true) {
+    if (errorEmpty=== true) {
 
         $("#form-name, #form-email, #form-message , #form-number").addClass("input-error");
 

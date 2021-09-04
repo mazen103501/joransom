@@ -54,3 +54,21 @@
     background: #e20f33 !important;
     border: 2px solid black !important;
 }
+.input-error {
+    border: 1px solid red;
+
+}
+.result-error {
+    color: red;
+    font-size: 20px;
+    font-weight: bolder;
+
+
+}
+.result-success {
+    color: green;
+    margin-left: 522px;
+    font-size: 20px;
+    font-weight: bolder;
+    margin-top: 80px;
+}
