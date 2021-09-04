@@ -1436,3 +1436,22 @@ footer div:first-of-type img{
     }
 }
 
+.input-error {
+    border: 1px solid red;
+
+}
+.result-error {
+    color: red;
+    margin-left: 522px;
+    font-size: 20px;
+    font-weight: bolder;
+    margin-top: 80px;
+   
+}
+.result-success {
+    color: green;
+    margin-left: 522px;
+    font-size: 20px;
+    font-weight: bolder;
+    margin-top: 80px;
+}

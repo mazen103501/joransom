@@ -848,7 +848,7 @@ elseif($do=='trainingpage') {
             <form method="POST" action="courserequest.php">
                 <div>
                     <input type="text" placeholder="Full Name" name="fullname" id="form-name">
-                    <input type="email" placeholder="E-mail" name="email" id="form-email">
+                    <input type="text" placeholder="E-mail" name="email" id="form-email">
                 </div>
                 <div>
                     <select name="courses" id="form-courses">

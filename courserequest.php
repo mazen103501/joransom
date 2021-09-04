@@ -12,16 +12,16 @@ include "conn.php";
  $errorEmail = false;
 
  if (empty($fullname) || empty($phone) || empty($email)) {
-  echo "<span>fill all the filds</span>";
+  echo "<span class='result-error'>fill all the filds</span>";
   $errorEmpty = true;
   return false;
  }
  if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-  echo "<span>enter a valid email</span>";
+  echo "<span class='result-error'>enter a valid email</span>";
   $errorEmail = true;
   return false;
  } else {
-  echo "<span>request send</span>";
+  echo "<span class='result-success'>request send</span>";
 
 
   $stmt = $con->exec("INSERT INTO `courses_request` (`id`, `fullname`, `email`, `phone`, `course`, `message`) VALUES (NULL, '$fullname', '$email', '$phone', '$s1', '$message')");
