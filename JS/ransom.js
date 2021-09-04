@@ -1,3 +1,6 @@
+let theLink = location.href;
+
+
 // intro image
 let introImage = document.querySelector(".intro-section .intro-containter .section-img");
 
@@ -15,10 +18,12 @@ if(introImage !== null &&  window.innerWidth > 1107){
     })
 }
 
-
-function showIntroImage(){
-    introImage.classList.add("showimage");
+if(!theLink.includes("pages=")){
+    function showIntroImage(){
+        introImage.classList.add("showimage");
+    }
 }
+
 
 
 
@@ -105,7 +110,7 @@ let navBar = document.querySelector("nav"),
     trainingCourses = document.querySelectorAll(".course-container > div");
 
 
-    let theLink = location.href;
+
 
 
     // console.log(trainingCourses)
