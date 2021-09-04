@@ -845,13 +845,14 @@ elseif($do=='trainingpage') {
                 <p>Our cyber security training can help you and your team build fundamental to advanced cyber security techniques, Learn how to protect and defend against cyber threats with cyber security training courses for all levels of your organization.</p>
                 <p>From our interesting courses You and your team will learn to approach cyber security offensively and defensively through real-world examples and exercises, hands-on labs and expert instruction. You will gain knowledge to secure your critical systems and assets.</p>
             </div>
-            <form method="POST" action="index.php?pages=newuser">
+            <form method="POST" action="courserequest.php">
                 <div>
-                    <input type="text" placeholder="Full Name" name="fullname" required>
-                    <input type="email" placeholder="E-mail" name="email" required>
+                    <input type="text" placeholder="Full Name" name="fullname" id="form-name">
+                    <input type="email" placeholder="E-mail" name="email" id="form-email">
                 </div>
                 <div>
-                    <select name="courses">
+                    <select name="courses" id="form-courses">
+                        <option>hello</option>
                         <?php
                         foreach ($row1 as $course) {
                             $courserequest=$course['Course_name'];
@@ -859,11 +860,13 @@ elseif($do=='trainingpage') {
                         }
                         ?>
                     </select>
-                    <input type="number" placeholder="Phone Number" name="number" required>
+                    <input type="number" placeholder="Phone Number" name="number" id="form-number" >
 
                 </div>
-                <textarea placeholder="Message" name="message"></textarea>
-                <input type="submit" name="save" value="Send">
+                <textarea placeholder="Message" name="message" id="form-message"></textarea>
+                <input type="submit" name="save" value="Send" id="form-submit">
+                <p class="form-result"></p>
+
             </form>
         </div>
 
@@ -893,13 +896,13 @@ elseif ($do=='newuser'){
         $message=$_POST['message'];
         $stmt=$con->exec("INSERT INTO `courses_request` (`id`, `fullname`, `email`, `phone`, `course`, `message`) VALUES (NULL, '$fullname', '$email', '$phone', '$s1', '$message')");
         header("location:index.php?pages=cisco");
-        
+
 
            $msg="FullName: ".$fullname."\n"."Email: ".$email."\n"."PhoneNumber :".$phone."\n"."course :".$s1."\n"."Message :".$message."\n";
 
-         
 
-mail("register@joransom.com","New Register",$msg);
+
+            mail("register@joransom.com","New Register",$msg);
 
 
 
@@ -1018,11 +1021,42 @@ ob_end_flush();
                 items: 1
             }
         }
-    })
+    });
+
+
+
+
 
 
 
 </script>
+
+<script>
+    $(document).ready(function() {
+        $("form").submit(function(event) {
+            event.preventDefault();
+
+            var fullname = $("#form-name").val();
+            var email = $("#form-email").val();
+            var message = $("#form-message").val();
+            var submit = $("#form-submit").val();
+            var number = $("#form-number").val();
+            var courses = $("#form-courses").val();
+
+            $(".form-result").load("courserequest.php", {
+                fullname: fullname,
+                email: email,
+                message: message,
+                number :number,
+                courses:courses,
+                submit: submit
+            });
+        });
+    });
+
+
+</script>
+
 
 </body>
 </html>
