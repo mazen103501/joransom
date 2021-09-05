@@ -93,7 +93,7 @@ if(isset($do) && $do!='ar'){
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link"  href="index.php#whoarewe">About</a>
+                    <a class="nav-link"  href="index.php?pages=about">About</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#thefooter">Contact Us</a>
@@ -884,33 +884,48 @@ elseif($do=='trainingpage') {
 
 
 
+elseif($do=="about"){
+    ?>
+    <section class="about-us">
+    <div class="thecont">
+        <div class="about-box">
+            <div class="box selected-box">
+                <h5>Who Are We</h5>
+            </div>
+            <div class="box">
+                <h5>Objectives</h5>
+            </div>
+            <div class="box">
+                <h5>Our Mession & Vision</h5>
+            </div>
+        </div>
+        <div class="text-box">
+            <p class="show-text">- Ransom Company for Cyber security is a local company specialized in cyber security, headquartered in northern Jordan in Irbid Governorate The Hashemite Kingdom of Jordan
 
+                Founded in 2021, the company is today startup companies in the field of cyber security that provide a comprehensive range of learning methods and training in specialized curricula in cyber security (information security, networks, applications, databases and social engineering) in addition to providing solutions and software that contribute to solving problems Cyber intrusions and threats and regulates consulting and IT security services
 
+                We help organizations plan, build, and operate successful information security programs, solve security problems, and implement specific IT security projects
 
+                Each member of our team has a unique set of skills and experience in the fields of training, software solutions and consulting, as well as business development and information and communication technology. Our team also has a wide and deep understanding of the Middle East and the world and its urgent need for training based on the curricula provided by international companies and to be a specialized center for exams and also to attract programmers who are able to find software solutions related to cyber security
 
-elseif ($do=='newuser'){
-    if(isset($_POST['save'])){
-        $fullname=$_POST['fullname'];
-        $email=$_POST['email'];
-        $phone=$_POST['number'];
-        $s1=$_POST['courses'];
-        $message=$_POST['message'];
-        $stmt=$con->exec("INSERT INTO `courses_request` (`id`, `fullname`, `email`, `phone`, `course`, `message`) VALUES (NULL, '$fullname', '$email', '$phone', '$s1', '$message')");
-        header("location:index.php?pages=cisco");
+    </p>
+            <p>
 
+    - Training, qualifying and building the capacities of young people in basic knowledge related to networks and information security by adopting the curricula offered by international companies specialized in networks and information security
 
-           $msg="FullName: ".$fullname."\n"."Email: ".$email."\n"."PhoneNumber :".$phone."\n"."course :".$s1."\n"."Message :".$message."\n";
+    </p>
+            <p >
+    - To be the first choice in training, build the capabilities of young people, provide consulting, and develop software solutions to institutions/companies, and Secure Cyberspace.
+            </p>
+        </div>
+    </div>
 
-
-
-            mail("register@joransom.com","New Register",$msg);
-
-
-
-
-
-    }
+</section>
+<?php
 }
+
+
+
 else{
     header("location:index.php");
     exit();
@@ -933,12 +948,7 @@ ob_end_flush();
         <p><a href="https://wa.link/7y545l" target="_balnk">00962776277760</a></p>
         <p><a href="mailto:info@joransom.com">info@joransom.com</a></p>
     </div>
-    <div class="content">
-        <h3>Links</h3>
-        <p><a href="index.php">Home</a></p>
-        <p><a href="index.php?pages=cisco">Training</a></p>
-        <p><a href="index.php?pages=solutions">Services</a></p>
-    </div>
+
     <div class="content">
         <h3>Our Social Media</h3>
         <div>

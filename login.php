@@ -35,7 +35,7 @@ if(!isset($_SESSION['admin']) || !isset($_SESSION['username'])){
 <nav class="navbar navbar-expand-lg navbar-light bg-light ">
     <!-- Logo -->
     <div class="logo">
-      <img src="PHOTOS/mazenkhalid.svg">
+      <img src="PHOTOS/whitelogo.svg">
     </div>
     <!-- List -->
     <div class="container-fluid">
@@ -191,25 +191,23 @@ if(!isset($_SESSION['admin']) || !isset($_SESSION['username'])){
 
 
 <footer id="thefooter">
-    <div>
-        <img src="PHOTOS/logo.svg" alt="logo">
+    <div class="background">
+        <div></div>
     </div>
-    <div>
+    <div class="content">
+        <img src="PHOTOS/logo.svg" class="img-fluid" alt="...">
+    </div>
+    <div class="content">
         <h3>Contact Us</h3>
 
-
         <p><a href="https://maps.app.goo.gl/PRXcpVLVFkGmUBTCA" target="_blank"rel="noreferrer">Jordan,Irbid</a></p>
-        <p>0096227277760</p>
+
+        <p><a href="tel:0096227277760">0096227277760</a></p>
         <p><a href="https://wa.link/7y545l" target="_balnk">00962776277760</a></p>
         <p><a href="mailto:info@joransom.com">info@joransom.com</a></p>
     </div>
-    <div>
-        <h3>Links</h3>
-        <p><a href="index.php">Home</a></p>
-        <p><a href="index.php?pages=cisco">Training</a></p>
-        <p><a href="index.php?pages=solutions">Services</a></p>
-    </div>
-    <div>
+
+    <div class="content">
         <h3>Our Social Media</h3>
         <div>
             <a href="https://www.facebook.com/Ransom-Company-For-Cyber-Security-743467149734362" target="_blank"><i class="fab fa-facebook-f"></i></a>
@@ -222,6 +220,7 @@ if(!isset($_SESSION['admin']) || !isset($_SESSION['username'])){
     </div>
 
 </footer>
+
 <?php
 
 
