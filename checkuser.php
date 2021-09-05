@@ -14,6 +14,12 @@ $stmt->execute(array($username,$hashedpass));
 $user=$stmt->rowCount();
 $row=$stmt->fetch();
 $errorEmpty = false;
+if(empty($username) || empty($password)){
+    $errorEmpty=true;
+    echo "<span class='result-error'>Please fill all the fields</span>";
+    return false;
+
+}
 if ($user==0){
     $errorEmpty=true;
     echo "<span class='result-error'>username or password wrong</span>";
@@ -24,11 +30,11 @@ if($user>0){
     $errorEmpty=false;
     $_SESSION['username'] = $username;
 
-echo "<span class='result-error'>welcome</span>";
 
 
-    
-    
+
+
+
 
 }
 ob_end_flush();
@@ -57,7 +63,9 @@ ob_end_flush();
     // If all fields are filled and email address is valid, remove values from all input fields
     if (errorEmpty== false) {
         $("#form-name, #password ").val("");
-         location.reload();
+         // location.reload();
+        window.location.assign("https://localhost/joransom/index.php");
+
 
 
     }

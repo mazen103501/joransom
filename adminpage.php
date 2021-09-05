@@ -1,6 +1,6 @@
 <?php
 ob_start();
-// session_start();
+ session_start();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -25,7 +25,7 @@ ob_start();
     <?php
 
 include "conn.php";
-include "checkadmin.php";
+
 if(isset($_SESSION['admin'])){
     ?>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">

@@ -5,6 +5,7 @@
 ob_start();
  session_start();
 
+if(!isset($_SESSION['admin']) || !isset($_SESSION['username'])){
 
 ?>
 
@@ -147,29 +148,30 @@ ob_start();
 
 
 
-    <form method="POST" action="adduser.php">
+    <form id="Register-form" method="POST" action="adduser.php">
         <h3>Register</h3>
         <div>
             <!-- <label for="exampleInputEmail1" class="form-label">user name</label> -->
             <i class="fas fa-user-alt"></i>
-            <input type="text" name="username" placeholder="Username" required>
+            <input id="username" type="text" name="username" placeholder="Username">
         </div>
             <div >
                 <!-- <label for="exampleInputEmail1" class="form-label">Email</label> -->
                 <i class="fas fa-envelope"></i>
-                <input type="email" name="email" placeholder="Email" required>
+                <input id="email" type="email" name="email" placeholder="Email">
             </div>
             <div >
                 <!-- <label for="exampleInputEmail1" class="form-label">Phone numper</label> -->
                 <i class="fas fa-phone-volume"></i>
-                <input type="number" name="phone" placeholder="Phone Number" required>
+                <input id="phonenumber" type="number" name="phone" placeholder="Phone Number">
             </div>
         <div>
             <!-- <label for="exampleInputPassword1" class="form-label">Password</label> -->
             <i class="fas fa-key"></i>
-            <input type="password" name="password" placeholder="Password" required>
+            <input id="passwordregister" type="password" name="password" placeholder="Password" >
         </div>
-        <button type="submit" name="Register" class="btn btn-primary">Submit</button>
+        <button id="registersubmit" type="submit" name="Register" class="btn btn-primary">Submit</button>
+        <p class="form-result"></p>
     </form>
 </div>
 
@@ -194,6 +196,7 @@ ob_start();
     </div>
     <div>
         <h3>Contact Us</h3>
+
 
         <p><a href="https://maps.app.goo.gl/PRXcpVLVFkGmUBTCA" target="_blank"rel="noreferrer">Jordan,Irbid</a></p>
         <p>0096227277760</p>
@@ -220,9 +223,14 @@ ob_start();
 
 </footer>
 <?php
+
+
+
+}
+else{
+    echo "404 Notfound";
+}
 ob_end_flush();
-
-
 ?>
 <script src="bootstrap-5.0.1-dist/js/bootstrap.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -244,10 +252,38 @@ ob_end_flush();
                 password:password,
                 submit: submit
             });
+            $(".form-result").load("checkadmin.php", {
+                username: username,
+                password:password,
+                submit: submit
+            });
         });
     });
 
 
 
+</script>
+
+<script>
+$(document).ready(function() {
+$("#Register-form").submit(function(event) {
+event.preventDefault();
+
+    var username = $("#username").val();
+    var password = $("#passwordregister").val();
+    var email = $("#email").val();
+    var phone = $("#phonenumber").val();
+    var submit = $("#registersubmit").val();
+
+
+$(".form-result").load("adduser.php", {
+   username: username,
+   password:password,
+    email:email,
+    phone:phone,
+     submit: submit
+});
+});
+});
 </script>
 </body>

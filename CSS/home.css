@@ -9,6 +9,7 @@ body{
     scroll-behavior: smooth;
     color: #1C2B4E;
     background: white;
+    font-family: Regular;
     /* background: #1C2B4E; */
 }
 
@@ -1450,8 +1451,5 @@ footer div:first-of-type img{
 }
 .result-success {
     color: green;
-    margin-left: 522px;
-    font-size: 20px;
-    font-weight: bolder;
-    margin-top: 80px;
+
 }

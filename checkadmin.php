@@ -1,12 +1,12 @@
 <?php
 
- session_start();
-ob_start();
+    session_start();
+    ob_start();
 
-include "conn.php";
+    include "conn.php";
 
 
-if(isset($_POST['login'])){
+
 $username=$_POST['username'];
 $password=$_POST['password'];
 $hashedpassword=sha1($password);
@@ -17,12 +17,49 @@ $hashedpassword=sha1($password);
     $stmt->execute(array($username,$hashedpassword));
     $count=$stmt->rowCount();
     $row=$stmt->fetch();
+    $errorEmpty=false;
+    if($count==0){
+        $errorEmpty=true;
+        echo "<span class='result-error'>please fill all the fields</span>";
+        return false;
+    }
     if($count>0) {
+        $errorEmpty=false;
         $_SESSION['admin'] = $username;
         $_SESSION['id']=$row['user_id'];
-        header("location:adminpage.php");
-        exit();
-    }
+
+
+
 }
 ob_end_flush();
 
+    ?>
+<script>
+$("#name, #password").removeClass("input-error");
+
+var errorEmpty = " <?php $errorEmpty; ?>" ;
+
+// Store the value of PHP variables into JavaScript variables
+
+
+// If any fields are empty, errorEmpty will return true
+// Add error class on all input fields
+if (errorEmpty=== true) {
+
+$("#name, #password").addClass("input-error");
+
+}
+
+// If email address is invalid, errorEmail will return true
+// Add error class on that input field
+
+
+// If all fields are filled and email address is valid, remove values from all input fields
+if (errorEmpty== false) {
+$("#form-name, #password ").val("");
+    window.location.assign("https://localhost/joransom/adminpage.php");
+
+
+
+}
+</script>
