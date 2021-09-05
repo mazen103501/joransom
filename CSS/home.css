@@ -1134,11 +1134,22 @@ footer div:first-of-type img{
     width: 370px;
     text-align: center;
 }
+.solution{
+    margin-top: 90px !important;
+
+}
+.solutionimgside{
+    width: 150px;
+    margin-left: 240px;
+    margin-bottom: 90px !important;
+    margin-top: 90px !important;
+
+}
 
 .thecover{
     width: 100%;
     height: 100%;
-    background: rgb(226, 15, 51 , 0.3);
+    background: rgb(0 23 48 / 30%);
 }
 
 
@@ -1442,4 +1453,9 @@ footer div:first-of-type img{
 .result-success {
     color: green;
 
+}
+
+.title{
+    font-weight: bolder;
+    font-size: 19px;
 }

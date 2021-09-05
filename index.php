@@ -401,6 +401,11 @@ if($do=='dashborad'){
 //our soultions
 elseif($do=='solutions'){
     ?>
+
+
+
+
+
     <div class="solutionimg">
         <div class="thecover"></div>
         <h1>Solutions & Services</h1>
@@ -408,287 +413,316 @@ elseif($do=='solutions'){
 
 
 
-    <h3 style="text-align: center ; margin-top: 20px ; margin-bottom: 20px">Our Solutions </h3>
-    <!--first card-->
-    <div class="container mx-auto mt-4">
+<!---->
+<!--    <h3 style="text-align: center ; margin-top: 20px ; margin-bottom: 20px;color: white">Our Solutions </h3>-->
+<!--    <!--first card-->-->
+<!--    <div class="container mx-auto mt-4">-->
+<!--        <div class="row">-->
+<!--            <div class="col">-->
+<!--                <div class="card" style="width: 18rem;">-->
+<!--                    <img src="PHOTOS/icon2.png" class="card-img-top" alt="...">-->
+<!--                    <div class="card-body">-->
+<!--                        <h5 class="card-title">Penetration Testing</h5>-->
+<!---->
+<!---->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!--            <div class="col">-->
+<!--                <div class="card" style="width: 18rem;">-->
+<!--                    <img src="PHOTOS/images.jpg" class="card-img-top" alt="...">-->
+<!--                    <div class="card-body">-->
+<!--                        <h5 class="card-title">Antivirus</h5>-->
+<!---->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!--            <div class="col">-->
+<!--                <div class="card" style="width: 18rem;">-->
+<!--                    <img src="PHOTOS/Control-safety-en-security-systems.png" class="card-img-top" alt="...">-->
+<!--                    <div class="card-body">-->
+<!--                        <h5 class="card-title">Intrusion Detection System</h5>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!---->
+<!---->
+<!--            <h2 style="text-align: center ; margin-top: 20px ; margin-bottom: 20px;color: white">In Cooperation with KAIZEN365</h2>-->
+<!--            <div class="col">-->
+<!--                <div class="card" style="width: 18rem;">-->
+<!--                    <img src="PHOTOS/shutterstock-33654265.jpg" class="card-img-top" alt="...">-->
+<!--                    <div class="card-body">-->
+<!--                        <h5 class="card-title">Network Administration Service</h5>-->
+<!--                        <ul class="list-group list-group-flush">-->
+<!--                            <li class="list-group-item">1. Supervising the performance of the network in actual working conditions (Operation)</li>-->
+<!--                            <li class="list-group-item">2. Take immediate actions to control the network when needed(Configuration)</li>-->
+<!--                            <li class="list-group-item">3. Maximum network capacity utilization (Effectiveness)</li>-->
+<!--                            <li class="list-group-item">4. Planning for future events (Development)</li>-->
+<!--                            <li class="list-group-item">5. Risk Managment</li>-->
+<!---->
+<!--                        </ul>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!---->
+<!---->
+<!---->
+<!--            <div class="col">-->
+<!--                <div class="card" style="width: 18rem;">-->
+<!--                    <img src="PHOTOS/unnamed (1).png" class="card-img-top" alt="...">-->
+<!--                    <div class="card-body">-->
+<!--                        <h5 class="card-title">Professional Network Solution service</h5>-->
+<!--                        <ul class="list-group list-group-flush">-->
+<!--                            <li class="list-group-item">1. Backup Solutions</li>-->
+<!--                            <li class="list-group-item">2. Security Solutions</li>-->
+<!--                            <li class="list-group-item">3. Infrastructure Solutions</li>-->
+<!--                            <li class="list-group-item">4. Data Leak Solutions (DLP Solutinos)</li>-->
+<!---->
+<!--                        </ul>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!---->
+<!---->
+<!---->
+<!--            <div class="col">-->
+<!--                <div class="card" style="width: 18rem;">-->
+<!--                    <img src="PHOTOS/download.png" class="card-img-top" alt="...">-->
+<!--                    <div class="card-body">-->
+<!--                        <h5 class="card-title">Cloud Service</h5>-->
+<!--                        <ul class="list-group list-group-flush">-->
+<!--                            <li class="list-group-item">1. Cloud Backup Solutions </li>-->
+<!--                            <li class="list-group-item">2. Cloud Services Solutions</li>-->
+<!---->
+<!--                        </ul>-->
+<!---->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+
+    <div class="container">
         <div class="row">
-            <div class="col">
-                <div class="card" style="width: 18rem;">
-                    <img src="PHOTOS/icon2.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Penetration Testing</h5>
+            <div class="col-md-6 solution">
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                Our solutions
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <ul class="title">
+                                    <li>Penetration Testing</li>
+                                    <li>Antivirus</li>
+                                    <li>Intrusion Detection System</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                In Cooperation with KAIZEN365
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <ul >
+                                    <li class="title">Cloud Service</li>
+                                    <ol>
+                                        <li>Cloud Backup Solutions</li>
+                                        <li>Cloud Services Solutions</li>
+                                    </ol>
 
+                                </ul>
+                                <ul>
+                                    <li class="title">Professional Network Solution service</li>
+                                    <ol>
+                                        <li>Backup Solutions</li>
+                                        <li>Security Solutions</li>
+                                        <li>Infrastructure Solutions</li>
+                                        <li>Data Leak Solutions (DLP Solutinos)</li>
+                                    </ol>
 
+                                </ul>
+                                <ul>
+                                    <li class="title">Network Administration Service  </li>
+                                    <ol>
+                                        <li>Supervising the performance of the network in actual working conditions (Operation)</li>
+                                        <li>Take immediate actions to control the network when needed(Configuration)</li>
+                                        <li>Maximum network capacity utilization (Effectiveness)</li>
+                                        <li>Planning for future events (Development)</li>
+                                        <li>Risk Managment</li>
+                                    </ol>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                In Cooperation with Green Circle
+
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <ul>
+                                    <li class="title">Green Apple</li>
+                                    <ol>
+                                        <li>Network Vulnerability Scan & PEN Test once Per Quarter</li>
+                                        <li>24X7 Monitoring</li>
+                                        <li>Managed SIEM</li>
+                                        <li>IDS (Host Based for All Servers)</li>
+                                        <li>Hardening Security Devices</li>
+                                        <li>Review Policies and procedures</li>
+                                    </ol>
+                                </ul>
+
+                                <ul>
+                                    <li class="title">Green Grape</li>
+                                    <ol>
+                                        <li>Network Vulnerability Scan & PEN Test once Per Quarter</li>
+                                        <li>24X7 Monitoring</li>
+                                        <li>Managed Security Devices</li>
+                                        <li>Managed SIEM</li>
+                                        <li>IDS & FIM (Host Based for All Servers)</li>
+                                        <li>Hardening Security Devices</li>
+                                        <li>Review Policies and procedures</li>
+
+                                    </ol>
+
+                                </ul>
+
+                                <ul>
+                                    <li class="title">Green Kiwi</li>
+                                    <ol>
+                                        <li>Network Vulnerability Scan & PEN Test once Per Quarter</li>
+                                        <li>24X7 Monitoring</li>
+                                        <li>Managed Security Devices</li>
+                                        <li>Managed SIEM</li>
+                                        <li>IDS & FIM (Host Based for All Servers)</li>
+                                        <li>Hardening Security Devices</li>
+                                        <li>Review Policies and procedures</li>
+                                        <li>AntiX</li>
+                                        <li>Threat Management</li>
+                                        <li>Social Media Tools</li>
+                                        <li>Brand/Name Protection</li>
+
+                                    </ol>
+                                </ul>
+                                <ul>
+                                  <li class="title">Cyber Testing</li>
+                                    <ol>
+                                        <li>Penetration Testing (Web , Network , Apps , and Code security review).</li>
+                                        <li>Vulnerability Management</li>
+                                        <li>RED Team</li>
+                                    </ol>
+                                </ul>
+                                <ul>
+                                    <li class="title">Cyber Consulting</li>
+                                        <ol>
+                                            <li>Risk Assessment</li>
+                                            <li>SOC Architecture</li>
+                                            <li>Threat Modeling</li>
+                                            <li>Security Maturity Model and Risk scoring</li>
+                                        </ol>
+                                </ul>
+                                <ul>
+                                    <li class="title">Cyber Compliance Services</li>
+                                    <ol>
+                                        <li>GRC Architecture</li>
+                                        <li>ISO 27001 – 27701</li>
+                                        <li>General Data Protection Regulations - GDPR</li>
+                                        <li>PCI-DSS, PCI-PA</li>
+                                        <li>NIST</li>
+                                    </ol>
+                                </ul>
+                                <ul>
+                                    <li class="title">Managed Cyber Security Solutions</li>
+                                        <ol>
+                                            <li>Unified Threat Management - UTM</li>
+                                            <li>Web application firewall - WAF</li>
+                                            <li>Database Access Monitoring - DAM</li>
+                                            <li>Email Security</li>
+                                            <li>Data Encryption Solution</li>
+                                            <li>Identity Management - IDM</li>
+                                            <li>Privileges Access Management - PAM</li>
+                                            <li>EDR – EPP</li>
+                                            <li>APT</li>
+                                            <li>Dynamic Deception</li>
+                                            <li>Awareness Solution</li>
+
+                                        </ol>
+                                </ul>
+                                <ul>
+                                    <li class="title">Advanced Cyber Security Solutions</li>
+                                        <ol>
+                                            <li>Cyber Range</li>
+                                            <li>Brand Name Protection</li>
+                                            <li>Cyber warfare</li>
+                                            <li>RED Team</li>
+                                            <li>SOAR</li>
+                                            <li>SecOPS</li>
+                                            <li>Threat Intelligence</li>
+                                        </ol>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
+
             </div>
 
 
+            <div class="col-md-6">
+                <img class="img-fluid solutionimgside" src="PHOTOS/project-management.png">
 
-
-
-            <div class="col">
-                <div class="card" style="width: 18rem;">
-                    <img src="PHOTOS/images.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Antivirus</h5>
-
-                    </div>
-                </div>
             </div>
-
-
-
-
-
-            <div class="col">
-                <div class="card" style="width: 18rem;">
-                    <img src="PHOTOS/Control-safety-en-security-systems.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Intrusion Detection System</h5>
-                    </div>
-                </div>
-            </div>
-
-
-            <h2 style="text-align: center ; margin-top: 20px ; margin-bottom: 20px">In Cooperation with KAIZEN365</h2>
-            <div class="col">
-                <div class="card" style="width: 18rem;">
-                    <img src="PHOTOS/shutterstock-33654265.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Network Administration Service</h5>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">1. Supervising the performance of the network in actual working conditions (Operation)</li>
-                            <li class="list-group-item">2. Take immediate actions to control the network when needed(Configuration)</li>
-                            <li class="list-group-item">3. Maximum network capacity utilization (Effectiveness)</li>
-                            <li class="list-group-item">4. Planning for future events (Development)</li>
-                            <li class="list-group-item">5. Risk Managment</li>
-
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-
-
-            <div class="col">
-                <div class="card" style="width: 18rem;">
-                    <img src="PHOTOS/unnamed (1).png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Professional Network Solution service</h5>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">1. Backup Solutions</li>
-                            <li class="list-group-item">2. Security Solutions</li>
-                            <li class="list-group-item">3. Infrastructure Solutions</li>
-                            <li class="list-group-item">4. Data Leak Solutions (DLP Solutinos)</li>
-
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-
-
-            <div class="col">
-                <div class="card" style="width: 18rem;">
-                    <img src="PHOTOS/download.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Cloud Service</h5>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">1. Cloud Backup Solutions </li>
-                            <li class="list-group-item">2. Cloud Services Solutions</li>
-
-                        </ul>
-
-                    </div>
-                </div>
-            </div>
-
-            <h2 style="text-align: center ; margin-top: 20px; margin-bottom: 20px">In Cooperation with Green Circle</h2>
-
-
-
-            <div class="col">
-                <div class="card" style="width: 18rem;">
-                    <img src="PHOTOS/greenapple.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Green Apple</h5>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">1. Network Vulnerability Scan & PEN Test once Per Quarter</li>
-                            <li class="list-group-item">2. 24X7 Monitoring</li>
-                            <li class="list-group-item">3. Managed SIEM</li>
-                            <li class="list-group-item">4. IDS (Host Based for All Servers)</li>
-                            <li class="list-group-item">5. Hardening Security Devices</li>
-                            <li class="list-group-item">6. Review Policies and procedures</li>
-
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-
-
-            <div class="col">
-                <div class="card" style="width: 18rem;">
-                    <img src="PHOTOS/download (1).png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Green Grape</h5>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">1. Network Vulnerability Scan & PEN Test once Per Quarter</li>
-                            <li class="list-group-item">2. 24X7 Monitoring</li>
-                            <li class="list-group-item">3. Managed Security Devices</li>
-                            <li class="list-group-item">4. Managed SIEM</li>
-                            <li class="list-group-item">5. IDS & FIM (Host Based for All Servers)</li>
-                            <li class="list-group-item">6. Hardening Security Devices</li>
-                            <li class="list-group-item">7. Review Policies and procedures</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-
-
-            <div class="col">
-                <div class="card" style="width: 18rem;">
-                    <img src="PHOTOS/kiwi-1624156-1375298.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Green Kiwi</h5>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">1. Network Vulnerability Scan & PEN Test once Per Quarter</li>
-                            <li class="list-group-item">2. 24X7 Monitoring</li>
-                            <li class="list-group-item">3. Managed Security Devices</li>
-                            <li class="list-group-item">4. Managed SIEM</li>
-                            <li class="list-group-item">5. IDS & FIM (Host Based for All Servers)</li>
-                            <li class="list-group-item">6. Hardening Security Devices</li>
-                            <li class="list-group-item">7. Review Policies and procedures </li>
-                            <li class="list-group-item">8. AntiX </li>
-                            <li class="list-group-item">9. Threat Management</li>
-                            <li class="list-group-item">10. Social Media Tools</li>
-                            <li class="list-group-item">11. Brand/Name Protection</li>
-
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-
-
-            <div class="col">
-                <div class="card" style="width: 18rem;">
-                    <img src="PHOTOS/Cyber_Security_14-256.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Cyber Testing</h5>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">1. Penetration Testing (Web , Network , Apps , and Code security review).</li>
-                            <li class="list-group-item">2. Vulnerability Management</li>
-                            <li class="list-group-item">3. RED Team</li>
-
-                        </ul>
-
-                    </div>
-                </div>
-            </div>
-
-
-
-
-            <div class="col">
-                <div class="card" style="width: 18rem;">
-                    <img src="PHOTOS/cybersecurity.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Cyber Consulting</h5>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">1. Risk Assessment</li>
-                            <li class="list-group-item">2. SOC Architecture</li>
-                            <li class="list-group-item">3. Threat Modeling</li>
-                            <li class="list-group-item">4. Security Maturity Model and Risk scoring</li>
-
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-
-
-
-            <div class="col">
-                <div class="card" style="width: 18rem;">
-                    <img src="PHOTOS/ic_securityservices-1.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Cyber Compliance Services</h5>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">1. GRC Architecture</li>
-                            <li class="list-group-item">2. ISO 27001 – 27701</li>
-                            <li class="list-group-item">3. General Data Protection Regulations - GDPR</li>
-                            <li class="list-group-item">4. PCI-DSS, PCI-PA</li>
-                            <li class="list-group-item">5. NIST</li>
-
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col">
-                <div class="card" style="width: 18rem;">
-                    <img src="PHOTOS/managed.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Managed Cyber Security Solutions </h5>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">1. Unified Threat Management - UTM</li>
-                            <li class="list-group-item">2. Web application firewall - WAF</li>
-                            <li class="list-group-item">3. Database Access Monitoring - DAM</li>
-                            <li class="list-group-item">4. Email Security</li>
-                            <li class="list-group-item">5. Data Encryption Solution</li>
-                            <li class="list-group-item">6. Identity Management - IDM</li>
-                            <li class="list-group-item">7. Privileges Access Management - PAM</li>
-                            <li class="list-group-item">8. EDR – EPP</li>
-                            <li class="list-group-item">9. APT</li>
-                            <li class="list-group-item">10. Dynamic Deception</li>
-                            <li class="list-group-item">11. Awareness Solution</li>
-
-
-
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-
-
-
-
-            <div class="col">
-                <div class="card" style="width: 18rem;">
-                    <img src="PHOTOS/security-solutions.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Advanced Cyber Security Solutions</h5>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">1. Cyber Range</li>
-                            <li class="list-group-item">2. Brand Name Protection</li>
-                            <li class="list-group-item">3. Cyber warfare</li>
-                            <li class="list-group-item">4. RED Team</li>
-                            <li class="list-group-item">5. SOAR</li>
-                            <li class="list-group-item">6. SecOPS</li>
-                            <li class="list-group-item">7. Threat Intelligence</li>
-
-
-
-
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-
-
-
-
-
-
-
-
         </div>
+
     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -49,17 +49,14 @@ if(!isset($_SESSION['admin']) || !isset($_SESSION['username'])){
             <a class="nav-link" href="index.php">Home</a>
           </li>
 
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Training
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <li><a class="dropdown-item" href="index.php?pages=cisco">Cisco course</a></li>
-                    <li><a class="dropdown-item" href="index.php?pages=software">Software course</a></li>
-                    <li><a class="dropdown-item" href="index.php?pages=ec">EC_council course</a></li>
-                    <li><a class="dropdown-item" href="index.php?pages=others">others</a></li>
-                </ul>
-            </li>
+
+            <ul class="navbar-nav">
+                <li class="nav-item">
+
+                    <a class="nav-link" href="index.php?pages=trainigpage">Trainig</a>
+                </li>
+
+
 
 
           <li class="nav-item">
