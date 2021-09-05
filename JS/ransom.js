@@ -2,25 +2,26 @@ let theLink = location.href;
 
 
 // intro image
-let introImage = document.querySelector(".intro-section .intro-containter .section-img");
 
-window.addEventListener("scroll" , showIntroImage);
-if(introImage !== null &&  window.innerWidth > 1107){
-    setTimeout(() => {
-        introImage.classList.add("showimage");
-    }, 500);
-    
-}else{
-    window.addEventListener("scroll" , function(){
-        if(introImage !== null &&  window.innerWidth < 1107 && document.documentElement.scrollTop > (homeCourses[0].parentElement.offsetTop -50) ){
-            showIntroImage()
-        }
-    })
-}
 
 if(!theLink.includes("pages=")){
     function showIntroImage(){
         introImage.classList.add("showimage");
+    }
+    let introImage = document.querySelector(".intro-section .intro-containter .section-img");
+    console.log("heeeelo")
+    window.addEventListener("scroll" , showIntroImage);
+    if(window.innerWidth > 1107){
+        setTimeout(() => {
+            introImage.classList.add("showimage");
+        }, 500);
+        
+    }else{
+        window.addEventListener("scroll" , function(){
+            if(window.innerWidth < 1107 && document.documentElement.scrollTop > (homeCourses[0].parentElement.offsetTop -50) ){
+                showIntroImage()
+            }
+        })
     }
 }
 
