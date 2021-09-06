@@ -17,6 +17,11 @@ $mail = $_POST['email'];
 $phone=$_POST['phone'];
 $hashpass=sha1($_POST['password']);
 $errorEmpty=false;
+if(strlen($name)>16){
+    $errorEmpty=true;
+    echo "<p class='result-error'>Username cant be mor than 16 character</p>";
+    return false;
+}
 if (empty($name)||empty($pass)||empty($mail)||empty($phone)){
     $errorEmpty=true;
     echo "<p class='result-error'>fill the field</p>";

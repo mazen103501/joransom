@@ -438,17 +438,17 @@ nav{
     bottom:70px;
 
 }
-.card{
+.card1{
     position:relative;
 }
 
-.card .face{
+.card1 .face{
     height:200px;
     width:300px;
     transition:0.5s;
 }
 
-.card .face.face1{
+.card1 .face.face1{
     position:relative;
     background:#333;
     display:flex;
@@ -459,30 +459,30 @@ nav{
 }
 
 
-.card:hover .face.face1{
+.card1:hover .face.face1{
     background:#ff0057;
     transform:translateY(0);
 }
 
-.card .face.face1 .content{
+.card1 .face.face1 .content{
 
     transition:0.5s;
 }
 
-.card .face.face1 .content img{
+.card1 .face.face1 .content img{
     max-width:100px;
 }
 
-.card .face.face1 .content h3{
+.card1 .face.face1 .content h3{
     color:#0f93fc;
     text-align:center;
 }
 
-.card:hover .face.face1 .content{
+.card1:hover .face.face1 .content{
     opacity:1;
 }
 
-.card .face.face2{
+.card1 .face.face2{
     position:relative;
     background:#fff;
     padding:20px;
@@ -493,17 +493,17 @@ nav{
     transform:translateY(-100px);
 }
 
-.card:hover .face.face2{
+.card1:hover .face.face2{
     transform:translateY(0);
 }
 
-.card .face.face2 p{
+.card1 .face.face2 p{
     padding:0;
     margin:0;
     font-size: 18px;
 }
 
-.card .face.face2 a{
+.card1 .face.face2 a{
     margin:20px 0;
     display:inline-block;
     border:1px solid #333;
@@ -514,7 +514,7 @@ nav{
     transition:0.5s;
 }
 
-.card .face.face2 a:hover{
+.card1 .face.face2 a:hover{
     background:#333;
     color:#fff;
 }

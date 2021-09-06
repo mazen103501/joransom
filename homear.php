@@ -88,18 +88,18 @@ if(isset($do) && $do!='ar'){
                         الخدمات
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <li><a class="dropdown-item" href="index.php?pages=solutions">الحلول</a></li>
+                        <li><a class="dropdown-item" href="homear.php?pages=solutionsar">الحلول</a></li>
                         <li><a class="dropdown-item" href="index.php?pages=consulting">الاستشارات</a></li>
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link"  href="index.php?pages=about">من نحن</a>
+                    <a class="nav-link"  href="homear.php?pages=aboutar">من نحن</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#thefooter">تواصل معنا</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="homear.php">EN</a>
+                    <a class="nav-link" href="index.php">EN</a>
                 </li>
                 <?php
                 if(!isset($_SESSION['admin'] ) && !isset($_SESSION['username'])){
@@ -425,11 +425,11 @@ if($do=='dashborad'){
 
     }
     //our soultions
-    elseif($do=='solutions'){
+    elseif($do=='solutionsar'){
         ?>
         <div class="solutionimg">
             <div class="thecover"></div>
-            <h1>Solutions & Services</h1>
+            <h1>حلولنا وخدماتنا</h1>
         </div>
 
 
@@ -910,38 +910,64 @@ if($do=='dashborad'){
 
 
 
-    elseif($do=="about"){
+    elseif($do=="aboutar"){
         ?>
         <section class="about-us">
             <div class="thecont">
                 <div class="about-box">
                     <div class="box selected-box">
-                        <h5>Who Are We</h5>
+                        <h5>من نحن</h5>
                     </div>
                     <div class="box">
-                        <h5>Objectives</h5>
+                        <h5>الاهداف</h5>
                     </div>
                     <div class="box">
-                        <h5>Our Mession & Vision</h5>
+                        <h5>الرؤيا والرسالة</h5>
                     </div>
                 </div>
                 <div class="text-box">
-                    <p class="show-text">- Ransom Company for Cyber security is a local company specialized in cyber security, headquartered in northern Jordan in Irbid Governorate The Hashemite Kingdom of Jordan
+                    <p class="show-text">- شركة الفدية للأمن السيبراني (Ransom Company For Cyber Security) هي شركة محلية متخصصة في الأمن السيبراني مقرها شمال الاردن في محافظة اربد - المملكة الاردنية الهاشمية
 
-                        Founded in 2021, the company is today startup companies in the field of cyber security that provide a comprehensive range of learning methods and training in specialized curricula in cyber security (information security, networks, applications, databases and social engineering) in addition to providing solutions and software that contribute to solving problems Cyber intrusions and threats and regulates consulting and IT security services
+                        - تأسست عام 2021، تعد الشركة اليوم من بين الشركات الناشئة الرائدة في مجال الأمن السيبراني التي تقدم مجموعة شاملة من وسائل التعلم والتدريب على مناهج متخصصة في الامن السيبراني ( أمن المعلومات والشبكات والتطبيقات وقواعد البيانات والهندسة الاجتماعية ) بالاضافة الى تقديم الحلول والبرمجيات التي تساهم في حل مشكلات الاختراقات والتهديدات السيبرانية وتنظم خدمات الاستشارات وأمن تكنولوجيا المعلومات
 
-                        We help organizations plan, build, and operate successful information security programs, solve security problems, and implement specific IT security projects
+                        - نحن نساعد المؤسسات على التخطيط وبناء وتشغيل برامج أمن المعلومات الناجحة ، وحل مشاكل الأمان ، وتنفيذ مشاريع محددة لأمن تكنولوجيا المعلومات
 
-                        Each member of our team has a unique set of skills and experience in the fields of training, software solutions and consulting, as well as business development and information and communication technology. Our team also has a wide and deep understanding of the Middle East and the world and its urgent need for training based on the curricula provided by international companies and to be a specialized center for exams and also to attract programmers who are able to find software solutions related to cyber security
-
+                        - يتمتع كل فرد من أعضاء فريقنا بمجموعة فريدة من المهارات والخبرات في مجال التدريب والحلول البرمجية والاستشارات وايضا تطوير الأعمال وتكنولوجيا المعلومات والاتصالات. حيث يتمتع فريقنا أيضًا بفهم واسع وعميق للشرق الأوسط والعالم وحاجته الماسة للتدريب المعتمد على المناهج المقدمة من الشركات العاليمة وان نكون مركز متخصص لاجراء الامتحانات وايضا استقطابه للمبرمجين القادرين على ايجاد الحلول البرمجية المتعلقة بالامن السيبراني
                     </p>
                     <p>
 
-                        - Training, qualifying and building the capacities of young people in basic knowledge related to networks and information security by adopting the curricula offered by international companies specialized in networks and information security
 
+                        تدريب وتأهيل وبناء قدرات الشباب في المعارف الرئيسية المتعلقة بالشبكات وامن المعلومات باعتماد المناهج التي تطرحها الشركات العالمية المتخصصة في الشبكات وأمن المعلومات.
+
+                        ✓
+                        <br>
+                        توفير مركز اختبارات متخصص للحصول على الشهادات العالمية المعتمدة
+
+                        ✓
+                        <br>
+                        توفير بيئة برمجية قادرة على بناء حلول برمجية لمشكلات الاختراق والتهديدات السيبرانية.
+
+                        ✓
+                        <br>
+                        المساهمة والمشاركة بتقديم الخبرات والاستشارات للمؤسسات الحكومية والخاصة بتقنيات الامن السيبراني
+
+                        ✓
+                        <br>
+                        بناء شبكة من التحالفات الإستراتيجية لتشكيل قاعدة معرفية متطورة ومحدثة ومتطورة ، والتي من شأنها أن تمكننا من مشاركة أعلى مستوى من الخبرات الجماعية الدولية مع عملائنا
+
+                        ✓
+                        <br>
+                        دعم وتعزيز المجتمع المحلي من خلال المساهمة الفعالة في الأنشطة والفعاليات المحلية
                     </p>
                     <p >
-                        - To be the first choice in training, build the capabilities of young people, provide consulting, and develop software solutions to institutions/companies, and Secure Cyberspace.
+                        الرسالة : أن نكون الخيار الأول في تدريب وبناء قدرات الشباب وتقديم الاستشارات والحلول البرمجية الامنة للمؤسسات والشركات-
+                        <br>
+                        الرؤيا : حماية الفضاء الالكتروني-
+
+
+                        <br>
+
+
                     </p>
                 </div>
             </div>

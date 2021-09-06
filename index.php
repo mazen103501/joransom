@@ -212,7 +212,7 @@ if($do=='dashborad'){
 
 
     <div class="container1">
-        <div class="card">
+        <div class="card1">
             <div class="face face1">
                 <div class="content">
                     <img src="PHOTOS/presentation.svg" alt="image"/>
@@ -226,7 +226,7 @@ if($do=='dashborad'){
                 </div>
             </div>
         </div>
-        <div class="card">
+        <div class="card1">
             <div class="face face1">
                 <div class="content">
                     <img src="PHOTOS/consultation.svg" alt="image"/>
@@ -243,7 +243,7 @@ if($do=='dashborad'){
 
 
 
-        <div class="card">
+        <div class="card1">
             <div class="face face1">
                 <div class="content">
                     <img src="PHOTOS/idea.svg" alt="image"/>
@@ -271,25 +271,25 @@ if($do=='dashborad'){
                     <div class="box">
                         <p class="backend-num"></p>
                         <img src="PHOTOS/team.svg" alt="team">
-                        <p class="number"><span>15</span>+</p>
+                        <p class="number"><span>10</span>+</p>
                         <p class="text-box">Team Member's</p>
                     </div>
                     <div class="box">
                         <p class="backend-num"></p>
                         <img src="PHOTOS/deal.svg" alt="Partner">
-                        <p class="number"><span>6</span>+</p>
+                        <p class="number"><span>6</span></p>
                         <p class="text-box">Partner's</p>
                     </div>
                     <div class="box">
                         <p class="backend-num"></p>
                         <img src="PHOTOS/book.svg" alt="Course">
-                        <p class="number"><span>49</span>+</p>
+                        <p class="number"><span>50</span>+</p>
                         <p class="text-box">Course's</p>
                     </div>
                     <div class="box">
                         <p class="backend-num"></p>
                         <img src="PHOTOS/reading.svg" alt="Student">
-                        <p class="number"><span>254</span>+</p>
+                        <p class="number"><span></span></p>
                         <p class="text-box">Student's</p>
                     </div>
                 </div>
@@ -412,114 +412,23 @@ elseif($do=='solutions'){
     </div>
 
 
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="card">
+                <div class="card-body">
+                    <img src="PHOTOS/ransomware.png" class="rounded mx-auto d-block" alt="...">
 
-<!---->
-<!--    <h3 style="text-align: center ; margin-top: 20px ; margin-bottom: 20px;color: white">Our Solutions </h3>-->
-<!--    <!--first card-->-->
-<!--    <div class="container mx-auto mt-4">-->
-<!--        <div class="row">-->
-<!--            <div class="col">-->
-<!--                <div class="card" style="width: 18rem;">-->
-<!--                    <img src="PHOTOS/icon2.png" class="card-img-top" alt="...">-->
-<!--                    <div class="card-body">-->
-<!--                        <h5 class="card-title">Penetration Testing</h5>-->
-<!---->
-<!---->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!---->
-<!---->
-<!---->
-<!---->
-<!---->
-<!--            <div class="col">-->
-<!--                <div class="card" style="width: 18rem;">-->
-<!--                    <img src="PHOTOS/images.jpg" class="card-img-top" alt="...">-->
-<!--                    <div class="card-body">-->
-<!--                        <h5 class="card-title">Antivirus</h5>-->
-<!---->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!---->
-<!---->
-<!---->
-<!---->
-<!---->
-<!--            <div class="col">-->
-<!--                <div class="card" style="width: 18rem;">-->
-<!--                    <img src="PHOTOS/Control-safety-en-security-systems.png" class="card-img-top" alt="...">-->
-<!--                    <div class="card-body">-->
-<!--                        <h5 class="card-title">Intrusion Detection System</h5>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!---->
-<!---->
-<!--            <h2 style="text-align: center ; margin-top: 20px ; margin-bottom: 20px;color: white">In Cooperation with KAIZEN365</h2>-->
-<!--            <div class="col">-->
-<!--                <div class="card" style="width: 18rem;">-->
-<!--                    <img src="PHOTOS/shutterstock-33654265.jpg" class="card-img-top" alt="...">-->
-<!--                    <div class="card-body">-->
-<!--                        <h5 class="card-title">Network Administration Service</h5>-->
-<!--                        <ul class="list-group list-group-flush">-->
-<!--                            <li class="list-group-item">1. Supervising the performance of the network in actual working conditions (Operation)</li>-->
-<!--                            <li class="list-group-item">2. Take immediate actions to control the network when needed(Configuration)</li>-->
-<!--                            <li class="list-group-item">3. Maximum network capacity utilization (Effectiveness)</li>-->
-<!--                            <li class="list-group-item">4. Planning for future events (Development)</li>-->
-<!--                            <li class="list-group-item">5. Risk Managment</li>-->
-<!---->
-<!--                        </ul>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!---->
-<!---->
-<!---->
-<!--            <div class="col">-->
-<!--                <div class="card" style="width: 18rem;">-->
-<!--                    <img src="PHOTOS/unnamed (1).png" class="card-img-top" alt="...">-->
-<!--                    <div class="card-body">-->
-<!--                        <h5 class="card-title">Professional Network Solution service</h5>-->
-<!--                        <ul class="list-group list-group-flush">-->
-<!--                            <li class="list-group-item">1. Backup Solutions</li>-->
-<!--                            <li class="list-group-item">2. Security Solutions</li>-->
-<!--                            <li class="list-group-item">3. Infrastructure Solutions</li>-->
-<!--                            <li class="list-group-item">4. Data Leak Solutions (DLP Solutinos)</li>-->
-<!---->
-<!--                        </ul>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!---->
-<!---->
-<!---->
-<!--            <div class="col">-->
-<!--                <div class="card" style="width: 18rem;">-->
-<!--                    <img src="PHOTOS/download.png" class="card-img-top" alt="...">-->
-<!--                    <div class="card-body">-->
-<!--                        <h5 class="card-title">Cloud Service</h5>-->
-<!--                        <ul class="list-group list-group-flush">-->
-<!--                            <li class="list-group-item">1. Cloud Backup Solutions </li>-->
-<!--                            <li class="list-group-item">2. Cloud Services Solutions</li>-->
-<!---->
-<!--                        </ul>-->
-<!---->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
+                    <h3 class="card-title">Our Solutions</h3>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 solution">
-                <div class="accordion accordion-flush" id="accordionFlushExample">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="flush-headingOne">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                                Our solutions
-                            </button>
-                        </h2>
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+
+                                </button>
+                            </h2>
+                        </div>
+
                         <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
                             <div class="accordion-body">
                                 <ul class="title">
@@ -530,51 +439,21 @@ elseif($do=='solutions'){
                             </div>
                         </div>
                     </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="flush-headingTwo">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                                In Cooperation with KAIZEN365
-                            </button>
-                        </h2>
-                        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">
-                                <ul >
-                                    <li class="title">Cloud Service</li>
-                                    <ol>
-                                        <li>Cloud Backup Solutions</li>
-                                        <li>Cloud Services Solutions</li>
-                                    </ol>
+                </div>
+            </div>
+        </div>
 
-                                </ul>
-                                <ul>
-                                    <li class="title">Professional Network Solution service</li>
-                                    <ol>
-                                        <li>Backup Solutions</li>
-                                        <li>Security Solutions</li>
-                                        <li>Infrastructure Solutions</li>
-                                        <li>Data Leak Solutions (DLP Solutinos)</li>
-                                    </ol>
 
-                                </ul>
-                                <ul>
-                                    <li class="title">Network Administration Service  </li>
-                                    <ol>
-                                        <li>Supervising the performance of the network in actual working conditions (Operation)</li>
-                                        <li>Take immediate actions to control the network when needed(Configuration)</li>
-                                        <li>Maximum network capacity utilization (Effectiveness)</li>
-                                        <li>Planning for future events (Development)</li>
-                                        <li>Risk Managment</li>
-                                    </ol>
+        <div class="col-sm-6">
+            <div class="card">
+                <div class="card-body">
+                    <img src="PHOTOS/cyber-security.png" class="rounded mx-auto d-block" alt="...">
 
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+                    <h3 class="card-title">In Cooperation with Green Circle</h3>
+
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="flush-headingThree">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                                In Cooperation with Green Circle
-
                             </button>
                         </h2>
                         <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
@@ -624,7 +503,7 @@ elseif($do=='solutions'){
                                     </ol>
                                 </ul>
                                 <ul>
-                                  <li class="title">Cyber Testing</li>
+                                    <li class="title">Cyber Testing</li>
                                     <ol>
                                         <li>Penetration Testing (Web , Network , Apps , and Code security review).</li>
                                         <li>Vulnerability Management</li>
@@ -633,12 +512,12 @@ elseif($do=='solutions'){
                                 </ul>
                                 <ul>
                                     <li class="title">Cyber Consulting</li>
-                                        <ol>
-                                            <li>Risk Assessment</li>
-                                            <li>SOC Architecture</li>
-                                            <li>Threat Modeling</li>
-                                            <li>Security Maturity Model and Risk scoring</li>
-                                        </ol>
+                                    <ol>
+                                        <li>Risk Assessment</li>
+                                        <li>SOC Architecture</li>
+                                        <li>Threat Modeling</li>
+                                        <li>Security Maturity Model and Risk scoring</li>
+                                    </ol>
                                 </ul>
                                 <ul>
                                     <li class="title">Cyber Compliance Services</li>
@@ -652,32 +531,32 @@ elseif($do=='solutions'){
                                 </ul>
                                 <ul>
                                     <li class="title">Managed Cyber Security Solutions</li>
-                                        <ol>
-                                            <li>Unified Threat Management - UTM</li>
-                                            <li>Web application firewall - WAF</li>
-                                            <li>Database Access Monitoring - DAM</li>
-                                            <li>Email Security</li>
-                                            <li>Data Encryption Solution</li>
-                                            <li>Identity Management - IDM</li>
-                                            <li>Privileges Access Management - PAM</li>
-                                            <li>EDR – EPP</li>
-                                            <li>APT</li>
-                                            <li>Dynamic Deception</li>
-                                            <li>Awareness Solution</li>
+                                    <ol>
+                                        <li>Unified Threat Management - UTM</li>
+                                        <li>Web application firewall - WAF</li>
+                                        <li>Database Access Monitoring - DAM</li>
+                                        <li>Email Security</li>
+                                        <li>Data Encryption Solution</li>
+                                        <li>Identity Management - IDM</li>
+                                        <li>Privileges Access Management - PAM</li>
+                                        <li>EDR – EPP</li>
+                                        <li>APT</li>
+                                        <li>Dynamic Deception</li>
+                                        <li>Awareness Solution</li>
 
-                                        </ol>
+                                    </ol>
                                 </ul>
                                 <ul>
                                     <li class="title">Advanced Cyber Security Solutions</li>
-                                        <ol>
-                                            <li>Cyber Range</li>
-                                            <li>Brand Name Protection</li>
-                                            <li>Cyber warfare</li>
-                                            <li>RED Team</li>
-                                            <li>SOAR</li>
-                                            <li>SecOPS</li>
-                                            <li>Threat Intelligence</li>
-                                        </ol>
+                                    <ol>
+                                        <li>Cyber Range</li>
+                                        <li>Brand Name Protection</li>
+                                        <li>Cyber warfare</li>
+                                        <li>RED Team</li>
+                                        <li>SOAR</li>
+                                        <li>SecOPS</li>
+                                        <li>Threat Intelligence</li>
+                                    </ol>
                                 </ul>
                             </div>
                         </div>
@@ -685,72 +564,98 @@ elseif($do=='solutions'){
                 </div>
 
             </div>
+                </div>
+            </div>
+        </div>
 
 
-            <div class="col-md-6">
-                <img class="img-fluid solutionimgside" src="PHOTOS/project-management.png">
+        <div class="col-sm-6">
+            <div class="card">
+                <div class="card-body">
+                    <img src="PHOTOS/network.png" class="rounded mx-auto d-block" alt="...">
+                    <h3 class="card-title">In Cooperation with KAIZEN365</h3>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
 
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <ul >
+                                    <li class="title">Cloud Service</li>
+                                    <ol>
+                                        <li>Cloud Backup Solutions</li>
+                                        <li>Cloud Services Solutions</li>
+                                    </ol>
+
+                                </ul>
+                                <ul>
+                                    <li class="title">Professional Network Solution service</li>
+                                    <ol>
+                                        <li>Backup Solutions</li>
+                                        <li>Security Solutions</li>
+                                        <li>Infrastructure Solutions</li>
+                                        <li>Data Leak Solutions (DLP Solutinos)</li>
+                                    </ol>
+
+                                </ul>
+                                <ul>
+                                    <li class="title">Network Administration Service  </li>
+                                    <ol>
+                                        <li>Supervising the performance of the network in actual working conditions (Operation)</li>
+                                        <li>Take immediate actions to control the network when needed(Configuration)</li>
+                                        <li>Maximum network capacity utilization (Effectiveness)</li>
+                                        <li>Planning for future events (Development)</li>
+                                        <li>Risk Managment</li>
+                                    </ol>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <?php
-
-
 }
-
-
-
 elseif ($do=="consulting"){
     ?>
     <div class="consultingimg">
         <div class="thecover"></div>
         <h1>Consulting</h1>
     </div>
-    <div class="theconsulting">
-        <div>
-            <p>1. Knowing the weaknesses in your systems is the first step to protecting them.</p>
-            <p>2. Our comprehensive assessment and analysis can reveal the gaps between the current state of your
+
+    <div class="container">
+        <div class="row">
+    <div class="card" style="width: 18rem;">
+        <img src="PHOTOS/system.png" class="card-img-top" alt="...">
+        <div class="card-body">
+            <p class="card-text">Knowing the weaknesses in your systems is the first step to protecting them</p>
+        </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+        <img src="PHOTOS/monitoring.png" class="card-img-top" alt="...">
+        <div class="card-body">
+            <p class="card-text"> Our comprehensive assessment and analysis can reveal the gaps between the current state of your
                 systems and the problem-free state of protection.</p>
-            <p>3. There is a clear roadmap and action plan for identifying the right people, processes and techniques to
-                fill the gaps.</p>
         </div>
 
+
     </div>
+            <div class="card" style="width: 18rem;">
+                <img src="PHOTOS/route.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">There is a clear roadmap and action plan for identifying the right people, processes and techniques to
+                        fill the gaps</p>
+                </div>
+            </div>
+    </div>
+    </div>
+
+
 
 
 
@@ -976,10 +881,10 @@ ob_end_flush();
     <div class="content">
         <h3>Contact Us</h3>
 
-        <p><a href="https://maps.app.goo.gl/PRXcpVLVFkGmUBTCA" target="_blank"rel="noreferrer">Jordan,Irbid</a></p>
+        <p><a href="https://maps.app.goo.gl/PRXcpVLVFkGmUBTCA" target="_blank"rel="noreferrer">Ransom Company For Cyber Security - Irbid - Omar ALmokhtar</a></p>
 
-       <p><a href="tel:0096227277760">0096227277760</a></p> 
-        <p><a href="https://wa.link/7y545l" target="_balnk">00962776277760</a></p>
+       <p><a href="tel:0096227277760">00962 - 77 - 6277760</a></p>
+        <p><a href="https://wa.link/7y545l" target="_balnk">00962 - 2 - 7277760</a></p>
         <p><a href="mailto:info@joransom.com">info@joransom.com</a></p>
     </div>
 
