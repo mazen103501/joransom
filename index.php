@@ -693,7 +693,7 @@ elseif($do=='trainingpage') {
         $photos = $course['photos'];
         $id=$course['id'];
 
-        echo "<div>";
+        echo "<div data-type='cisco'>";
 
         echo "<img src='HTML/upload/course/$photos' alt='image' />";
         echo "<div><h6>".$course['Course_name']."</h6></div>";
@@ -701,7 +701,7 @@ elseif($do=='trainingpage') {
 
         echo "</div>";
     }
-   
+
 
 
 
@@ -717,7 +717,7 @@ elseif($do=='trainingpage') {
         $photos = $course['photos'];
         $id=$course['id'];
 
-        echo "<div>";
+        echo "<div data-type='software'>";
 
         echo "<img src='HTML/upload/course/$photos' alt='image'/>";
         echo "<div><h6>".$course['Course_name']."</h6></div>";
@@ -739,7 +739,7 @@ elseif($do=='trainingpage') {
     foreach ($row1 as $course) {
         $photos = $course['photos'];
         $id=$course['id'];
-        echo "<div>";
+        echo "<div data-type='ec'>";
 
         echo "<img src='HTML/upload/course/$photos' alt='image'/>";
         echo "<div><h6>".$course['Course_name']."</h6></div>";
@@ -766,7 +766,7 @@ elseif($do=='trainingpage') {
     foreach ($row1 as $course) {
         $photos = $course['photos'];
         $id=$course['id'];
-        echo "<div>";
+        echo "<div data-type='other'>";
 
         echo "<img src='HTML/upload/course/$photos' alt='image'/>";
         echo "<div><h6>".$course['Course_name']."</h6></div>";
@@ -792,7 +792,6 @@ elseif($do=='trainingpage') {
                 </div>
                 <div>
                     <select name="courses" id="form-courses">
-                        <option>hello</option>
                         <?php
                         foreach ($row1 as $course) {
                             $courserequest=$course['Course_name'];

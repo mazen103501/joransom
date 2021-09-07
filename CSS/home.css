@@ -1077,6 +1077,9 @@ footer div:first-of-type img{
 .showtrainingcourse{
     opacity: 1 !important;
 }
+.filterhide{
+    display: none;
+}
 
 
 

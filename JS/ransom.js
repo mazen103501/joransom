@@ -91,7 +91,7 @@ aboutUsBoxes.forEach((e)=>{
 // training Buttons
 
 let trainingBtns = document.querySelectorAll(".filter-buttons button");
-console.log(trainingBtns)
+// console.log(trainingBtns)
 
 trainingBtns.forEach(e=>{
     e.addEventListener("click" , trainingBtnsFunc)
@@ -133,7 +133,7 @@ if(theLink.includes("pages=")){
 
 
 }else{
-    console.log(homeCourses)
+    // console.log(homeCourses)
     window.onscroll = function(){
         if(document.documentElement.scrollTop > (homeCourses[0].parentElement.offsetTop -250)){
             let theTime = 200;
@@ -159,8 +159,89 @@ enroll.forEach((ele,i)=>{
     })
 });
 
-//acordion js
 
 
 
+// 
+
+
+if(theLink.includes("pages=")){
+    let courseContainer = document.querySelector(".course-container"),
+        courseContainerDivs = document.querySelectorAll(".course-container >div")
+        filterButtons=document.querySelector(".filter-buttons"),
+        allBtn = filterButtons.children[0],
+        ciscoBtn = filterButtons.children[1],
+        softwareBtn = filterButtons.children[2],
+        ecBtn = filterButtons.children[3],
+        otherBtn = filterButtons.children[4];
+    // console.log(courseContainer,courseContainerDivs,filterButtons,allBtn,ciscoBtn,softwareBtn,ecBtn,otherBtn);
+    
+
+
+
+    function allBtnFunc(){
+        courseContainerDivs.forEach(e=>{
+            e.classList.remove("filterhide")
+        })
+    }
+    function ciscoBtnFunc(){
+        courseContainerDivs.forEach(e=>{
+            e.classList.remove("filterhide")
+        })
+        courseContainerDivs.forEach(e=>{
+            if(e.getAttribute("data-type") == "cisco"){
+                e.classList.remove("filterhide")
+                console.log("true")
+            }else{
+                e.classList.add("filterhide")
+                console.log("f")
+            }
+            
+        })
+    }
+    function softwareBtnFunc(){
+        courseContainerDivs.forEach(e=>{
+            e.classList.remove("filterhide")
+        })
+        courseContainerDivs.forEach(e=>{
+            if(e.getAttribute("data-type") == "software"){
+                e.classList.remove("filterhide")
+            }else{
+                e.classList.add("filterhide")
+            }
+            
+        })
+    }
+    function ecBtnFunc(){
+        courseContainerDivs.forEach(e=>{
+            e.classList.remove("filterhide")
+        })
+        courseContainerDivs.forEach(e=>{
+            if(e.getAttribute("data-type") == "ec"){
+                e.classList.remove("filterhide")
+            }else{
+                e.classList.add("filterhide")
+            }
+            
+        })
+    }
+    function otherBtnFunc(){
+        courseContainerDivs.forEach(e=>{
+            e.classList.remove("filterhide")
+        })
+        courseContainerDivs.forEach(e=>{
+            if(e.getAttribute("data-type") == "other"){
+                e.classList.remove("filterhide")
+            }else{
+                e.classList.add("filterhide")
+            }
+            
+        })
+    }
+    allBtn.addEventListener("click",allBtnFunc);
+    ciscoBtn.addEventListener("click",ciscoBtnFunc);
+    softwareBtn.addEventListener("click",softwareBtnFunc);
+    ecBtn.addEventListener("click",ecBtnFunc);
+    otherBtn.addEventListener("click",otherBtnFunc);
+}
 

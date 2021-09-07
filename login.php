@@ -59,9 +59,7 @@ if(!isset($_SESSION['admin']) || !isset($_SESSION['username'])){
 
 
 
-          <li class="nav-item">
-            <a class="nav-link"  href="index.php#whoarewe">About</a>
-          </li>
+          
 
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -71,6 +69,9 @@ if(!isset($_SESSION['admin']) || !isset($_SESSION['username'])){
               <li><a class="dropdown-item" href="index.php?pages=solutions">Solutions</a></li>
               <li><a class="dropdown-item" href="index.php?pages=consulting">Consulting</a></li>
             </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"  href="index.php#whoarewe">About</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#thefooter">Contact Us</a>
