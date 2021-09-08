@@ -712,11 +712,11 @@ if($do=='dashborad'){
 
 
     <div class="filter-buttons">
-        <button class="selected">All</button>
-        <button>Cisco</button>
-        <button>Software</button>
+        <button class="selected">الكل</button>
+        <button>سيسكو</button>
+        <button>برمجة</button>
         <button>EC-Council</button>
-        <button>Other</button>
+        <button>اخرى</button>
     </div>
 
 
@@ -734,7 +734,7 @@ if($do=='dashborad'){
 
         echo "<img src='HTML/upload/course/$photos' alt='image' />";
         echo "<div><h6>".$course['Course_name']."</h6></div>";
-        echo "<a href='#request'>Enroll now</a>";
+        echo "<a href='#request'>سجل الان</a>";
 
         echo "</div>";
     }
@@ -758,7 +758,7 @@ if($do=='dashborad'){
 
         echo "<img src='HTML/upload/course/$photos' alt='image'/>";
         echo "<div><h6>".$course['Course_name']."</h6></div>";
-        echo "<a href='#request'>Enroll now</a>";
+        echo "<a href='#request'>سجل الان</a>";
         echo "</div>";
     }
 
@@ -780,7 +780,7 @@ if($do=='dashborad'){
 
         echo "<img src='HTML/upload/course/$photos' alt='image'/>";
         echo "<div><h6>".$course['Course_name']."</h6></div>";
-        echo "<a href='#request'>Enroll now</a>";
+        echo "<a href='#request'>سجل الان</a>";
 
         echo "</div>";
     }
@@ -807,7 +807,7 @@ if($do=='dashborad'){
 
         echo "<img src='HTML/upload/course/$photos' alt='image'/>";
         echo "<div><h6>".$course['Course_name']."</h6></div>";
-        echo "<a href='#request'>Enroll now</a>";
+        echo "<a href='#request'>سجل الان</a>";
 
         echo "</div>";
     }
@@ -824,8 +824,8 @@ if($do=='dashborad'){
             </div>
             <form method="POST" action="courserequest.php">
                 <div>
-                    <input type="text" placeholder="Full Name" name="fullname" id="form-name" required>
-                    <input type="text" placeholder="E-mail" name="email" id="form-email" required>
+                    <input type="text" placeholder="الاسم بالكامل" name="fullname" id="form-name" required>
+                    <input type="text" placeholder="الايميل" name="email" id="form-email" required>
                 </div>
                 <div>
                     <select name="courses" id="form-courses" disabled>
@@ -852,11 +852,11 @@ if($do=='dashborad'){
 
 
                     </select>
-                    <input type="number" placeholder="Phone Number" name="number" id="form-number" >
+                    <input type="number" placeholder="رقم الهاتف" name="number" id="form-number" >
 
                 </div>
-                <textarea placeholder="Message" name="message" id="form-message"></textarea>
-                <input type="submit" name="save" value="Send" id="form-submit">
+                <textarea placeholder="ملاحظات" name="message" id="form-message"></textarea>
+                <input type="submit" name="save" value="ارسال" id="form-submit">
                 <p class="form-result"></p>
 
             </form>
