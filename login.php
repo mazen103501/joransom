@@ -133,12 +133,12 @@ if(!isset($_SESSION['admin']) || !isset($_SESSION['username'])){
             <div>
                 <!-- <label for="exampleInputEmail1">user name</label> -->
                 <i class="fas fa-user-alt"></i>
-                <input id="name" type="text" name="username" placeholder="Username" >
+                <input id="name" type="text" name="username" placeholder="Username" required >
             </div>
             <div >
                 <!-- <label for="exampleInputPassword1" >Password</label> -->
                 <i class="fas fa-key"></i>
-                <input id="password" type="password" name="password" placeholder="Password" >
+                <input id="password" type="password" name="password" placeholder="Password" required>
             </div>
             <button id="submit" type="submit" name="login" class="btn btn-primary">Submit</button>
         <p class="form-result"></p>
@@ -151,22 +151,22 @@ if(!isset($_SESSION['admin']) || !isset($_SESSION['username'])){
         <div>
             <!-- <label for="exampleInputEmail1" class="form-label">user name</label> -->
             <i class="fas fa-user-alt"></i>
-            <input id="username" type="text" name="username" placeholder="Username">
+            <input id="username" type="text" name="username" placeholder="Username" required>
         </div>
             <div >
                 <!-- <label for="exampleInputEmail1" class="form-label">Email</label> -->
                 <i class="fas fa-envelope"></i>
-                <input id="email" type="email" name="email" placeholder="Email">
+                <input id="email" type="email" name="email" placeholder="Email" required>
             </div>
             <div >
                 <!-- <label for="exampleInputEmail1" class="form-label">Phone numper</label> -->
                 <i class="fas fa-phone-volume"></i>
-                <input id="phonenumber" type="number" name="phone" placeholder="Phone Number">
+                <input id="phonenumber" type="number" name="phone" placeholder="Phone Number" required>
             </div>
         <div>
             <!-- <label for="exampleInputPassword1" class="form-label">Password</label> -->
             <i class="fas fa-key"></i>
-            <input id="passwordregister" type="password" name="password" placeholder="Password" >
+            <input id="passwordregister" type="password" name="password" placeholder="Password" required >
         </div>
         <button id="registersubmit" type="submit" name="Register" class="btn btn-primary">Submit</button>
         <p class="form-result"></p>
@@ -198,10 +198,10 @@ if(!isset($_SESSION['admin']) || !isset($_SESSION['username'])){
     <div class="content">
         <h3>Contact Us</h3>
 
-        <p><a href="https://maps.app.goo.gl/PRXcpVLVFkGmUBTCA" target="_blank"rel="noreferrer">Jordan,Irbid</a></p>
+        <p><a href="https://maps.app.goo.gl/PRXcpVLVFkGmUBTCA" target="_blank"rel="noreferrer">Ransom For Cyber Security - Irbid - Omar ALmokhtar</a></p>
 
-        <p><a href="tel:0096227277760">0096227277760</a></p>
-        <p><a href="https://wa.link/7y545l" target="_balnk">00962776277760</a></p>
+        <p><a href="tel:0096227277760">00962 - 2 - 7277760</a></p>
+        <p><a href="https://wa.link/7y545l" target="_balnk">00962 - 77 - 6277760</a></p>
         <p><a href="mailto:info@joransom.com">info@joransom.com</a></p>
     </div>
 
@@ -218,6 +218,7 @@ if(!isset($_SESSION['admin']) || !isset($_SESSION['username'])){
     </div>
 
 </footer>
+
 
 <?php
 

@@ -1,5 +1,5 @@
 *{
-    direction: rtl;
+    direction: rtl !important;
 }
 body{
     direction: rtl;
@@ -47,3 +47,5 @@ footer div:nth-of-type(3) p::before{
 .owl-carousel{
         direction: ltr;
 }
+
+

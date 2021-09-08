@@ -71,11 +71,11 @@ if(isset($do) && $do!='ar'){
             <ul class="navbar-nav">
                 <li class="nav-item">
 
-                    <a class="nav-link" href="index.php">الرئيسية</a>
+                    <a class="nav-link" href="homear.php">الرئيسية</a>
                 </li>
 
                 <li class="nav-item dropdown">
-                    <a class="nav-link" href="index.php?pages=trainingpage">
+                    <a class="nav-link" href="homear.php?pages=trainingpage">
                         التدريب
                     </a>
 
@@ -89,7 +89,7 @@ if(isset($do) && $do!='ar'){
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <li><a class="dropdown-item" href="homear.php?pages=solutionsar">الحلول</a></li>
-                        <li><a class="dropdown-item" href="index.php?pages=consulting">الاستشارات</a></li>
+                        <li><a class="dropdown-item" href="homear.php?pages=consulting">الاستشارات</a></li>
                     </ul>
                 </li>
                 <li class="nav-item">
@@ -238,7 +238,7 @@ if($do=='dashborad'){
 
 
 <div class="container1">
-    <div class="card">
+    <div class="card1">
         <div class="face face1">
             <div class="content">
                 <img src="PHOTOS/presentation.svg" alt="image"/>
@@ -252,7 +252,7 @@ if($do=='dashborad'){
             </div>
         </div>
     </div>
-    <div class="card">
+    <div class="card1">
         <div class="face face1">
             <div class="content">
                 <img src="PHOTOS/consultation.svg" alt="image"/>
@@ -269,7 +269,7 @@ if($do=='dashborad'){
 
 
 
-    <div class="card">
+    <div class="card1">
         <div class="face face1">
             <div class="content">
                 <img src="PHOTOS/idea.svg" alt="image"/>
@@ -429,294 +429,219 @@ if($do=='dashborad'){
         ?>
         <div class="solutionimg">
             <div class="thecover"></div>
-            <h1>حلولنا وخدماتنا</h1>
+            <h1>Solutions & Services</h1>
         </div>
 
 
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="PHOTOS/ransomware.png" class="rounded mx-auto d-block" alt="...">
 
-        <h3 style="text-align: center ; margin-top: 20px ; margin-bottom: 20px">Our Solutions </h3>
-        <!--first card-->
-        <div class="container mx-auto mt-4">
-            <div class="row">
-                <div class="col">
-                    <div class="card" style="width: 18rem;">
-                        <img src="PHOTOS/icon2.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Penetration Testing</h5>
+                        <h3 class="card-title">حلولنا</h3>
 
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
 
+                                    </button>
+                                </h2>
+                            </div>
+
+                            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <ul class="title">
+                                        <li>Penetration Testing</li>
+                                        <li>Antivirus</li>
+                                        <li>Intrusion Detection System</li>
+                                        <li>Software Solutions </li>
+                                        <li>Logo Design</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+            </div>
 
 
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="PHOTOS/cyber-security.png" class="rounded mx-auto d-block" alt="...">
+
+                        <h3 class="card-title">Green Circle بالتعاون مع </h3>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <ul>
+                                        <li class="title">التفاحة الخضراء</li>
+                                        <ol>
+                                            <li>فحص نقاط الضعف في الشبكة واختبار الاختراق مرة واحدة كل ثلاثة أشهر</li>
+                                            <li>مراقبة 24 ساعة على مدار الاسبوع</li>
+                                            <li>SIEM ادارة معلومات الأمن وادارة الأحداث</li>
+                                            <li>IDS (المضيف مركزي لجميع الخوادم)</li>
+                                            <li>تقوية أجهزة الأمن</li>
+                                            <li>مراجعة السياسات والإجراءات</li>
+                                        </ol>
+                                    </ul>
+
+                                    <ul>
+                                        <li class="title">العنب الأخضر</li>
+                                        <ol>
+                                            <li>فحص نقاط الضعف في الشبكة واختبار الاختراق مرة واحدة كل ثلاثة أشهر</li>
+                                            <li>مراقبة 24 ساعة على مدار الاسبوع</li>
+                                            <li>ادارة أجهزة الأمن</li>
+                                            <li>SIEM ادارة معلومات الأمن وادارة الأحداث</li>
+                                            <li>نظام كشف التسلل ومراقبة سلامة الملفات (مضيف مركزي لجميع الخوادم)</li>
+                                            <li>تقوية أجهزة الأمن</li>
+                                            <li>مراجعة السياسات والإجراءات</li>
+
+                                        </ol>
+
+                                    </ul>
+
+                                    <ul>
+                                        <li class="title">الكيوي الأخضر</li>
+                                        <ol>
+                                            <li>فحص نقاط الضعف في الشبكة واختبار الاختراق مرة واحدة كل ثلاثة أشهر</li>
+                                            <li>مراقبة 24 ساعة على مدار الاسبوع</li>
+                                            <li>ادارة أجهزة الأمن</li>
+                                            <li>SIEM ادارة معلومات الأمن وادارة الأحداث</li>
+                                            <li>نظام كشف التسلل ومراقبة سلامة الملفات (مضيف مركزي لجميع الخوادم)</li>
+                                            <li>تقوية أجهزة الأمن</li>
+                                            <li>مراجعة السياسات والإجراءات</li>
+                                            <li>AntiX</li>
+                                            <li>دارة التهديدات</li>
+                                            <li>أدوات وسائل التواصل الاجتماعي</li>
+                                            <li>حماية العلامة التجارية / الاسم</li>
+
+                                        </ol>
+                                    </ul>
+                                    <ul>
+                                        <li class="title">إختبار الانترنت</li>
+                                        <ol>
+                                            <li>اختبار الاختراق (مراجعة الويب والشبكة والتطبيقات ومراجعة الرمز الأمان).</li>
+                                            <li>إدارة الثغرات الأمنية</li>
+                                            <li>RED Team</li>
+                                        </ol>
+                                    </ul>
+                                    <ul>
+                                        <li class="title">استشارات سيبيرانية</li>
+                                        <ol>
+                                            <li>تقييم المخاطر</li>
+                                            <li>SOC Architecture</li>
+                                            <li>نموذج التهديد</li>
+                                            <li>نموذج النضج الأمني وتسجيل المخاطر</li>
+                                        </ol>
+                                    </ul>
+                                    <ul>
+                                        <li class="title">خدمات الامتثال عبر الإنترنت</li>
+                                        <ol>
+                                            <li>GRC Architecture</li>
+                                            <li>ISO 27001 – 27701</li>
+                                            <li>General Data Protection Regulations - GDPR</li>
+                                            <li>PCI-DSS, PCI-PA</li>
+                                            <li>NIST</li>
+                                        </ol>
+                                    </ul>
+                                    <ul>
+                                        <li class="title">حلول ادارة الامن السيبراني</li>
+                                        <ol>
+                                            <li>إدارة التهديدات الموحدة - UTM</li>
+                                            <li>جدار حماية تطبيق الويب - WAF</li>
+                                            <li>رصد الوصول إلى قاعدة البيانات - DAM</li>
+                                            <li>حماية البريد الإلكتروني</li>
+                                            <li>حل تشفير البيانات</li>
+                                            <li>إدارة الهوية - IDM</li>
+                                            <li>إدارة الوصول إلى الامتيازات - PAM</li>
+                                            <li>EDR – EPP</li>
+                                            <li>APT</li>
+                                            <li>الخداع الديناميكي</li>
+                                            <li>حل التوعية</li>
+
+                                        </ol>
+                                    </ul>
+                                    <ul>
+                                        <li class="title">حلول الامن السيبراني المتقدمة</li>
+                                        <ol>
+                                            <li>المدى السيبيري</li>
+                                            <li>حماية اسم العلامة التجارية</li>
+                                            <li>Cyber warfare</li>
+                                            <li>RED Team</li>
+                                            <li>SOAR</li>
+                                            <li>SecOPS</li>
+                                            <li>Threat Intelligence</li>
+                                        </ol>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        </div>
 
 
+        <div class="col-sm-6">
+            <div class="card">
+                <div class="card-body">
+                    <img src="PHOTOS/network.png" class="rounded mx-auto d-block" alt="...">
+                    <h3 class="card-title">KAIZEN365 بالتعاون مع </h3>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
 
-                <div class="col">
-                    <div class="card" style="width: 18rem;">
-                        <img src="PHOTOS/images.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Antivirus</h5>
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <ul >
+                                    <li class="title">Cloud Service</li>
+                                    <ol>
+                                        <li>Cloud Backup Solutions</li>
+                                        <li>Cloud Services Solutions</li>
+                                    </ol>
 
+                                </ul>
+                                <ul>
+                                    <li class="title">Professional Network Solution service</li>
+                                    <ol>
+                                        <li>Backup Solutions</li>
+                                        <li>Security Solutions</li>
+                                        <li>Infrastructure Solutions</li>
+                                        <li>Data Leak Solutions (DLP Solutinos)</li>
+                                    </ol>
+
+                                </ul>
+                                <ul>
+                                    <li class="title">Network Administration Service  </li>
+                                    <ol>
+                                        <li>Supervising the performance of the network in actual working conditions (Operation)</li>
+                                        <li>Take immediate actions to control the network when needed(Configuration)</li>
+                                        <li>Maximum network capacity utilization (Effectiveness)</li>
+                                        <li>Planning for future events (Development)</li>
+                                        <li>Risk Managment</li>
+                                    </ol>
+
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
-
-
-
-
-
-                <div class="col">
-                    <div class="card" style="width: 18rem;">
-                        <img src="PHOTOS/Control-safety-en-security-systems.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Intrusion Detection System</h5>
-                        </div>
-                    </div>
-                </div>
-
-
-                <h2 style="text-align: center ; margin-top: 20px ; margin-bottom: 20px">In Cooperation with KAIZEN365</h2>
-                <div class="col">
-                    <div class="card" style="width: 18rem;">
-                        <img src="PHOTOS/shutterstock-33654265.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Network Administration Service</h5>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">1. Supervising the performance of the network in actual working conditions (Operation)</li>
-                                <li class="list-group-item">2. Take immediate actions to control the network when needed(Configuration)</li>
-                                <li class="list-group-item">3. Maximum network capacity utilization (Effectiveness)</li>
-                                <li class="list-group-item">4. Planning for future events (Development)</li>
-                                <li class="list-group-item">5. Risk Managment</li>
-
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-
-
-                <div class="col">
-                    <div class="card" style="width: 18rem;">
-                        <img src="PHOTOS/unnamed (1).png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Professional Network Solution service</h5>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">1. Backup Solutions</li>
-                                <li class="list-group-item">2. Security Solutions</li>
-                                <li class="list-group-item">3. Infrastructure Solutions</li>
-                                <li class="list-group-item">4. Data Leak Solutions (DLP Solutinos)</li>
-
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-
-
-                <div class="col">
-                    <div class="card" style="width: 18rem;">
-                        <img src="PHOTOS/download.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Cloud Service</h5>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">1. Cloud Backup Solutions </li>
-                                <li class="list-group-item">2. Cloud Services Solutions</li>
-
-                            </ul>
-
-                        </div>
-                    </div>
-                </div>
-
-                <h2 style="text-align: center ; margin-top: 20px; margin-bottom: 20px">In Cooperation with Green Circle</h2>
-
-
-
-                <div class="col">
-                    <div class="card" style="width: 18rem;">
-                        <img src="PHOTOS/greenapple.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Green Apple</h5>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">1. Network Vulnerability Scan & PEN Test once Per Quarter</li>
-                                <li class="list-group-item">2. 24X7 Monitoring</li>
-                                <li class="list-group-item">3. Managed SIEM</li>
-                                <li class="list-group-item">4. IDS (Host Based for All Servers)</li>
-                                <li class="list-group-item">5. Hardening Security Devices</li>
-                                <li class="list-group-item">6. Review Policies and procedures</li>
-
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-
-
-                <div class="col">
-                    <div class="card" style="width: 18rem;">
-                        <img src="PHOTOS/download (1).png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Green Grape</h5>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">1. Network Vulnerability Scan & PEN Test once Per Quarter</li>
-                                <li class="list-group-item">2. 24X7 Monitoring</li>
-                                <li class="list-group-item">3. Managed Security Devices</li>
-                                <li class="list-group-item">4. Managed SIEM</li>
-                                <li class="list-group-item">5. IDS & FIM (Host Based for All Servers)</li>
-                                <li class="list-group-item">6. Hardening Security Devices</li>
-                                <li class="list-group-item">7. Review Policies and procedures</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-
-
-                <div class="col">
-                    <div class="card" style="width: 18rem;">
-                        <img src="PHOTOS/kiwi-1624156-1375298.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Green Kiwi</h5>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">1. Network Vulnerability Scan & PEN Test once Per Quarter</li>
-                                <li class="list-group-item">2. 24X7 Monitoring</li>
-                                <li class="list-group-item">3. Managed Security Devices</li>
-                                <li class="list-group-item">4. Managed SIEM</li>
-                                <li class="list-group-item">5. IDS & FIM (Host Based for All Servers)</li>
-                                <li class="list-group-item">6. Hardening Security Devices</li>
-                                <li class="list-group-item">7. Review Policies and procedures </li>
-                                <li class="list-group-item">8. AntiX </li>
-                                <li class="list-group-item">9. Threat Management</li>
-                                <li class="list-group-item">10. Social Media Tools</li>
-                                <li class="list-group-item">11. Brand/Name Protection</li>
-
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-
-
-                <div class="col">
-                    <div class="card" style="width: 18rem;">
-                        <img src="PHOTOS/Cyber_Security_14-256.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Cyber Testing</h5>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">1. Penetration Testing (Web , Network , Apps , and Code security review).</li>
-                                <li class="list-group-item">2. Vulnerability Management</li>
-                                <li class="list-group-item">3. RED Team</li>
-
-                            </ul>
-
-                        </div>
-                    </div>
-                </div>
-
-
-
-
-                <div class="col">
-                    <div class="card" style="width: 18rem;">
-                        <img src="PHOTOS/cybersecurity.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Cyber Consulting</h5>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">1. Risk Assessment</li>
-                                <li class="list-group-item">2. SOC Architecture</li>
-                                <li class="list-group-item">3. Threat Modeling</li>
-                                <li class="list-group-item">4. Security Maturity Model and Risk scoring</li>
-
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-
-
-
-                <div class="col">
-                    <div class="card" style="width: 18rem;">
-                        <img src="PHOTOS/ic_securityservices-1.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Cyber Compliance Services</h5>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">1. GRC Architecture</li>
-                                <li class="list-group-item">2. ISO 27001 – 27701</li>
-                                <li class="list-group-item">3. General Data Protection Regulations - GDPR</li>
-                                <li class="list-group-item">4. PCI-DSS, PCI-PA</li>
-                                <li class="list-group-item">5. NIST</li>
-
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col">
-                    <div class="card" style="width: 18rem;">
-                        <img src="PHOTOS/managed.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Managed Cyber Security Solutions </h5>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">1. Unified Threat Management - UTM</li>
-                                <li class="list-group-item">2. Web application firewall - WAF</li>
-                                <li class="list-group-item">3. Database Access Monitoring - DAM</li>
-                                <li class="list-group-item">4. Email Security</li>
-                                <li class="list-group-item">5. Data Encryption Solution</li>
-                                <li class="list-group-item">6. Identity Management - IDM</li>
-                                <li class="list-group-item">7. Privileges Access Management - PAM</li>
-                                <li class="list-group-item">8. EDR – EPP</li>
-                                <li class="list-group-item">9. APT</li>
-                                <li class="list-group-item">10. Dynamic Deception</li>
-                                <li class="list-group-item">11. Awareness Solution</li>
-
-
-
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-
-
-
-
-                <div class="col">
-                    <div class="card" style="width: 18rem;">
-                        <img src="PHOTOS/security-solutions.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Advanced Cyber Security Solutions</h5>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">1. Cyber Range</li>
-                                <li class="list-group-item">2. Brand Name Protection</li>
-                                <li class="list-group-item">3. Cyber warfare</li>
-                                <li class="list-group-item">4. RED Team</li>
-                                <li class="list-group-item">5. SOAR</li>
-                                <li class="list-group-item">6. SecOPS</li>
-                                <li class="list-group-item">7. Threat Intelligence</li>
-
-
-
-
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-
-
-
-
-
-
-
-
             </div>
         </div>
 
-
+        </div>
 
 
 
@@ -731,19 +656,35 @@ if($do=='dashborad'){
         ?>
         <div class="consultingimg">
             <div class="thecover"></div>
-            <h1>Consulting</h1>
+            <h1>الاستشارات</h1>
         </div>
-        <div class="theconsulting">
-            <div>
-                <p>1. Knowing the weaknesses in your systems is the first step to protecting them.</p>
-                <p>2. Our comprehensive assessment and analysis can reveal the gaps between the current state of your
-                    systems and the problem-free state of protection.</p>
-                <p>3. There is a clear roadmap and action plan for identifying the right people, processes and techniques to
-                    fill the gaps.</p>
+
+        <div class="container">
+            <div class="row">
+                <div class="card" style="width: 18rem;">
+                    <img src="PHOTOS/system.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Knowing the weaknesses in your systems is the first step to protecting them</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="PHOTOS/monitoring.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text"> Our comprehensive assessment and analysis can reveal the gaps between the current state of your
+                            systems and the problem-free state of protection.</p>
+                    </div>
+
+
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="PHOTOS/route.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">There is a clear roadmap and action plan for identifying the right people, processes and techniques to
+                            fill the gaps</p>
+                    </div>
+                </div>
             </div>
-
         </div>
-
 
 
 
@@ -761,150 +702,167 @@ if($do=='dashborad'){
     elseif($do=='trainingpage') {
         ?>
 
-        <div class="filter-buttons">
-            <button class="selected">All</button>
-            <button>Cisco</button>
-            <button>Software</button>
-            <button>EC-Council</button>
-            <button>Other</button>
-        </div>
+
+    <div class="filter-buttons">
+        <button class="selected">All</button>
+        <button>Cisco</button>
+        <button>Software</button>
+        <button>EC-Council</button>
+        <button>Other</button>
+    </div>
 
 
-        <?php
-        $id=isset($_GET['ciscoid'])&& is_numeric($_GET['ciscoid'])?intval($_GET['ciscoid']): 0;
-        echo "<div class='course-container'>";
-        $stmt1 = $con->prepare('SELECT * FROM `cisco_course`');
-        $stmt1->execute();
-        $row1 = $stmt1->fetchAll();
-        foreach ($row1 as $course) {
-            $photos = $course['photos'];
-            $id=$course['id'];
+    <?php
+    $id=isset($_GET['ciscoid'])&& is_numeric($_GET['ciscoid'])?intval($_GET['ciscoid']): 0;
+    echo "<div class='course-container'>";
+    $stmt = $con->prepare('SELECT * FROM `cisco_course`');
+    $stmt->execute();
+    $row = $stmt->fetchAll();
+    foreach ($row as $course) {
+        $photos = $course['photos'];
+        $id=$course['id'];
 
-            echo "<div>";
+        echo "<div data-type='cisco'>";
 
-            echo "<img src='HTML/upload/course/$photos' alt='image' />";
-            echo "<div><h6>".$course['Course_name']."</h6></div>";
-            echo "<a href='#request'>Enroll now</a>";
+        echo "<img src='HTML/upload/course/$photos' alt='image' />";
+        echo "<div><h6>".$course['Course_name']."</h6></div>";
+        echo "<a href='#request'>Enroll now</a>";
 
-            echo "</div>";
-        }
-
-
-
-
-
-
-        //software course
-
-
-        $stmt1 = $con->prepare('SELECT * FROM `software_course`');
-        $stmt1->execute();
-        $row1 = $stmt1->fetchAll();
-        foreach ($row1 as $course) {
-            $photos = $course['photos'];
-            $id=$course['id'];
-
-            echo "<div>";
-
-            echo "<img src='HTML/upload/course/$photos' alt='image'/>";
-            echo "<div><h6>".$course['Course_name']."</h6></div>";
-            echo "<a href='#request'>Enroll now</a>";
-            echo "</div>";
-        }
-
-
-
-
-//ec course
-        $id=isset($_GET['ecid'])&& is_numeric($_GET['ecid'])?intval($_GET['ecid']): 0;
-
-
-
-        $stmt1 = $con->prepare('SELECT * FROM `ec_course`');
-        $stmt1->execute();
-        $row1 = $stmt1->fetchAll();
-        foreach ($row1 as $course) {
-            $photos = $course['photos'];
-            $id=$course['id'];
-            echo "<div>";
-
-            echo "<img src='HTML/upload/course/$photos' alt='image'/>";
-            echo "<div><h6>".$course['Course_name']."</h6></div>";
-            echo "<a href='#request'>Enroll now</a>";
-
-            echo "</div>";
-        }
-
-
-
-
-
-
-        //other course
-
-
-        $id=isset($_GET['otherid'])&& is_numeric($_GET['otherid'])?intval($_GET['otherid']): 0;
-
-
-
-        $stmt1 = $con->prepare('SELECT * FROM `others`');
-        $stmt1->execute();
-        $row1 = $stmt1->fetchAll();
-        foreach ($row1 as $course) {
-            $photos = $course['photos'];
-            $id=$course['id'];
-            echo "<div>";
-
-            echo "<img src='HTML/upload/course/$photos' alt='image'/>";
-            echo "<div><h6>".$course['Course_name']."</h6></div>";
-            echo "<a href='#request'>Enroll now</a>";
-
-            echo "</div>";
-        }
         echo "</div>";
-        ?>
+    }
 
-        <div class="bookcourses" id="request">
-            <div class="bookcover"></div>
-            <div class="thecontainer">
-                <div>
-                    <h1>Courses Request</h1>
-                    <p>Our cyber security training can help you and your team build fundamental to advanced cyber security techniques, Learn how to protect and defend against cyber threats with cyber security training courses for all levels of your organization.</p>
-                    <p>From our interesting courses You and your team will learn to approach cyber security offensively and defensively through real-world examples and exercises, hands-on labs and expert instruction. You will gain knowledge to secure your critical systems and assets.</p>
-                </div>
-                <form method="POST" action="courserequest.php">
-                    <div>
-                        <input type="text" placeholder="Full Name" name="fullname" id="form-name">
-                        <input type="text" placeholder="E-mail" name="email" id="form-email">
-                    </div>
-                    <div>
-                        <select name="courses" id="form-courses">
-                            <option>hello</option>
-                            <?php
-                            foreach ($row1 as $course) {
-                                $courserequest=$course['Course_name'];
-                                echo "<option value='$courserequest'>".$course['Course_name']."</option>";
-                            }
-                            ?>
-                        </select>
-                        <input type="number" placeholder="Phone Number" name="number" id="form-number" >
 
-                    </div>
-                    <textarea placeholder="Message" name="message" id="form-message"></textarea>
-                    <input type="submit" name="save" value="Send" id="form-submit">
-                    <p class="form-result"></p>
 
-                </form>
+
+
+
+    //software course
+
+
+    $stmt1 = $con->prepare('SELECT * FROM `software_course`');
+    $stmt1->execute();
+    $row1 = $stmt1->fetchAll();
+    foreach ($row1 as $course) {
+        $photos = $course['photos'];
+        $id=$course['id'];
+
+        echo "<div data-type='software'>";
+
+        echo "<img src='HTML/upload/course/$photos' alt='image'/>";
+        echo "<div><h6>".$course['Course_name']."</h6></div>";
+        echo "<a href='#request'>Enroll now</a>";
+        echo "</div>";
+    }
+
+
+
+
+    //ec course
+    $id=isset($_GET['ecid'])&& is_numeric($_GET['ecid'])?intval($_GET['ecid']): 0;
+
+
+
+    $stmt2 = $con->prepare('SELECT * FROM `ec_course`');
+    $stmt2->execute();
+    $row2 = $stmt2->fetchAll();
+    foreach ($row2 as $course) {
+        $photos = $course['photos'];
+        $id=$course['id'];
+        echo "<div data-type='ec'>";
+
+        echo "<img src='HTML/upload/course/$photos' alt='image'/>";
+        echo "<div><h6>".$course['Course_name']."</h6></div>";
+        echo "<a href='#request'>Enroll now</a>";
+
+        echo "</div>";
+    }
+
+
+
+
+
+
+    //other course
+
+
+    $id=isset($_GET['otherid'])&& is_numeric($_GET['otherid'])?intval($_GET['otherid']): 0;
+
+
+
+    $stmt3 = $con->prepare('SELECT * FROM `others`');
+    $stmt3->execute();
+    $row3 = $stmt3->fetchAll();
+    foreach ($row3 as $course) {
+        $photos = $course['photos'];
+        $id=$course['id'];
+        echo "<div data-type='other'>";
+
+        echo "<img src='HTML/upload/course/$photos' alt='image'/>";
+        echo "<div><h6>".$course['Course_name']."</h6></div>";
+        echo "<a href='#request'>Enroll now</a>";
+
+        echo "</div>";
+    }
+    echo "</div>";
+    ?>
+
+    <div class="bookcourses" id="request">
+        <div class="bookcover"></div>
+        <div class="thecontainer">
+            <div>
+                <h1>Courses Request</h1>
+                <p>Our cyber security training can help you and your team build fundamental to advanced cyber security techniques, Learn how to protect and defend against cyber threats with cyber security training courses for all levels of your organization.</p>
+                <p>From our interesting courses You and your team will learn to approach cyber security offensively and defensively through real-world examples and exercises, hands-on labs and expert instruction. You will gain knowledge to secure your critical systems and assets.</p>
             </div>
+            <form method="POST" action="courserequest.php">
+                <div>
+                    <input type="text" placeholder="Full Name" name="fullname" id="form-name" required>
+                    <input type="text" placeholder="E-mail" name="email" id="form-email" required>
+                </div>
+                <div>
+                    <select name="courses" id="form-courses" disabled>
+                        <?php
+                        foreach ($row as $course) {
+                            $courserequest=$course['Course_name'];
+                            echo "<option value='$courserequest'>".$course['Course_name']."</option>";
+                        }
+
+                        foreach ($row1 as $course1){
+                            echo "<option value='$courserequest'>".$course1['Course_name']."</option>";
+
+                        }
+                        foreach ($row2 as $course2){
+                            echo "<option value='$courserequest'>".$course2['Course_name']."</option>";
+
+                        }
+                        foreach ($row3 as $course3){
+                            echo "<option value='$courserequest'>".$course3['Course_name']."</option>";
+
+                        }
+
+                        ?>
 
 
+                    </select>
+                    <input type="number" placeholder="Phone Number" name="number" id="form-number" >
 
+                </div>
+                <textarea placeholder="Message" name="message" id="form-message"></textarea>
+                <input type="submit" name="save" value="Send" id="form-submit">
+                <p class="form-result"></p>
 
+            </form>
         </div>
 
-        <?php
 
-    }
+
+
+    </div>
+
+    <?php
+
+}
+
 
 
 
@@ -994,10 +952,10 @@ if($do=='dashborad'){
         <div class="content">
             <h3>تواصل معنا</h3>
 
-            <p><a href="https://maps.app.goo.gl/PRXcpVLVFkGmUBTCA" target="_blank"rel="noreferrer">Jordan,Irbid</a></p>
+            <p><a href="https://maps.app.goo.gl/PRXcpVLVFkGmUBTCA" target="_blank"rel="noreferrer">Ransom For Cyber Security - Irbid - Omar ALmokhtar</a></p>
 
-            <p><a href="tel:0096227277760">0096227277760</a></p>
-            <p><a href="https://wa.link/7y545l" target="_balnk">00962776277760</a></p>
+            <p><a href="tel:0096227277760">00962 - 2 - 7277760</a></p>
+            <p><a href="https://wa.link/7y545l" target="_balnk">00962 - 77 - 6277760</a></p>
             <p><a href="mailto:info@joransom.com">info@joransom.com</a></p>
         </div>
 

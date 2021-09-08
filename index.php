@@ -160,7 +160,7 @@ if($do=='dashborad'){
             <div class="intro-text">
                 <h4>We Are Ransom</h4>
                 <h1><span>CyberSecurity</span><br> Service</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam odit enim natus porro suscipit facere.</p>
+<!--                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam odit enim natus porro suscipit facere.</p>-->
             </div>
             <div class="section-img">
                 <img src="PHOTOS/intro-image.png">
@@ -325,7 +325,8 @@ if($do=='dashborad'){
                     <img src="PHOTOS/thr.jpg" alt="Course">
                 </div>
                 <div class="event-text">
-                    <p> khalid</p>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam blanditiis dignissimos, ea facilis fuga fugit nam neque nihil nulla odio officia quod, sed tempore? Aspernatur consectetur cumque sit tempore voluptates?
+                    </p>
                 </div>
             </div>
 
@@ -686,10 +687,10 @@ elseif($do=='trainingpage') {
 <?php
     $id=isset($_GET['ciscoid'])&& is_numeric($_GET['ciscoid'])?intval($_GET['ciscoid']): 0;
     echo "<div class='course-container'>";
-    $stmt1 = $con->prepare('SELECT * FROM `cisco_course`');
-    $stmt1->execute();
-    $row1 = $stmt1->fetchAll();
-    foreach ($row1 as $course) {
+    $stmt = $con->prepare('SELECT * FROM `cisco_course`');
+    $stmt->execute();
+    $row = $stmt->fetchAll();
+    foreach ($row as $course) {
         $photos = $course['photos'];
         $id=$course['id'];
 
@@ -733,10 +734,10 @@ elseif($do=='trainingpage') {
 
 
 
-    $stmt1 = $con->prepare('SELECT * FROM `ec_course`');
-    $stmt1->execute();
-    $row1 = $stmt1->fetchAll();
-    foreach ($row1 as $course) {
+    $stmt2 = $con->prepare('SELECT * FROM `ec_course`');
+    $stmt2->execute();
+    $row2 = $stmt2->fetchAll();
+    foreach ($row2 as $course) {
         $photos = $course['photos'];
         $id=$course['id'];
         echo "<div data-type='ec'>";
@@ -760,10 +761,10 @@ elseif($do=='trainingpage') {
 
 
 
-    $stmt1 = $con->prepare('SELECT * FROM `others`');
-    $stmt1->execute();
-    $row1 = $stmt1->fetchAll();
-    foreach ($row1 as $course) {
+    $stmt3 = $con->prepare('SELECT * FROM `others`');
+    $stmt3->execute();
+    $row3 = $stmt3->fetchAll();
+    foreach ($row3 as $course) {
         $photos = $course['photos'];
         $id=$course['id'];
         echo "<div data-type='other'>";
@@ -787,17 +788,33 @@ elseif($do=='trainingpage') {
             </div>
             <form method="POST" action="courserequest.php">
                 <div>
-                    <input type="text" placeholder="Full Name" name="fullname" id="form-name">
-                    <input type="text" placeholder="E-mail" name="email" id="form-email">
+                    <input type="text" placeholder="Full Name" name="fullname" id="form-name" required>
+                    <input type="text" placeholder="E-mail" name="email" id="form-email" required>
                 </div>
                 <div>
-                    <select name="courses" id="form-courses">
+                    <select name="courses" id="form-courses" disabled>
                         <?php
-                        foreach ($row1 as $course) {
+                        foreach ($row as $course) {
                             $courserequest=$course['Course_name'];
                             echo "<option value='$courserequest'>".$course['Course_name']."</option>";
                         }
+
+                        foreach ($row1 as $course1){
+                            echo "<option value='$courserequest'>".$course1['Course_name']."</option>";
+
+                        }
+                        foreach ($row2 as $course2){
+                            echo "<option value='$courserequest'>".$course2['Course_name']."</option>";
+
+                        }
+                        foreach ($row3 as $course3){
+                            echo "<option value='$courserequest'>".$course3['Course_name']."</option>";
+
+                        }
+
                         ?>
+
+
                     </select>
                     <input type="number" placeholder="Phone Number" name="number" id="form-number" >
 
@@ -880,10 +897,10 @@ ob_end_flush();
     <div class="content">
         <h3>Contact Us</h3>
 
-        <p><a href="https://maps.app.goo.gl/PRXcpVLVFkGmUBTCA" target="_blank"rel="noreferrer">Ransom Company For Cyber Security - Irbid - Omar ALmokhtar</a></p>
+        <p><a href="https://maps.app.goo.gl/PRXcpVLVFkGmUBTCA" target="_blank"rel="noreferrer">Ransom For Cyber Security - Irbid - Omar ALmokhtar</a></p>
 
-       <p><a href="tel:0096227277760">00962 - 77 - 6277760</a></p>
-        <p><a href="https://wa.link/7y545l" target="_balnk">00962 - 2 - 7277760</a></p>
+       <p><a href="tel:0096227277760">00962 - 2 - 7277760</a></p>
+        <p><a href="https://wa.link/7y545l" target="_balnk">00962 - 77 - 6277760</a></p>
         <p><a href="mailto:info@joransom.com">info@joransom.com</a></p>
     </div>
 
