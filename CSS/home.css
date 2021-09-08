@@ -116,7 +116,7 @@ nav{
     border: 0 !important;
 }
 .collapse{
-    margin-left: 15% !important;
+    margin-left: 0% !important;
 }
 
 
@@ -135,7 +135,7 @@ nav{
 }
 @media (max-width:1176px){
     .collapse{
-        margin-left: 30px !important;
+        margin-left: -17px !important;
     }
 }
 

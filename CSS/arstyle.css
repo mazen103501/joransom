@@ -1,8 +1,6 @@
-*{
-    direction: rtl !important;
-}
+
 body{
-    direction: rtl;
+    direction: rtl !important;
 }
 .logo{
     margin-right: 100px;
@@ -34,7 +32,7 @@ footer div:nth-of-type(2) p::before{
 footer div:nth-of-type(3) p::before{
     margin: 0 0 0 5px !important;
 }
-.bookcourses{
+.course-container{
     direction: ltr;
 }
 
@@ -47,5 +45,11 @@ footer div:nth-of-type(3) p::before{
 .owl-carousel{
         direction: ltr;
 }
+.evet-cont{
+    direction: rtl;
 
+}
+.ar{
+    direction: ltr !important;
+}
 

@@ -43,6 +43,8 @@ if(isset($do) && $do!='ar'){
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integriy="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="bootstrap-5.0.1-dist/css/bootstrap.css">
     <link rel="stylesheet" href="CSS/home.css">
+    <link rel="stylesheet" href="CSS/arstyle.css">
+
     <link rel="stylesheet" href="CSS/owl.theme.default.css">
     <link rel="stylesheet" href="CSS/owl.carousel.min.css">
 
@@ -101,45 +103,45 @@ if(isset($do) && $do!='ar'){
                 <li class="nav-item">
                     <a class="nav-link" href="index.php">EN</a>
                 </li>
-                <?php
-                if(!isset($_SESSION['admin'] ) && !isset($_SESSION['username'])){
-                    ?>
-                    <li class="nav-item login">
-                        <a class="nav-link" href="login.php">تسجيل الدخول</a>
-                    </li>
-                    <?php
-                }
-                ?>
-
-                <?php
-                if(isset($_SESSION['admin'])){
-                    ?>
-                    <li class="nav-item login">
-                        <a class="nav-link" href="adminpage.php">adminpage</a>
-                    </li>
-                    <?php
-                }
-                ?>
-                <?php
-                if(isset($_SESSION['username'])){
-                    ?>
-                    <li class="nav-item login">
-                        <a class="nav-link" href="#"> <?php echo $_SESSION['username'] ?> </a>
-                    </li>
-                    <?php
-                }
-                ?>
-                <?php
-                if(isset($_SESSION['admin']) || isset($_SESSION['username'])){
-
-
-                    ?>
-                    <li class="nav-item">
-                        <a class="nav-link" href="logout.php">تسجيل الخروج</a>
-                    </li>
-                    <?php
-                }
-                ?>
+<!--                --><?php
+//                if(!isset($_SESSION['admin'] ) && !isset($_SESSION['username'])){
+//                    ?>
+<!--                    <li class="nav-item login">-->
+<!--                        <a class="nav-link" href="login.php">تسجيل الدخول</a>-->
+<!--                    </li>-->
+<!--                    --><?php
+//                }
+//                ?>
+<!---->
+<!--                --><?php
+//                if(isset($_SESSION['admin'])){
+//                    ?>
+<!--                    <li class="nav-item login">-->
+<!--                        <a class="nav-link" href="adminpage.php">adminpage</a>-->
+<!--                    </li>-->
+<!--                    --><?php
+//                }
+//                ?>
+<!--                --><?php
+//                if(isset($_SESSION['username'])){
+//                    ?>
+<!--                    <li class="nav-item login">-->
+<!--                        <a class="nav-link" href="#"> --><?php //echo $_SESSION['username'] ?><!-- </a>-->
+<!--                    </li>-->
+<!--                    --><?php
+//                }
+//                ?>
+<!--                --><?php
+//                if(isset($_SESSION['admin']) || isset($_SESSION['username'])){
+//
+//
+//                    ?>
+<!--                    <li class="nav-item">-->
+<!--                        <a class="nav-link" href="logout.php">تسجيل الخروج</a>-->
+<!--                    </li>-->
+<!--                    --><?php
+//                }
+//                ?>
 
 
             </ul>
@@ -158,9 +160,8 @@ if($do=='dashborad'){
     <div class="spot-background"></div>
     <div class="intro-containter">
         <div class="intro-text">
-            <h4>We Are Ransom</h4>
-            <h1><span>CyberSecurity</span><br> Service</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam odit enim natus porro suscipit facere.</p>
+            <h4>نحن شركة الفدية</h4>
+            <h1><span>خدمات</span><br>الامن السيبراني</h1>
         </div>
         <div class="section-img">
             <img src="PHOTOS/intro-image.png">
@@ -195,33 +196,40 @@ if($do=='dashborad'){
             </p>
             <p>
 
-
+                ✓
                 تدريب وتأهيل وبناء قدرات الشباب في المعارف الرئيسية المتعلقة بالشبكات وامن المعلومات باعتماد المناهج التي تطرحها الشركات العالمية المتخصصة في الشبكات وأمن المعلومات.
 
-                ✓
+
                 <br>
+                ✓
                 توفير مركز اختبارات متخصص للحصول على الشهادات العالمية المعتمدة
 
-                ✓
+
                 <br>
+                ✓
                 توفير بيئة برمجية قادرة على بناء حلول برمجية لمشكلات الاختراق والتهديدات السيبرانية.
 
-                ✓
+
                 <br>
+                ✓
                 المساهمة والمشاركة بتقديم الخبرات والاستشارات للمؤسسات الحكومية والخاصة بتقنيات الامن السيبراني
 
-                ✓
+
                 <br>
+                ✓
                 بناء شبكة من التحالفات الإستراتيجية لتشكيل قاعدة معرفية متطورة ومحدثة ومتطورة ، والتي من شأنها أن تمكننا من مشاركة أعلى مستوى من الخبرات الجماعية الدولية مع عملائنا
 
-                ✓
+
                 <br>
+                ✓
                 دعم وتعزيز المجتمع المحلي من خلال المساهمة الفعالة في الأنشطة والفعاليات المحلية
             </p>
             <p >
-                الرسالة : أن نكون الخيار الأول في تدريب وبناء قدرات الشباب وتقديم الاستشارات والحلول البرمجية الامنة للمؤسسات والشركات-
+                -
+                الرسالة : أن نكون الخيار الأول في تدريب وبناء قدرات الشباب وتقديم الاستشارات والحلول البرمجية الامنة للمؤسسات والشركات
                 <br>
-                 الرؤيا : حماية الفضاء الالكتروني-
+                -
+                 الرؤيا : حماية الفضاء الالكتروني
 
 
                 <br>
@@ -297,25 +305,25 @@ if($do=='dashborad'){
                     <div class="box">
                         <p class="backend-num"></p>
                         <img src="PHOTOS/team.svg" alt="team">
-                        <p class="number"><span>15</span>+</p>
+                        <p class="number"><span>10</span>+</p>
                         <p class="text-box">اعضاء الفريق</p>
                     </div>
                     <div class="box">
                         <p class="backend-num"></p>
                         <img src="PHOTOS/deal.svg" alt="Partner">
-                        <p class="number"><span>6</span>+</p>
+                        <p class="number"><span>6</span></p>
                         <p class="text-box">الشركاء</p>
                     </div>
                     <div class="box">
                         <p class="backend-num"></p>
                         <img src="PHOTOS/book.svg" alt="Course">
-                        <p class="number"><span>49</span>+</p>
-                        <p class="text-box">الكورسات</p>
+                        <p class="number"><span>50</span>+</p>
+                        <p class="text-box">الدورات</p>
                     </div>
                     <div class="box">
                         <p class="backend-num"></p>
                         <img src="PHOTOS/reading.svg" alt="Student">
-                        <p class="number"><span>254</span>+</p>
+                        <p class="number"><span></span></p>
                         <p class="text-box">الطلاب</p>
                     </div>
                 </div>
@@ -429,7 +437,7 @@ if($do=='dashborad'){
         ?>
         <div class="solutionimg">
             <div class="thecover"></div>
-            <h1>Solutions & Services</h1>
+            <h1>خدماتنا و حلولنا</h1>
         </div>
 
 
@@ -453,11 +461,11 @@ if($do=='dashborad'){
                             <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
                                 <div class="accordion-body">
                                     <ul class="title">
-                                        <li>Penetration Testing</li>
-                                        <li>Antivirus</li>
-                                        <li>Intrusion Detection System</li>
-                                        <li>Software Solutions </li>
-                                        <li>Logo Design</li>
+                                        <li>اختبار الاختراق</li>
+                                        <li>مضاد الفيروسات</li>
+                                        <li>نظام كشف التسلل</li>
+                                        <li>حلول البرمجيات</li>
+                                        <li>تصميم شعار</li>
                                     </ul>
                                 </div>
                             </div>
@@ -472,7 +480,7 @@ if($do=='dashborad'){
                     <div class="card-body">
                         <img src="PHOTOS/cyber-security.png" class="rounded mx-auto d-block" alt="...">
 
-                        <h3 class="card-title">Green Circle بالتعاون مع </h3>
+                        <h3 class="card-title">بالتعاون مع Green Circle </h3>
 
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="flush-headingThree">
@@ -596,7 +604,7 @@ if($do=='dashborad'){
             <div class="card">
                 <div class="card-body">
                     <img src="PHOTOS/network.png" class="rounded mx-auto d-block" alt="...">
-                    <h3 class="card-title">KAIZEN365 بالتعاون مع </h3>
+                    <h3 class="card-title">بالتعاون مع KAIZEN365  </h3>
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="flush-headingTwo">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
@@ -604,7 +612,7 @@ if($do=='dashborad'){
                             </button>
                         </h2>
                         <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">
+                            <div class="accordion-body ar">
                                 <ul >
                                     <li class="title">Cloud Service</li>
                                     <ol>
@@ -952,7 +960,7 @@ if($do=='dashborad'){
         <div class="content">
             <h3>تواصل معنا</h3>
 
-            <p><a href="https://maps.app.goo.gl/PRXcpVLVFkGmUBTCA" target="_blank"rel="noreferrer">Ransom For Cyber Security - Irbid - Omar ALmokhtar</a></p>
+            <p><a href="https://maps.app.goo.gl/PRXcpVLVFkGmUBTCA" target="_blank"rel="noreferrer">شركة الفدية-اربد-شارع عمر المختار</a></p>
 
             <p><a href="tel:0096227277760">00962 - 2 - 7277760</a></p>
             <p><a href="https://wa.link/7y545l" target="_balnk">00962 - 77 - 6277760</a></p>
@@ -963,9 +971,9 @@ if($do=='dashborad'){
             <h3>صفحات التواصل الاجتماعي</h3>
             <div>
                 <a href="https://www.facebook.com/Ransom-Company-For-Cyber-Security-743467149734362" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <!--            <a href="#"><i class="fab fa-twitter"></i></a>-->
+                <a href="https://www.instagram.com/ransom_company/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/company/ransom-jo?_l=en_US" target="_blank"><i class="fab fa-linkedin-in"></i></a>
             </div>
 
 
