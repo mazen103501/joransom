@@ -61,7 +61,7 @@ if(isset($do) && $do!='ar'){
 <!-- Nav Bar -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light ">
     <!-- Logo -->
-    <div class="logo">
+    <div class="logo logoar">
         <img src="PHOTOS/whitelogo.svg" alt="logo">
     </div>
     <!-- List -->
