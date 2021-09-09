@@ -23,20 +23,19 @@ if(!theLink.includes("pages=")){
         introImage.classList.add("showimage");
     }
     let introImage = document.querySelector(".intro-section .intro-containter .section-img");
-    console.log("heeeelo")
-    window.addEventListener("scroll" , showIntroImage);
-    if(window.innerWidth > 1107){
-        setTimeout(() => {
-            introImage.classList.add("showimage");
-        }, 500);
+    window.addEventListener("load" , showIntroImage);
+    // if(window.innerWidth > 1107){
+    //     setTimeout(() => {
+    //         introImage.classList.add("showimage");
+    //     }, 500);
         
-    }else{
-        window.addEventListener("scroll" , function(){
-            if(window.innerWidth < 1107 && document.documentElement.scrollTop > (homeCourses[0].parentElement.offsetTop -50) ){
-                showIntroImage()
-            }
-        })
-    }
+    // }else{
+    //     window.addEventListener("scroll" , function(){
+    //         if(window.innerWidth < 1107 && document.documentElement.scrollTop > (homeCourses[0].parentElement.offsetTop -50) ){
+    //             showIntroImage()
+    //         }
+    //     })
+    // }
 }
 
 
