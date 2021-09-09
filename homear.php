@@ -55,6 +55,9 @@ if(isset($do) && $do!='ar'){
     <!--    <link href="https://fonts.googleapis.com/css2?family=Castoro&display=swap" rel="stylesheet">-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300&display=swap" rel="stylesheet">
 
 </head>
 <body>
@@ -160,8 +163,8 @@ if($do=='dashborad'){
     <div class="spot-background"></div>
     <div class="intro-containter">
         <div class="intro-text">
-            <h4>نحن شركة الفدية</h4>
-            <h1><span>خدمات</span><br>الامن السيبراني</h1>
+            <h4> </h4>
+            <h1><span>شركة الفدية </span>لخدمات <br><span>الامن السيبراني</span></h1>
         </div>
         <div class="section-img">
             <img src="PHOTOS/intro-image.png">
@@ -269,7 +272,9 @@ if($do=='dashborad'){
         </div>
         <div class="face face2">
             <div class="content">
-                <p>Penetration Testing, Antivirus, AND Intrusion Detection System</p>
+                <p>هناك خارطة طريق وخطة عمل واضحة لتحديد الاشخاص المناسبين والعمليات والاساليب لسد الفجوات الامنية.
+
+                </p>
 
             </div>
         </div>
@@ -300,7 +305,7 @@ if($do=='dashborad'){
     <div class="thecont">
         <div class="space">
             <div class="headerandboxes">
-                <div class="heading"><h1>Some <span>Numbers</span></h1></div>
+                <div class="heading"><h1><span>بعض الارقام</span></h1></div>
                 <div class="boxescont">
                     <div class="box">
                         <p class="backend-num"></p>
@@ -344,10 +349,11 @@ if($do=='dashborad'){
     <div class="owl-carousel owl-3 owl-theme">
         <div class="evet-cont">
             <div class="event-image">
-                <img src="PHOTOS/thr.jpg" alt="Course">
+                <img src="PHOTOS/handshake.jpg " class="event-img" alt="Course">
             </div>
             <div class="event-text">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique iure deleniti doloremque laborum et velit numquam inventore. Fuga, dolore laudantium asperiores, placeat eum natus minima voluptate consequuntur voluptatum voluptates libero? Est earum velit consectetur mollitia, harum optio dignissimos tempora eveniet reiciendis nam numquam, voluptate accusamus cum natus illum iste nulla.</p>
+                <p>تم توقيع إتفاقية تعاون بين شركة الفدية للأمن السيبراني و شركة الدائرة الخضراء الصناعة البرمجيات
+                </p>
             </div>
         </div>
 
@@ -356,10 +362,21 @@ if($do=='dashborad'){
 
         <div class="evet-cont">
             <div class="event-image">
-                <img src="PHOTOS/thr.jpg" alt="Course">
+                <img src="PHOTOS/handshake.jpg " class="event-img" alt="Course">
             </div>
             <div class="event-text">
-                <p> khalid</p>
+                <p>تم توقيع إتفاقية تعاون بين شركة الفدية للأمن السيبراني و
+                    شركة التقدمية الرقمية لشبكات الحاسوب
+                </p>
+            </div>
+        </div>
+        <div class="evet-cont">
+            <div class="event-image">
+                <img src="PHOTOS/handshake.jpg " class="event-img" alt="Course">
+            </div>
+            <div class="event-text">
+                <p>تم إختيار شركة الفدية للأمن السيبراني كشريك وممثل لشركة TG8 الأمريكية الحلول الأمن السيبراني
+                </p>
             </div>
         </div>
 
@@ -1038,9 +1055,7 @@ if($do=='dashborad'){
 
 
         $('.owl-3').owlCarousel({
-
             margin: 10,
-            autoplay: 1000,
             autoplayHoverPause: true,
             slideTransition: 'linear',
             navigation:true,

@@ -158,8 +158,8 @@ if($do=='dashborad'){
     <div class="spot-background"></div>
     <div class="intro-containter">
             <div class="intro-text">
-                <h4>We Are Ransom</h4>
-                <h1><span>CyberSecurity</span><br> Service</h1>
+
+                <h1><span>Ransom For CyberSecurity</span><br> Service</h1>
 <!--                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam odit enim natus porro suscipit facere.</p>-->
             </div>
             <div class="section-img">
@@ -324,10 +324,13 @@ if($do=='dashborad'){
         <div class="owl-carousel owl-3 owl-theme">
     <div class="evet-cont">
         <div class="event-image">
-            <img src="PHOTOS/thr.jpg" alt="Course">
+            <img src="PHOTOS/handshake.jpg" class="event-img" alt="Course">
         </div>
         <div class="event-text">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique iure deleniti doloremque laborum et velit numquam inventore. Fuga, dolore laudantium asperiores, placeat eum natus minima voluptate consequuntur voluptatum voluptates libero? Est earum velit consectetur mollitia, harum optio dignissimos tempora eveniet reiciendis nam numquam, voluptate accusamus cum natus illum iste nulla.</p>
+            <p>A cooperation agreement was signed
+                between the Ransom Company for Cyber
+                securityand the Green Circle Company for
+                software Industry</p>
         </div>
     </div>
 
@@ -336,10 +339,27 @@ if($do=='dashborad'){
 
             <div class="evet-cont">
                 <div class="event-image">
-                    <img src="PHOTOS/thr.jpg" alt="Course">
+                    <img src="PHOTOS/handshake.jpg" class="event-img" alt="Course">
                 </div>
                 <div class="event-text">
-                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam blanditiis dignissimos, ea facilis fuga fugit nam neque nihil nulla odio officia quod, sed tempore? Aspernatur consectetur cumque sit tempore voluptates?
+                    <p>
+                        A cooperation agreement was signed between the
+                        Ransom Company for Cyber security
+                        and the KAIZEN365Technology Company
+                    </p>
+                </div>
+            </div>
+
+            <div class="evet-cont">
+                <div class="event-image">
+                    <img src="PHOTOS/handshake.jpg" class="event-img" alt="Course">
+                </div>
+                <div class="event-text">
+                    <p>
+                        The Ransom company for cyber security has
+                        been chosen as a partner and representative of
+                        the American company TG8for cyber
+                        security solutions
                     </p>
                 </div>
             </div>

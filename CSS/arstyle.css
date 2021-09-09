@@ -1,6 +1,7 @@
 
 body{
     direction: rtl !important;
+    font-family: 'Tajawal', sans-serif;
 }
 .logo{
     margin-right: 100px;
