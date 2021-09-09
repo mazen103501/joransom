@@ -1,6 +1,20 @@
 let theLink = location.href;
 
 
+
+// loading
+window.addEventListener("load", function(){
+    let loadinganimation = document.querySelector(".loader-wrap");
+    console.log("asdasdasd")
+    loadinganimation.classList.add("hideloading")
+})
+
+
+
+
+
+
+
 // intro image
 
 

@@ -56,6 +56,31 @@ if(isset($do) && $do!='ar'){
 
 </head>
 <body>
+
+<!-- loading -->
+<div class="loader-wrap">
+    <div class="loader">   
+        <div class="circle-1 circle">
+            <div class="circle-2 circle">
+                <div class="circle-3 circle">
+                    <div class="circle-4 circle">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="loading-text">Loading ...</p>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
 <!-- Nav Bar -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light ">
     <!-- Logo -->
