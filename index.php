@@ -249,7 +249,7 @@ if($do=='dashborad'){
             </div>
             <div class="face face2">
                 <div class="content">
-                    <p>Penetration Testing, Antivirus, AND Intrusion Detection System</p>
+                    <p>Knowing the weaknesses in your systems is the first step to protecting them</p>
 
                 </div>
             </div>
@@ -869,22 +869,33 @@ elseif($do=="about"){
             </div>
         </div>
         <div class="text-box">
-            <p class="show-text">- Ransom Company for Cyber security is a local company specialized in cyber security, headquartered in northern Jordan in Irbid Governorate The Hashemite Kingdom of Jordan
-
-                Founded in 2021, the company is today startup companies in the field of cyber security that provide a comprehensive range of learning methods and training in specialized curricula in cyber security (information security, networks, applications, databases and social engineering) in addition to providing solutions and software that contribute to solving problems Cyber intrusions and threats and regulates consulting and IT security services
-
-                We help organizations plan, build, and operate successful information security programs, solve security problems, and implement specific IT security projects
-
-                Each member of our team has a unique set of skills and experience in the fields of training, software solutions and consulting, as well as business development and information and communication technology. Our team also has a wide and deep understanding of the Middle East and the world and its urgent need for training based on the curricula provided by international companies and to be a specialized center for exams and also to attract programmers who are able to find software solutions related to cyber security
-
-    </p>
+            <p class="show-text">Ransom Company for Cyber security is a local company, founded in 2021 in nothern Jordan, Irbid government under the name Ransom Company for Cyber Security. The Company is specialized in Cyber security that provides a comprehensive range of learning methods and training in specialized curricula in cyber security (information security, networks, applications, databases and social engineering). Not only do we provide solutions and software that contribute to solving problems,  Cyber intrusions and threats, but also we regulate consulting and IT security services, help, plan, build, solve security problems, implement specific IT security projects and operate a successful information  security programs.</p>
             <p>
 
-    - Training, qualifying and building the capacities of young people in basic knowledge related to networks and information security by adopting the curricula offered by international companies specialized in networks and information security
+                ✓
+                Training, qualifying and building the capacities of young people in basic knowledge related to networks and information security by adopting the curricula offered by international companies specialized in networks and information security.
+                <br>
+                ✓
+                Providing a specialized testing center to obtain accredited international certificates.
+                <br>
+                ✓
+                Providing a programming environment capable of building software solutions to hacking problems and cyber threats.
+                <br>
+                ✓
+                Contributing and participating in providing expertise and advice to governmental and private institutions in cyber security technologies.
+                <br>
+                ✓
+                Building a network of strategic alliances to form an advanced, updated and sophisticated knowledge base, which would enable us to share the highest level of international collective experiences with our clients.
+                <br>
+                ✓
+                Supporting and strengthening the local community through effective participation in local activities and events.
+                <br>
 
-    </p>
+            </p>
             <p >
-    - To be the first choice in training, build the capabilities of young people, provide consulting, and develop software solutions to institutions/companies, and Secure Cyberspace.
+                Our Mission : To be the first choice in training, build the capabilities of young people, provide consulting, and develop software solutions to institutions and companies.
+                <br>
+                Our Vision : Secure Cyberspace.
             </p>
         </div>
     </div>

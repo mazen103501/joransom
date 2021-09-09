@@ -255,7 +255,7 @@ if($do=='dashborad'){
         </div>
         <div class="face face2">
             <div class="content">
-                <p>CISCO Academy , Ec_Council Masterclass, Cyber Security Training Courses.</p>
+                <p>أكاديمية سيسكو ، Ec_Council Masterclass ، دورات تدريبية في الأمن السيبراني.</p>
 
             </div>
         </div>
@@ -286,7 +286,7 @@ if($do=='dashborad'){
         </div>
         <div class="face face2">
             <div class="content">
-                <p>Penetration Testing, Antivirus, AND Intrusion Detection System</p>
+                <p>نظام اختبار الاختراق ومكافحة الفيروسات وكشف التسلل</p>
 
             </div>
         </div>
@@ -670,25 +670,23 @@ if($do=='dashborad'){
         <div class="container">
             <div class="row">
                 <div class="card" style="width: 18rem;">
-                    <img src="PHOTOS/system.png" class="card-img-top" alt="...">
+                    <img src="PHOTOS/system.png" class="card-img-top rounded mx-auto d-block"" alt="...">
                     <div class="card-body">
-                        <p class="card-text">Knowing the weaknesses in your systems is the first step to protecting them</p>
+                        <p class="card-text">معرفة نقاط الضعف في انظمتك هي الخطوة الاولى لحمايتها.</p>
                     </div>
                 </div>
                 <div class="card" style="width: 18rem;">
-                    <img src="PHOTOS/monitoring.png" class="card-img-top" alt="...">
+                    <img src="PHOTOS/monitoring.png" class="card-img-top rounded mx-auto d-block" alt="...">
                     <div class="card-body">
-                        <p class="card-text"> Our comprehensive assessment and analysis can reveal the gaps between the current state of your
-                            systems and the problem-free state of protection.</p>
+                        <p class="card-text"> يمكن ان يكشف تقييمنا الشامل وتحليلنا عن الفجوات الامنية بين الحالة الحالية لانظمتك وحالة الحماية الخالية من المشاكل.</p>
                     </div>
 
 
                 </div>
                 <div class="card" style="width: 18rem;">
-                    <img src="PHOTOS/route.png" class="card-img-top" alt="...">
+                    <img src="PHOTOS/route.png" class="card-img-top rounded mx-auto d-block" alt="...">
                     <div class="card-body">
-                        <p class="card-text">There is a clear roadmap and action plan for identifying the right people, processes and techniques to
-                            fill the gaps</p>
+                        <p class="card-text">هناك خارطة طريق وخطة عمل واضحة لتحديد الاشخاص المناسبين والعمليات والاساليب لسد الفجوات.</p>
                     </div>
                 </div>
             </div>
@@ -818,9 +816,11 @@ if($do=='dashborad'){
         <div class="bookcover"></div>
         <div class="thecontainer">
             <div>
-                <h1>Courses Request</h1>
-                <p>Our cyber security training can help you and your team build fundamental to advanced cyber security techniques, Learn how to protect and defend against cyber threats with cyber security training courses for all levels of your organization.</p>
-                <p>From our interesting courses You and your team will learn to approach cyber security offensively and defensively through real-world examples and exercises, hands-on labs and expert instruction. You will gain knowledge to secure your critical systems and assets.</p>
+                <h1>طلب دورات</h1>
+                <p>يمكن للتدريب على الأمن الالكتروني أن يساعدك أنت وموظفيك على بناء تقنيات الأمان المتقدمة، وتعلم كيفية الحماية من التهديدات الاكترونية والتحصن ضدها من خلال دورات تدريبية للأمن الالكتروني ولجميع مستويات موظفي المؤسسة.</p>
+                <p>وتتضمن دوراتنا المميزة؛ دورات في القرصنة الأخلاقية المعتمدة، ودورات في التحليل الجنائي الرقمي، ودورات في الاستجابة للحوادث.
+
+                    ستتعلم أنت وفريقك كيفية الاقتراب من الأمن الالكتروني بطريقة هجومية ودفاعية من خلال الأمثلة والتمارين الواقعية والمختبرات العملية وتعليمات الخبراء.وستتمكن من اكتساب المعرفة لتأمين أنظمتك وأصولك المهمة.</p>
             </div>
             <form method="POST" action="courserequest.php">
                 <div>
@@ -902,33 +902,40 @@ if($do=='dashborad'){
                     </p>
                     <p>
 
-
+                        ✓
                         تدريب وتأهيل وبناء قدرات الشباب في المعارف الرئيسية المتعلقة بالشبكات وامن المعلومات باعتماد المناهج التي تطرحها الشركات العالمية المتخصصة في الشبكات وأمن المعلومات.
 
-                        ✓
+
                         <br>
+                        ✓
                         توفير مركز اختبارات متخصص للحصول على الشهادات العالمية المعتمدة
 
-                        ✓
+
                         <br>
+                        ✓
                         توفير بيئة برمجية قادرة على بناء حلول برمجية لمشكلات الاختراق والتهديدات السيبرانية.
 
-                        ✓
+
                         <br>
+                        ✓
                         المساهمة والمشاركة بتقديم الخبرات والاستشارات للمؤسسات الحكومية والخاصة بتقنيات الامن السيبراني
 
-                        ✓
+
                         <br>
+                        ✓
                         بناء شبكة من التحالفات الإستراتيجية لتشكيل قاعدة معرفية متطورة ومحدثة ومتطورة ، والتي من شأنها أن تمكننا من مشاركة أعلى مستوى من الخبرات الجماعية الدولية مع عملائنا
 
-                        ✓
+
                         <br>
+                        ✓
                         دعم وتعزيز المجتمع المحلي من خلال المساهمة الفعالة في الأنشطة والفعاليات المحلية
                     </p>
                     <p >
-                        الرسالة : أن نكون الخيار الأول في تدريب وبناء قدرات الشباب وتقديم الاستشارات والحلول البرمجية الامنة للمؤسسات والشركات-
+                        -
+                        الرسالة : أن نكون الخيار الأول في تدريب وبناء قدرات الشباب وتقديم الاستشارات والحلول البرمجية الامنة للمؤسسات والشركات
                         <br>
-                        الرؤيا : حماية الفضاء الالكتروني-
+                        -
+                        الرؤيا : حماية الفضاء الالكتروني
 
 
                         <br>
