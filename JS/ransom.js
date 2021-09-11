@@ -180,7 +180,7 @@ enroll.forEach((ele,i)=>{
 
 if(theLink.includes("pages=")){
     let courseContainer = document.querySelector(".course-container"),
-        courseContainerDivs = document.querySelectorAll(".course-container >div")
+        courseContainerDivs = document.querySelectorAll(".course-container >div"),
         filterButtons=document.querySelector(".filter-buttons"),
         allBtn = filterButtons.children[0],
         ciscoBtn = filterButtons.children[1],
