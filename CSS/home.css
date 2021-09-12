@@ -439,7 +439,7 @@ nav{
     position: relative;
     overflow: hidden;
     padding: 35px 40px 35px;
-    transition: all 1s ease;
+    transition: all 1s ease ;
     height: fit-content;
     min-height: 300px;
 }
@@ -447,6 +447,7 @@ nav{
     height: 0;
     padding: 0;
     min-height: 0;
+    opacity: 0;
 }
 .about-us .thecont .text-box p{
     transform: translateX(0);

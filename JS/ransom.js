@@ -58,33 +58,34 @@ function showAboutUsText(){
         e.classList.remove("absolute")
     })
     if(Array.from(this.parentNode.children).indexOf(this) == 0){
-        textBoxParag[0].classList.add("absolute")
-        textBox.classList.add("hidetextbox")
         this.classList.add("selected-box");
-        textBoxParag[0].classList.add("show-text")
+        textBox.classList.add("hidetextbox");
         setTimeout(() => {
+            textBoxParag[0].classList.add("absolute");
+            textBoxParag[0].classList.add("show-text")
             textBox.classList.remove("hidetextbox")
         }, 1000);
         setTimeout(() => {
             textBoxParag[0].classList.remove("absolute")
         }, 2000);
     }else if(Array.from(this.parentNode.children).indexOf(this) == 1){
-        textBoxParag[1].classList.add("absolute")
-        textBox.classList.add("hidetextbox")
         this.classList.add("selected-box");
-        textBoxParag[1].classList.add("show-text")
+        textBox.classList.add("hidetextbox")
         setTimeout(() => {
+            textBoxParag[1].classList.add("absolute")
+            textBoxParag[1].classList.add("show-text")
             textBox.classList.remove("hidetextbox")
         }, 1000);
         setTimeout(() => {
             textBoxParag[1].classList.remove("absolute")
         }, 2000);
     }else if(Array.from(this.parentNode.children).indexOf(this) == 2){
-        textBoxParag[2].classList.add("absolute")
         textBox.classList.add("hidetextbox")
         this.classList.add("selected-box");
-        textBoxParag[2].classList.add("show-text")
+        
         setTimeout(() => {
+            textBoxParag[2].classList.add("absolute")
+            textBoxParag[2].classList.add("show-text")
             textBox.classList.remove("hidetextbox")
         }, 1000);
         setTimeout(() => {
