@@ -60,7 +60,7 @@ if(isset($do) && $do!='ar'){
 <!-- loading -->
 <div class="loader-wrap">
     <div class="loader">   
-        <div class="circle-1 circle">w
+        <div class="circle-1 circle">
             <div class="circle-2 circle">
                 <div class="circle-3 circle">
                     <div class="circle-4 circle">
