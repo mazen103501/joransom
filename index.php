@@ -60,7 +60,7 @@ if(isset($do) && $do!='ar'){
 <!-- loading -->
 <div class="loader-wrap">
     <div class="loader">   
-        <div class="circle-1 circle">
+        <div class="circle-1 circle">w
             <div class="circle-2 circle">
                 <div class="circle-3 circle">
                     <div class="circle-4 circle">
@@ -118,7 +118,7 @@ if(isset($do) && $do!='ar'){
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link"  href="index.php?pages=about">About</a>
+                    <a class="nav-link"  href="index.php?pages=about">About Us</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#thefooter">Contact Us</a>
@@ -184,7 +184,7 @@ if($do=='dashborad'){
     <div class="intro-containter">
             <div class="intro-text">
 
-                <h1><span>Ransom For CyberSecurity</span><br> Service</h1>
+                <h1><span>Ransom For</span><br>CyberSecurity</h1>
 <!--                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam odit enim natus porro suscipit facere.</p>-->
             </div>
             <div class="section-img">
@@ -206,7 +206,7 @@ if($do=='dashborad'){
                 <h5>Objectives</h5>
             </div>
             <div class="box">
-                <h5>Our Mession & Vision</h5>
+                <h5>Our Mission & Vision</h5>
             </div>
         </div>
         <div class="text-box">
@@ -217,7 +217,7 @@ if($do=='dashborad'){
             <p>
 
                 ✓
-                Training, qualifying and building the capacities of young people in basic knowledge related to networks and information security by adopting the curricula offered by international companies specialized in networks and information security.
+                Training, qualifying and capacity building for youth in basic knowledge related to networks and information security by adopting the curricula offered by international companies specialized in networks and information security.
 <br>
                 ✓
                 Providing a specialized testing center to obtain accredited international certificates.
@@ -239,6 +239,8 @@ if($do=='dashborad'){
             <p >
                 Our Mission : To be the first choice in training, build the capabilities of young people, provide consulting, and develop software solutions to institutions and companies.
                 <br>
+                <br>
+                <br>
                 Our Vision : Secure Cyberspace.
             </p>
         </div>
@@ -255,7 +257,7 @@ if($do=='dashborad'){
             <div class="face face1">
                 <div class="content">
                     <img src="PHOTOS/presentation.svg" alt="image"/>
-                    <h3>Trainig</h3>
+                    <h3>Training</h3>
                 </div>
             </div>
             <div class="face face2">
@@ -1004,7 +1006,7 @@ ob_end_flush();
         slideTransition: 'linear',
         responsive: {
             0: {
-                items: 1
+                items: 2
             },
             600: {
                 items: 3

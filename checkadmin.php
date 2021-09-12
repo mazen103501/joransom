@@ -57,7 +57,7 @@ $("#name, #password").addClass("input-error");
 // If all fields are filled and email address is valid, remove values from all input fields
 if (errorEmpty== false) {
 $("#form-name, #password ").val("");
-    window.location.assign("https://localhost/joransom/adminpage.php");
+    window.location.assign("https://joransom.com/adminpage.php");
 
 
 
