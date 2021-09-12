@@ -730,6 +730,108 @@ elseif ($do=="consulting"){
 
 }
 
+elseif ($do=="job"){
+    ?>
+
+    <div class="container">
+        <div class="content">
+            <div class="left-side">
+                <div class="address details">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div class="topic">Address</div>
+                    <div class="text-one">Ransom For Cyber Security - Irbid - Omar ALmokhtar st.</div>
+
+                </div>
+                <div class="phone details">
+                    <i class="fas fa-phone-alt"></i>
+                    <div class="topic">Phone</div>
+                    <div class="text-one">00962  2  7277760</div>
+                    <div class="text-two">00962  77  6277760</div>
+                </div>
+                <div class="email details">
+                    <i class="fas fa-envelope"></i>
+                    <div class="topic">Email</div>
+                    <div class="text-two">info@joransom.com</div>
+                </div>
+            </div>
+            <div class="right-side">
+                <div class="topic-text">Send us a message</div>
+                <p>If you have any work from me or any types of quries related to my tutorial, you can send me message from here. It's my pleasure to help you.</p>
+                <form action="#">
+                    <div class="input-box">
+                        <input type="text" placeholder="Enter your name">
+                    </div>
+                    <div class="input-box">
+                        <input type="text" placeholder="Enter your email">
+                    </div>
+                    <div class="input-box">
+                        <input type="number" placeholder="Enter your Phone number">
+                    </div>
+                    <div class="input-box">
+                        <select>
+                            <option value="" selected disabled>University major</option>
+                        </select>
+                    </div>
+                    <div class="input-box">
+                        <select>
+
+                        </select>
+                    </div>
+                    <div class="input-box">
+                        <select>
+                            <option value="" disabled selected>Grade Average</option>
+                            <option value="Pass">Pass</option>
+                            <option value="Good">Good</option>
+                            <option value="Very Good">Very Good</option>
+                            <option value="Excellent">Excellent</option>
+                        </select>
+                    </div>
+                    <div class="input-box">
+                        <select>
+                            <option selected disabled value="">Governorate</option>
+                            <option value="Irbid">Irbid</option>1
+                            <option value="Jerash">Jerash</option>2
+                            <option value="Ajloun">Ajloun</option>3
+                            <option value="Mafraq">Mafraq</option>3
+                            <option value="Amman">Amman</option>4
+                            <option value="Zarqa">Zarqa</option>5
+                            <option value="Madaba">Madaba</option>6
+                            <option value="Balqa">Balqa</option>7
+                            <option value="Karak">Karak</option>8
+                            <option value="Tafileh">Tafileh</option>9
+                            <option value="Maan">Maan</option>10
+                            <option value="Aqaba">Aqaba</option>11
+
+                        </select>
+                    </div>
+                    <div class="input-box">
+
+                        <input type="date" placeholder="Enter your email">
+                    </div>
+                    <div class="input-box">
+
+                        <input type="file" placeholder="Enter your email">
+                    </div>
+                    <div class="input-box">
+
+                        <textarea placeholder="How Did You Hear About Us"></textarea>
+                    </div>
+
+
+                    <div class="button">
+                        <input type="button" value="Send Now" >
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <?php
+}
+
+
+
+
 
 
 //print course
