@@ -719,10 +719,6 @@ elseif ($do=="consulting"){
 
 
 
-
-
-
-
     <?php
 
 
@@ -756,77 +752,115 @@ elseif ($do=="job"){
             </div>
             <div class="right-side">
                 <div class="topic-text">Send us a message</div>
+
                 <p>If you have any work from me or any types of quries related to my tutorial, you can send me message from here. It's my pleasure to help you.</p>
-                <form action="#">
+
+                <form method="POST" action="index.php?pages=new-job">
                     <div class="input-box">
-                        <input type="text" placeholder="Enter your name">
+                        <input type="text" placeholder="الاسم بالكامل" name="name" >
                     </div>
                     <div class="input-box">
-                        <input type="text" placeholder="Enter your email">
+                        <input type="text" placeholder="الايميل" name="email" >
                     </div>
                     <div class="input-box">
-                        <input type="number" placeholder="Enter your Phone number">
+                        <input type="number" placeholder="رقم الهاتف" name="phonenumber" >
                     </div>
                     <div class="input-box">
-                        <select>
-                            <option value="" selected disabled>University major</option>
-                        </select>
-                    </div>
-                    <div class="input-box">
-                        <select>
+                        <select name="universitymajor">
+                            <option value="" selected disabled>التخصص</option>
+                            <option value="Computer Since">Computer Since</option>
+                            <option value="Computer engineer">Computer engineering</option>
+                            <option value="Computer Information System">Computer Information System </option>
+                            <option value="Software Engineer">Software Engineer</option>
+                            <option value="Cyber Security">Cyber Security</option>
+                            <option value="Artificial Intelligence">Artificial Intelligence</option>
+                            <option value="Network Engineering">Network Engineering</option>
+                            <option value="المحاسبة">المحاسبة</option>
+                            <option value="ادارة الاعمال">ادارة الاعمال</option>
+                            <option value="نظم معلومات ادارية">نظم معلومات ادارية</option>
+                            <option value="تسويق">التسويق</option>
+                            <option value="سكرتيريا">سكرتيريا</option>
+                            <option value="الترجمة">الترجمة</option>
+                            <option value="آداب انجليزي">آداب انجليزي</option>
+                            <option value="HR">الموارد البشرية (HR)</option>
 
                         </select>
                     </div>
+
                     <div class="input-box">
-                        <select>
-                            <option value="" disabled selected>Grade Average</option>
-                            <option value="Pass">Pass</option>
-                            <option value="Good">Good</option>
-                            <option value="Very Good">Very Good</option>
-                            <option value="Excellent">Excellent</option>
+                        <select name="gpa">
+                            <option value="" disabled selected>التقدير الجامعي</option>
+                            <option value="Accept">مقبول</option>
+                            <option value="Good">جيد</option>
+                            <option value="Very Good">جيد جدا</option>
+                            <option value="Excellent">ممتاز</option>
                         </select>
                     </div>
-                    <div class="input-box">
-                        <select>
-                            <option selected disabled value="">Governorate</option>
-                            <option value="Irbid">Irbid</option>1
-                            <option value="Jerash">Jerash</option>2
-                            <option value="Ajloun">Ajloun</option>3
-                            <option value="Mafraq">Mafraq</option>3
-                            <option value="Amman">Amman</option>4
-                            <option value="Zarqa">Zarqa</option>5
-                            <option value="Madaba">Madaba</option>6
-                            <option value="Balqa">Balqa</option>7
-                            <option value="Karak">Karak</option>8
-                            <option value="Tafileh">Tafileh</option>9
-                            <option value="Maan">Maan</option>10
-                            <option value="Aqaba">Aqaba</option>11
+                    <div  class="input-box">
+                        <select name="governorate">
+                            <option selected disabled value="">المحافظة</option>
+                            <option value="Irbid">اربد</option>
+                            <option value="Jerash">جرش</option>
+                            <option value="Ajloun">عجلون</option>
+                            <option value="Mafraq">المفرق</option>
+                            <option value="Amman">عمان</option>
+                            <option value="Zarqa">الزرقاء</option>
+                            <option value="Madaba">مأدبا</option>
+                            <option value="Balqa">البلقاء</option>
+                            <option value="Karak">الكرك</option>
+                            <option value="Tafileh">الطفيلة</option>
+                            <option value="Maan">معان</option>
+                            <option value="Aqaba">العقبة</option>
 
                         </select>
                     </div>
-                    <div class="input-box">
 
-                        <input type="date" placeholder="Enter your email">
+
+                    <div class="row">
+                        <div class="col input-box">
+                            <label>سنة التخرج</label>
+
+                            <input name="date" type="date">
+                        </div>
+
+
+                        <div class="col input-box">
+                            <label>السيرة الذاتية</label>
+
+                            <input name="CV" type="file">
+                        </div>
                     </div>
-                    <div class="input-box">
 
-                        <input type="file" placeholder="Enter your email">
-                    </div>
-                    <div class="input-box">
+                    <div class="input-box" >
 
-                        <textarea placeholder="How Did You Hear About Us"></textarea>
+                        <textarea name="about-us" placeholder="How Did You Hear About Us"></textarea>
                     </div>
 
 
-                    <div class="button">
-                        <input type="button" value="Send Now" >
-                    </div>
+
+                        <input type="submit" name="job">
+
                 </form>
             </div>
         </div>
     </div>
 
     <?php
+}
+elseif ($do=="new-job"){
+if(isset($_POST['job']))
+        $name = $_POST['name'];
+        $email = $_POST['email'];
+        $phonenumber = $_POST['phonenumber'];
+        $universitymajor = $_POST['universitymajor'];
+        $gpa = $_POST['gpa'];
+        $governorate = $_POST['governorate'];
+        $date = $_POST['date'];
+        $CV = $_POST['CV'];
+        $about_us = $_POST['about-us'];
+    $con->exec( "INSERT INTO `jobrequest` (`id`, `name`, `email`, `phone`, `major`,`gpa`,`governorate`,`date`,`CV`,`about_us`) VALUES (NULL, '$name', '$email', '$phonenumber', '$universitymajor', '$gpa','$governorate','$date','$CV','$about_us')");
+    echo "<h1 style='color: white;text-align: center'>تم استقبال طلبك بنجاح </h1>";
+    echo "<p>Redirecting in 5s</p>";
 }
 
 
@@ -1169,31 +1203,31 @@ ob_end_flush();
 
 </script>
 
-<script>
-    $(document).ready(function() {
-        $("form").submit(function(event) {
-            event.preventDefault();
-
-            var fullname = $("#form-name").val();
-            var email = $("#form-email").val();
-            var message = $("#form-message").val();
-            var submit = $("#form-submit").val();
-            var number = $("#form-number").val();
-            var courses = $("#form-courses").val();
-
-            $(".form-result").load("courserequest.php", {
-                fullname: fullname,
-                email: email,
-                message: message,
-                number :number,
-                courses:courses,
-                submit: submit
-            });
-        });
-    });
-
-
-</script>
+<!--<script>-->
+<!--    $(document).ready(function() {-->
+<!--        $("form").submit(function(event) {-->
+<!--            event.preventDefault();-->
+<!---->
+<!--            var fullname = $("#form-name").val();-->
+<!--            var email = $("#form-email").val();-->
+<!--            var message = $("#form-message").val();-->
+<!--            var submit = $("#form-submit").val();-->
+<!--            var number = $("#form-number").val();-->
+<!--            var courses = $("#form-courses").val();-->
+<!---->
+<!--            $(".form-result").load("courserequest.php", {-->
+<!--                fullname: fullname,-->
+<!--                email: email,-->
+<!--                message: message,-->
+<!--                number :number,-->
+<!--                courses:courses,-->
+<!--                submit: submit-->
+<!--            });-->
+<!--        });-->
+<!--    });-->
+<!---->
+<!---->
+<!--</script>-->
 
 
 </body>

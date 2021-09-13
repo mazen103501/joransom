@@ -1670,6 +1670,7 @@ footer div:first-of-type img{
 }
 .right-side .input-box textarea{
     padding-top: 6px;
+    margin-top: 11px;
 }
 .right-side .button{
     display: inline-block;
@@ -1685,6 +1686,7 @@ footer div:first-of-type img{
     background: #3e2093;
     cursor: pointer;
     transition: all 0.3s ease;
+
 }
 .button input[type="button"]:hover{
     background: #5029bc;

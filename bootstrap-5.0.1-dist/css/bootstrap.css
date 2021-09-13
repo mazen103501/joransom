@@ -2929,6 +2929,7 @@ textarea.form-control-lg {
   color: #fff;
   background-color: #0d6efd;
   border-color: #0d6efd;
+  width: 108px !important;
 }
 .btn-primary:hover {
   color: #fff;
