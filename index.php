@@ -755,18 +755,18 @@ elseif ($do=="job"){
 
                 <p>If you have any work from me or any types of quries related to my tutorial, you can send me message from here. It's my pleasure to help you.</p>
 
-                <form method="POST" action="index.php?pages=new-job">
+                <form id="job-request" method="POST" action="index.php?pages=new-job" enctype="multipart/form-data">
                     <div class="input-box">
-                        <input type="text" placeholder="الاسم بالكامل" name="name" >
+                        <input id="job-name" type="text" placeholder="الاسم بالكامل" name="name" >
                     </div>
                     <div class="input-box">
-                        <input type="text" placeholder="الايميل" name="email" >
+                        <input id="job-email" type="text" placeholder="الايميل" name="email" >
                     </div>
                     <div class="input-box">
-                        <input type="number" placeholder="رقم الهاتف" name="phonenumber" >
+                        <input id="job-number" type="number" placeholder="رقم الهاتف" name="phonenumber" >
                     </div>
                     <div class="input-box">
-                        <select name="universitymajor">
+                        <select id="job-major" name="universitymajor">
                             <option value="" selected disabled>التخصص</option>
                             <option value="Computer Since">Computer Since</option>
                             <option value="Computer engineer">Computer engineering</option>
@@ -788,7 +788,7 @@ elseif ($do=="job"){
                     </div>
 
                     <div class="input-box">
-                        <select name="gpa">
+                        <select id="job-gpa" name="gpa">
                             <option value="" disabled selected>التقدير الجامعي</option>
                             <option value="Accept">مقبول</option>
                             <option value="Good">جيد</option>
@@ -797,7 +797,7 @@ elseif ($do=="job"){
                         </select>
                     </div>
                     <div  class="input-box">
-                        <select name="governorate">
+                        <select id="job-governorate" name="governorate">
                             <option selected disabled value="">المحافظة</option>
                             <option value="Irbid">اربد</option>
                             <option value="Jerash">جرش</option>
@@ -820,25 +820,26 @@ elseif ($do=="job"){
                         <div class="col input-box">
                             <label>سنة التخرج</label>
 
-                            <input name="date" type="date">
+                            <input id="job-date" name="date" type="date">
                         </div>
 
 
                         <div class="col input-box">
                             <label>السيرة الذاتية</label>
 
-                            <input name="CV" type="file">
+                            <input id="job-cv" name="CV" type="file" accept="application/pdf">
                         </div>
                     </div>
 
                     <div class="input-box" >
 
-                        <textarea name="about-us" placeholder="How Did You Hear About Us"></textarea>
+                        <textarea id="job-aboutus" name="about_us" placeholder="How Did You Hear About Us"></textarea>
                     </div>
 
 
 
-                        <input type="submit" name="job">
+                        <input type="submit" name="job" id="job-submit">
+                    <p class="job-result"></p>
 
                 </form>
             </div>
@@ -847,21 +848,7 @@ elseif ($do=="job"){
 
     <?php
 }
-elseif ($do=="new-job"){
-if(isset($_POST['job']))
-        $name = $_POST['name'];
-        $email = $_POST['email'];
-        $phonenumber = $_POST['phonenumber'];
-        $universitymajor = $_POST['universitymajor'];
-        $gpa = $_POST['gpa'];
-        $governorate = $_POST['governorate'];
-        $date = $_POST['date'];
-        $CV = $_POST['CV'];
-        $about_us = $_POST['about-us'];
-    $con->exec( "INSERT INTO `jobrequest` (`id`, `name`, `email`, `phone`, `major`,`gpa`,`governorate`,`date`,`CV`,`about_us`) VALUES (NULL, '$name', '$email', '$phonenumber', '$universitymajor', '$gpa','$governorate','$date','$CV','$about_us')");
-    echo "<h1 style='color: white;text-align: center'>تم استقبال طلبك بنجاح </h1>";
-    echo "<p>Redirecting in 5s</p>";
-}
+
 
 
 
@@ -982,7 +969,7 @@ elseif($do=='trainingpage') {
                 <p>Our cyber security training can help you and your team build fundamental to advanced cyber security techniques, Learn how to protect and defend against cyber threats with cyber security training courses for all levels of your organization.</p>
                 <p>From our interesting courses You and your team will learn to approach cyber security offensively and defensively through real-world examples and exercises, hands-on labs and expert instruction. You will gain knowledge to secure your critical systems and assets.</p>
             </div>
-            <form method="POST" action="courserequest.php">
+            <form method="POST" action="courserequest.php" id="course-request">
                 <div>
                     <input type="text" placeholder="Full Name" name="fullname" id="form-name" required>
                     <input type="text" placeholder="E-mail" name="email" id="form-email" required>
@@ -1203,32 +1190,78 @@ ob_end_flush();
 
 </script>
 
-<!--<script>-->
-<!--    $(document).ready(function() {-->
-<!--        $("form").submit(function(event) {-->
-<!--            event.preventDefault();-->
-<!---->
-<!--            var fullname = $("#form-name").val();-->
-<!--            var email = $("#form-email").val();-->
-<!--            var message = $("#form-message").val();-->
-<!--            var submit = $("#form-submit").val();-->
-<!--            var number = $("#form-number").val();-->
-<!--            var courses = $("#form-courses").val();-->
-<!---->
-<!--            $(".form-result").load("courserequest.php", {-->
-<!--                fullname: fullname,-->
-<!--                email: email,-->
-<!--                message: message,-->
-<!--                number :number,-->
-<!--                courses:courses,-->
-<!--                submit: submit-->
-<!--            });-->
-<!--        });-->
-<!--    });-->
-<!---->
-<!---->
-<!--</script>-->
+<script>
+    $(document).ready(function() {
+        $("#course-request").submit(function(event) {
+          event.preventDefault();
 
+          var fullname = $("#form-name").val();
+           var email = $("#form-email").val();
+      var message = $("#form-message").val();
+           var submit = $("#form-submit").val();
+          var number = $("#form-number").val();
+           var courses = $("#form-courses").val();
+
+            $(".form-result").load("courserequest.php", {
+              fullname: fullname,
+              email: email,
+             message: message,
+               number :number,
+             courses:courses,
+               submit: submit
+            });
+        });
+   });
+
+</script>
+<script>
+
+    $(document).ready(function() {
+        $("#job-request").submit(function(event) {
+            event.preventDefault();
+
+            var name = $("#job-name").val();
+            var email = $("#job-email").val();
+            var phonenumber = $("#job-number").val();
+            var universitymajor = $("#job-major").val();
+            var gpa = $("#job-gpa").val();
+            var governorate= $("#job-governorate").val();
+            var date = $("#job-date").val();
+            var CV = $("#job-cv").val();
+            var about_us = $("#job-aboutus").val();
+            var submit = $("#job-submit").val();
+
+                async function uploadFile() {
+                let formData = new FormData();
+                formData.append("file", CV.files[0]);
+                await fetch('/jobrequest.php', {
+                method: "POST",
+                body: formData
+            });
+                alert('The file has been uploaded successfully.');
+            }
+
+
+
+            $(".job-result").load("jobrequest.php", {
+                name: name,
+                email: email,
+                phonenumber :phonenumber,
+                universitymajor: universitymajor,
+                gpa:gpa,
+                governorate:governorate,
+                date:date,
+                CV:CV,
+                about_us:about_us,
+                submit: submit
+            });
+        });
+    });
+
+
+
+
+</script>
 
 </body>
 </html>
