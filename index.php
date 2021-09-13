@@ -834,7 +834,6 @@ elseif ($do=="job"){
 
 
 
-//print course
 elseif($do=='trainingpage') {
     ?>
 
