@@ -123,9 +123,15 @@ if(isset($do) && $do!='ar'){
                 <li class="nav-item">
                     <a class="nav-link" href="#thefooter">Contact Us</a>
                 </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="index.php?pages=job">Job Request</a>
+                </li>
                 <li class="nav-item">
                     <a class="nav-link" href="homear.php">Ar</a>
                 </li>
+
+
                 <?php
 //                if(!isset($_SESSION['admin'] ) && !isset($_SESSION['username'])){
 //                    ?>
@@ -755,18 +761,18 @@ elseif ($do=="job"){
 
                 <p>If you have any work from me or any types of quries related to my tutorial, you can send me message from here. It's my pleasure to help you.</p>
 
-                <form id="job-request" method="POST" action="index.php?pages=new-job" enctype="multipart/form-data">
+                <form id="job-request" method="POST" action="jobrequest.php" enctype="multipart/form-data">
                     <div class="input-box">
-                        <input id="job-name" type="text" placeholder="الاسم بالكامل" name="name" >
+                        <input id="job-name" type="text" placeholder="الاسم بالكامل" name="name" required >
                     </div>
                     <div class="input-box">
-                        <input id="job-email" type="text" placeholder="الايميل" name="email" >
+                        <input id="job-email" type="email" placeholder="الايميل" name="email" required>
                     </div>
                     <div class="input-box">
-                        <input id="job-number" type="number" placeholder="رقم الهاتف" name="phonenumber" >
+                        <input id="job-number" type="number" placeholder="رقم الهاتف" name="phonenumber" required >
                     </div>
                     <div class="input-box">
-                        <select id="job-major" name="universitymajor">
+                        <select id="job-major" name="universitymajor" required>
                             <option value="" selected disabled>التخصص</option>
                             <option value="Computer Since">Computer Since</option>
                             <option value="Computer engineer">Computer engineering</option>
@@ -788,7 +794,7 @@ elseif ($do=="job"){
                     </div>
 
                     <div class="input-box">
-                        <select id="job-gpa" name="gpa">
+                        <select id="job-gpa" name="gpa" required>
                             <option value="" disabled selected>التقدير الجامعي</option>
                             <option value="Accept">مقبول</option>
                             <option value="Good">جيد</option>
@@ -797,7 +803,7 @@ elseif ($do=="job"){
                         </select>
                     </div>
                     <div  class="input-box">
-                        <select id="job-governorate" name="governorate">
+                        <select id="job-governorate" name="governorate" required>
                             <option selected disabled value="">المحافظة</option>
                             <option value="Irbid">اربد</option>
                             <option value="Jerash">جرش</option>
@@ -820,14 +826,14 @@ elseif ($do=="job"){
                         <div class="col input-box">
                             <label>سنة التخرج</label>
 
-                            <input id="job-date" name="date" type="date">
+                            <input id="job-date" name="date" type="date" required>
                         </div>
 
 
                         <div class="col input-box">
                             <label>السيرة الذاتية</label>
 
-                            <input id="job-cv" name="CV" type="file" accept="application/pdf">
+                            <input  name="CV" type="file" accept="application/pdf" required>
                         </div>
                     </div>
 
@@ -1214,49 +1220,49 @@ ob_end_flush();
    });
 
 </script>
-<script>
-
-    $(document).ready(function() {
-        $("#job-request").submit(function(event) {
-            event.preventDefault();
-
-            var name = $("#job-name").val();
-            var email = $("#job-email").val();
-            var phonenumber = $("#job-number").val();
-            var universitymajor = $("#job-major").val();
-            var gpa = $("#job-gpa").val();
-            var governorate= $("#job-governorate").val();
-            var date = $("#job-date").val();
-            var CV = $("#job-cv").val();
-            var about_us = $("#job-aboutus").val();
-            var submit = $("#job-submit").val();
-
-                async function uploadFile() {
-                let formData = new FormData();
-                formData.append("file", CV.files[0]);
-                await fetch('/jobrequest.php', {
-                method: "POST",
-                body: formData
-            });
-                alert('The file has been uploaded successfully.');
-            }
-
-
-
-            $(".job-result").load("jobrequest.php", {
-                name: name,
-                email: email,
-                phonenumber :phonenumber,
-                universitymajor: universitymajor,
-                gpa:gpa,
-                governorate:governorate,
-                date:date,
-                CV:CV,
-                about_us:about_us,
-                submit: submit
-            });
-        });
-    });
+<!--<script>-->
+<!---->
+<!--    $(document).ready(function() {-->
+<!--        $("#job-request").submit(function(event) {-->
+<!--            event.preventDefault();-->
+<!---->
+<!--            var name = $("#job-name").val();-->
+<!--            var email = $("#job-email").val();-->
+<!--            var phonenumber = $("#job-number").val();-->
+<!--            var universitymajor = $("#job-major").val();-->
+<!--            var gpa = $("#job-gpa").val();-->
+<!--            var governorate= $("#job-governorate").val();-->
+<!--            var date = $("#job-date").val();-->
+<!---->
+<!--            var about_us = $("#job-aboutus").val();-->
+<!--            var submit = $("#job-submit").val();-->
+<!---->
+<!--                async function uploadFile() {-->
+<!--                let formData = new FormData();-->
+<!--                formData.append("file", CV.files[0]);-->
+<!--                await fetch('/jobrequest.php', {-->
+<!--                method: "POST",-->
+<!--                body: formData-->
+<!--            });-->
+<!--                alert('The file has been uploaded successfully.');-->
+<!--            }-->
+<!---->
+<!---->
+<!---->
+<!--            $(".job-result").load("jobrequest.php", {-->
+<!--                name: name,-->
+<!--                email: email,-->
+<!--                phonenumber :phonenumber,-->
+<!--                universitymajor: universitymajor,-->
+<!--                gpa:gpa,-->
+<!--                governorate:governorate,-->
+<!--                date:date,-->
+<!---->
+<!--                about_us:about_us,-->
+<!--                submit: submit-->
+<!--            });-->
+<!--        });-->
+<!--    });-->
 
 
 

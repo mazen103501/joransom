@@ -120,6 +120,9 @@ if(isset($do) && $do!='ar'){
                     <a class="nav-link" href="#thefooter">تواصل معنا</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link" href="homear.php?pages=job">طلب التوظيف</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="index.php">EN</a>
                 </li>
 <!--                --><?php
@@ -734,6 +737,130 @@ if($do=='dashborad'){
 
 
     }
+
+
+elseif ($do=="job"){
+    ?>
+
+    <div class="container">
+        <div class="content">
+            <div class="left-side">
+                <div class="address details">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div class="topic">العنوان</div>
+                    <div class="text-one">شركة الفدية-اربد-شارع عمر المختار</div>
+
+                </div>
+                <div class="phone details">
+                    <i class="fas fa-phone-alt"></i>
+                    <div class="topic">الهاتف</div>
+                    <div class="text-one">00962  2  7277760</div>
+                    <div class="text-two">00962  77  6277760</div>
+                </div>
+                <div class="email details">
+                    <i class="fas fa-envelope"></i>
+                    <div class="topic">الايميل</div>
+                    <div class="text-two">info@joransom.com</div>
+                </div>
+            </div>
+            <div class="right-side">
+                <div class="topic-text">Send us a message</div>
+
+                <p>If you have any work from me or any types of quries related to my tutorial, you can send me message from here. It's my pleasure to help you.</p>
+
+                <form id="job-request" method="POST" action="jobrequest.php" enctype="multipart/form-data">
+                    <div class="input-box">
+                        <input id="job-name" type="text" placeholder="الاسم بالكامل" name="name" required >
+                    </div>
+                    <div class="input-box">
+                        <input id="job-email" type="email" placeholder="الايميل" name="email" required>
+                    </div>
+                    <div class="input-box">
+                        <input id="job-number" type="number" placeholder="رقم الهاتف" name="phonenumber" required >
+                    </div>
+                    <div class="input-box">
+                        <select id="job-major" name="universitymajor" required>
+                            <option value="" selected disabled>التخصص</option>
+                            <option value="Computer Since">Computer Since</option>
+                            <option value="Computer engineer">Computer engineering</option>
+                            <option value="Computer Information System">Computer Information System </option>
+                            <option value="Software Engineer">Software Engineer</option>
+                            <option value="Cyber Security">Cyber Security</option>
+                            <option value="Artificial Intelligence">Artificial Intelligence</option>
+                            <option value="Network Engineering">Network Engineering</option>
+                            <option value="المحاسبة">المحاسبة</option>
+                            <option value="ادارة الاعمال">ادارة الاعمال</option>
+                            <option value="نظم معلومات ادارية">نظم معلومات ادارية</option>
+                            <option value="تسويق">التسويق</option>
+                            <option value="سكرتيريا">سكرتيريا</option>
+                            <option value="الترجمة">الترجمة</option>
+                            <option value="آداب انجليزي">آداب انجليزي</option>
+                            <option value="HR">الموارد البشرية (HR)</option>
+
+                        </select>
+                    </div>
+
+                    <div class="input-box">
+                        <select id="job-gpa" name="gpa" required>
+                            <option value="" disabled selected>التقدير الجامعي</option>
+                            <option value="Accept">مقبول</option>
+                            <option value="Good">جيد</option>
+                            <option value="Very Good">جيد جدا</option>
+                            <option value="Excellent">ممتاز</option>
+                        </select>
+                    </div>
+                    <div  class="input-box">
+                        <select id="job-governorate" name="governorate" required>
+                            <option selected disabled value="">المحافظة</option>
+                            <option value="Irbid">اربد</option>
+                            <option value="Jerash">جرش</option>
+                            <option value="Ajloun">عجلون</option>
+                            <option value="Mafraq">المفرق</option>
+                            <option value="Amman">عمان</option>
+                            <option value="Zarqa">الزرقاء</option>
+                            <option value="Madaba">مأدبا</option>
+                            <option value="Balqa">البلقاء</option>
+                            <option value="Karak">الكرك</option>
+                            <option value="Tafileh">الطفيلة</option>
+                            <option value="Maan">معان</option>
+                            <option value="Aqaba">العقبة</option>
+
+                        </select>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="col input-box">
+                            <label>سنة التخرج</label>
+
+                            <input id="job-date" name="date" type="date" required>
+                        </div>
+
+
+                        <div class="col input-box">
+                            <label>السيرة الذاتية</label>
+
+                            <input  name="CV" type="file" accept="application/pdf" required>
+                        </div>
+                    </div>
+
+                    <div class="input-box" >
+
+                        <textarea id="job-aboutus" name="about_us" placeholder="How Did You Hear About Us"></textarea>
+                    </div>
+
+
+
+                    <input type="submit" name="job" id="job-submit">
+                    <p class="job-result"></p>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <?php
+}
 
 
 
